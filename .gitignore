@@ -1,0 +1,13 @@
+venv/
+.env
+.environment
+.idea/
+db.sqlite3
+__pycache__
+*.pyc
+*.log
+.coverage
+.env
+htmlcov/
+config/__pycache__/__init__.cpython-310.pyc
+.DS_Store
