@@ -6,20 +6,60 @@
 #
 asgiref==3.5.0
     # via django
+attrs==21.4.0
+    # via pytest
+black==22.3.0
+    # via -r requirements.in
 click==8.0.4
-    # via pip-tools
+    # via
+    #   black
+    #   pip-tools
+coverage==6.3.2
+    # via -r requirements.in
 django==4.0.3
     # via -r requirements.in
+iniconfig==1.1.1
+    # via pytest
+mypy-extensions==0.4.3
+    # via black
+packaging==21.3
+    # via pytest
+pathspec==0.9.0
+    # via black
 pep517==0.12.0
     # via pip-tools
 pip-tools==6.5.1
     # via -r requirements.in
+platformdirs==2.5.1
+    # via black
+pluggy==1.0.0
+    # via pytest
 psycopg2-binary==2.9.3
     # via -r requirements.in
+py==1.11.0
+    # via pytest
+pyparsing==3.0.7
+    # via packaging
+pytest==7.1.1
+    # via
+    #   -r requirements.in
+    #   pytest-django
+    #   pytest-dotenv
+pytest-django==4.5.2
+    # via -r requirements.in
+pytest-dotenv==0.5.2
+    # via -r requirements.in
+python-dotenv==0.20.0
+    # via
+    #   -r requirements.in
+    #   pytest-dotenv
 sqlparse==0.4.2
     # via django
 tomli==2.0.1
-    # via pep517
+    # via
+    #   black
+    #   pep517
+    #   pytest
 wheel==0.37.1
     # via pip-tools
 

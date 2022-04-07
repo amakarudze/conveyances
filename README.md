@@ -1,3 +1,3 @@
 # Covenyances
 
-This is an app for tracking conveyances matter for a legal firm.
+This is an app for tracking conveyances matters for a legal firm.

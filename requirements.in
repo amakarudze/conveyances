@@ -1,5 +1,9 @@
-django==4.0.3
+black
+coverage
+Django==4.0.3
 pip-tools
-psycopg2-binary==2.9.3
+psycopg2-binary
+python-dotenv
 pytest
 pytest-django
+pytest-dotenv
