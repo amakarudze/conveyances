@@ -1,0 +1,36 @@
+{
+  "status": "done",
+  "assets": {
+    "assets/c055650150f43d506ab1f884e0805001.svg": {
+      "name": "assets/c055650150f43d506ab1f884e0805001.svg",
+      "path": "/Users/anna/code/danziger/frontend/dist/assets/c055650150f43d506ab1f884e0805001.svg",
+      "publicPath": "http://127.0.0.1:8080/assets/c055650150f43d506ab1f884e0805001.svg"
+    },
+    "app-18e4e233f6342d226144.js": {
+      "name": "app-18e4e233f6342d226144.js",
+      "path": "/Users/anna/code/danziger/frontend/dist/app-18e4e233f6342d226144.js",
+      "publicPath": "http://127.0.0.1:8080/app-18e4e233f6342d226144.js"
+    },
+    "src_views_AboutView_vue.bundle.js": {
+      "name": "src_views_AboutView_vue.bundle.js",
+      "path": "/Users/anna/code/danziger/frontend/dist/src_views_AboutView_vue.bundle.js",
+      "publicPath": "http://127.0.0.1:8080/src_views_AboutView_vue.bundle.js"
+    },
+    "app-18e4e233f6342d226144.js.map": {
+      "name": "app-18e4e233f6342d226144.js.map",
+      "path": "/Users/anna/code/danziger/frontend/dist/app-18e4e233f6342d226144.js.map",
+      "publicPath": "http://127.0.0.1:8080/app-18e4e233f6342d226144.js.map"
+    },
+    "src_views_AboutView_vue.bundle.js.map": {
+      "name": "src_views_AboutView_vue.bundle.js.map",
+      "path": "/Users/anna/code/danziger/frontend/dist/src_views_AboutView_vue.bundle.js.map",
+      "publicPath": "http://127.0.0.1:8080/src_views_AboutView_vue.bundle.js.map"
+    }
+  },
+  "chunks": {
+    "app": [
+      "app-18e4e233f6342d226144.js"
+    ]
+  },
+  "publicPath": "http://127.0.0.1:8080/"
+}

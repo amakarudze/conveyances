@@ -1,6 +1,8 @@
 black
 coverage
 Django==4.0.3
+djangorestframework
+django-webpack-loader
 pip-tools
 psycopg2-binary
 python-dotenv

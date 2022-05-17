@@ -1,0 +1,57 @@
+{% extends 'accounts/base.html' %}
+
+{% block auth %}
+
+     <div class="row">
+        <div class="col-md-10">
+            <div class="card">
+                <div class="card-header text-white bg-primary">
+                    <div class="card-title">
+                        <h2>Login</h2>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <form method="POST">
+                        {% csrf_token %}
+                            {% for field in form %}
+                                <div class="form-group row">
+                                    <label class="col-md-4 col-form-label">{{ field.label }}:</label>
+                                    <div class="col-md-8">
+                                    {{ field }}
+                                    </div>
+                                </div>
+
+                                {% if form.errors and not form.non_field_errors %}
+                                    {% for error in field.errors %}
+                                        <div class="alert alert-danger">
+                                            <strong>{{ error }}</strong>
+                                         </div>
+                                    {% endfor %}
+                                {% endif %}
+
+                                {% if form.non_field_errors %}
+                                    {% for error in form.non_field_errors %}
+                                        <div class="alert alert-danger">
+                                            <strong>{{ error }}</strong>
+                                        </div>
+                                    {% endfor %}
+                                {% endif %}
+
+                            {% endfor %}
+                        <div class="row">
+                            <div class="col-md-4 offset-md-4">
+                                <button type="submit" class="btn btn-primary" id="login">Login</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 offset-md-4">
+                        <a href="#">Forgot Password</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}

@@ -5,8 +5,8 @@ ignore:
   - */management/*
   - */migrations/*
   - venv/*
-  - activity_generator/wsgi.py
-  - activity_generator/asgi.py
+  - conveyances/wsgi.py
+  - conveyances/asgi.py
   - manage.py
 
 codecov:
