@@ -65,7 +65,7 @@ ROOT_URLCONF = "conveyances.urls"
 TEMPLATES = [
     {
         "BACKEND": "django.template.backends.django.DjangoTemplates",
-        "DIRS": [os.path.join(BASE_DIR, 'templates')],
+        "DIRS": [os.path.join(BASE_DIR, "templates")],
         "APP_DIRS": True,
         "OPTIONS": {
             "context_processors": [
@@ -166,7 +166,7 @@ REST_FRAMEWORK = {
     ),
     "DEFAULT_PERMISSION_CLASSES": ("rest_framework.permissions.IsAuthenticated",),
     "DEFAULT_PAGINATION_CLASS": "rest_framework.pagination.PageNumberPagination",
-    "PAGE_SIZE": 5
+    "PAGE_SIZE": 5,
 }
 
 WEBPACK_LOADER = {
@@ -175,6 +175,6 @@ WEBPACK_LOADER = {
         "STATS_FILE": os.path.join(BASE_DIR, "frontend", "webpack-stats.json"),
         "POLL_INTERVAL": 0.1,
         "TIMEOUT": None,
-        "IGNORE": [".*\.hot-update.js", ".+\.map"]
+        "IGNORE": [".*\.hot-update.js", ".+\.map"],
     }
 }

@@ -14,10 +14,10 @@ def user(db, django_user_model, django_username_field):
     username_field = django_username_field
 
     try:
-        user = UserModel._default_manager.get(**{username_field: 'testuser'})
+        user = UserModel._default_manager.get(**{username_field: "testuser"})
     except UserModel.DoesNotExist:
         user = UserModel._default_manager.create_user(
-            'testuser', 'testuser@test.com', 'testpass1234'
+            "testuser", "testuser@test.com", "testpass1234"
         )
     return user
 
