@@ -13,8 +13,5 @@ urlpatterns = [
         form_class=LoginForm,
         extra_context={'title': "Login"}
     ), name='login'),
-    path('logout/', auth_views.LogoutView.as_view(
-        template_name='accounts/logout.html',
-        extra_context={'title': 'Logout'}
-    ), name='logout'),
+    path('logout/', auth_views.logout_then_login, name='logout'),
 ]
