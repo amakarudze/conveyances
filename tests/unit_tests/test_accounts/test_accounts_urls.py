@@ -8,4 +8,4 @@ def test_login_url(client):
 
 def test_logout_url(user_client):
     response = user_client.get(reverse('accounts:logout'))
-    assert response.status_code == 200
+    assert response.status_code == 302

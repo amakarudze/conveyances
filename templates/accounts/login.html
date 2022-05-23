@@ -2,56 +2,67 @@
 
 {% block auth %}
 
-     <div class="row">
-        <div class="col-md-10">
-            <div class="card">
-                <div class="card-header text-white bg-primary">
-                    <div class="card-title">
-                        <h2>Login</h2>
-                    </div>
-                </div>
-                <div class="card-body">
-                    <form method="POST">
-                        {% csrf_token %}
-                            {% for field in form %}
-                                <div class="form-group row">
-                                    <label class="col-md-4 col-form-label">{{ field.label }}:</label>
-                                    <div class="col-md-8">
-                                    {{ field }}
-                                    </div>
+
+    <!-- Outer Row -->
+    <div class="row justify-content-center">
+
+        <div class="col-xl-10 col-lg-12 col-md-9">
+
+            <div class="card o-hidden border-0 shadow-lg my-5">
+                <div class="card-body p-0">
+                    <!-- Nested Row within Card Body -->
+                    <div class="row">
+                        <div class="col-lg-6 d-none d-lg-block bg-login-image"></div>
+                        <div class="col-lg-6">
+                            <div class="p-5">
+                                <div class="text-center">
+                                    <h1 class="h4 text-gray-900 mb-4">Welcome Back!</h1>
                                 </div>
-
-                                {% if form.errors and not form.non_field_errors %}
-                                    {% for error in field.errors %}
-                                        <div class="alert alert-danger">
-                                            <strong>{{ error }}</strong>
-                                         </div>
-                                    {% endfor %}
-                                {% endif %}
-
-                                {% if form.non_field_errors %}
-                                    {% for error in form.non_field_errors %}
-                                        <div class="alert alert-danger">
-                                            <strong>{{ error }}</strong>
+                                <form method="POST">
+                                    {% csrf_token %}
+                                        {% for field in form %}
+                                            <div class="form-group row">
+                                                <label class="col-md-4 col-form-label">{{ field.label }}:</label>
+                                                <div class="col-md-8">
+                                                {{ field }}
+                                                </div>
+                                            </div>
+            
+                                            {% if form.errors and not form.non_field_errors %}
+                                                {% for error in field.errors %}
+                                                    <div class="alert alert-danger">
+                                                        <strong>{{ error }}</strong>
+                                                     </div>
+                                                {% endfor %}
+                                            {% endif %}
+            
+                                            {% if form.non_field_errors %}
+                                                {% for error in form.non_field_errors %}
+                                                    <div class="alert alert-danger">
+                                                        <strong>{{ error }}</strong>
+                                                    </div>
+                                                {% endfor %}
+                                            {% endif %}
+            
+                                        {% endfor %}
+                                    <div class="row">
+                                        <div class="col-md-4 offset-md-4">
+                                            <button type="submit" class="btn btn-primary btn-user btn-block" id="login">Login</button>
                                         </div>
-                                    {% endfor %}
-                                {% endif %}
-
-                            {% endfor %}
-                        <div class="row">
-                            <div class="col-md-4 offset-md-4">
-                                <button type="submit" class="btn btn-primary" id="login">Login</button>
+                                    </div>
+                                </form>
+                                <hr>
+                                <div class="text-center">
+                                    <a class="small" href="#">Forgot Password?</a>
+                                </div>
                             </div>
                         </div>
-                    </form>
-                </div>
-                <div class="row">
-                    <div class="col-md-4 offset-md-4">
-                        <a href="#">Forgot Password</a>
                     </div>
                 </div>
             </div>
+
         </div>
+
     </div>
 
 {% endblock %}
