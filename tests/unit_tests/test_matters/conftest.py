@@ -1,5 +1,6 @@
 import pytest
 
+from matters.models import Bank, ConveyanceMatter
 from matters.stages import create_conveyance_object
 
 
@@ -123,3 +124,30 @@ def mortgage_bond_cancellation_object(mortgage_bond_cancellation):
         "Mortgage Bond Cancellation", mortgage_bond_cancellation
     )
     return mortgage_bond_object
+
+
+@pytest.fixture
+def bank(db):
+    return Bank.objects.create(name="First Capital Bank")
+
+
+@pytest.fixture
+def conveyance_matter(db, transfer_object, bank, user):
+    return ConveyanceMatter.objects.create(
+        title="Deeds Transfer between Jane Doe and First Capital Bank",
+        matters=[transfer_object],
+        created_by=user,
+        bank=bank,
+    )
+
+
+@pytest.fixture
+def conveyance_matters(
+    db, mortgage_bond_object, mortgage_bond_other_lawyers_object, bank, user
+):
+    return ConveyanceMatter.objects.create(
+        title="Mortgage Bond and Mortgage Bond Other Lawyers between John Doe and First Capital Bank",
+        matters=[mortgage_bond_object, mortgage_bond_other_lawyers_object],
+        created_by=user,
+        bank=bank,
+    )
