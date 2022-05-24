@@ -90,14 +90,15 @@ class Stage:
     done: bool = None
 
 
+@dataclass
 class Matter:
-    def __init__(self, **kwargs):
-        pass
+    name: Text
+    stages: Dict
 
 
-def create_conveyance_object(code: str, stages: List, Stage: Dict) -> Iterable[Matter]:
+def create_conveyance_object(name: str, stages: List) -> Iterable[Matter]:
     matter_stages = {}
     for stage in stages:
         matter_stages[stage] = Stage()
-    convenyance_matter = Matter(code, matter_stages)
+    convenyance_matter = Matter(name, matter_stages)
     return convenyance_matter
