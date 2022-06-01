@@ -1,6 +1,10 @@
 import pytest
 
-from matters.serializers import BankSerializer, ConveyanceMatterSerializer
+from matters.serializers import (
+    BankSerializer,
+    ConveyanceMatterSerializer,
+    MatterSerializer,
+)
 from .factories import BankFactory, ConveyanceMatterFactory
 
 

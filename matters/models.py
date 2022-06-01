@@ -16,6 +16,8 @@ class ConveyanceMatter(models.Model):
     last_updated = models.DateTimeField(auto_now=True)
     created_by = models.ForeignKey(get_user_model(), on_delete=models.CASCADE)
     bank = models.ForeignKey(Bank, on_delete=models.CASCADE)
+    complete = models.BooleanField(default=False)
+    comment = models.TextField(blank=True, null=True)
 
     def __str__(self):
         return self.title
