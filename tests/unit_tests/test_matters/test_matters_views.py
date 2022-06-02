@@ -1,1 +1,193 @@
+import json
+import pytest
+
 from django.urls import reverse
+
+from rest_framework import status
+
+from matters.models import Bank, ConveyanceMatter, Matter
+from matters.serializers import BankSerializer, ConveyanceMatterSerializer, MatterSerializer
+
+
+BASE_MATTERS_URL = reverse('matters:base_matters')
+BANKS_URL = reverse('matters:bank-list')
+CONVEYANCES_URL = reverse('matters:conveyancematter-list')
+MATTERS_URL = reverse('matters:matter-list')
+
+
+def bank_detail_url(bank_id):
+    return reverse('matters:bank-detail', args=[bank_id])
+
+
+def conveyance_matter_detail_url(conveyancematter_id):
+    return reverse('matters:conveyancematter-detail', args=[conveyancematter_id])
+
+
+def matter_detail_url(matter_id):
+    return reverse('matters:matter-detail', args=[matter_id])
+
+
+def test_base_matters_view_unauthenticated(client):
+    response = client.get(BASE_MATTERS_URL)
+    assert response.status_code == status.HTTP_401_UNAUTHORIZED
+
+
+def test_banks_view_unauthenticated(client):
+    response = client.get(BANKS_URL)
+    assert response.status_code == status.HTTP_401_UNAUTHORIZED
+
+
+def test_conveyance_matters_view_unauthenticated(client):
+    response = client.get(CONVEYANCES_URL)
+    assert response.status_code == status.HTTP_401_UNAUTHORIZED
+
+
+def test_matters_view_unauthenticated(client):
+    response = client.get(MATTERS_URL)
+    assert response.status_code == status.HTTP_401_UNAUTHORIZED
+
+
+def test_base_matters_view(user_client, conveyances):
+    response = user_client.get(BASE_MATTERS_URL)
+    assert response.status_code == status.HTTP_200_OK
+    assert response.data == conveyances
+
+
+def test_get_banks_view(user_client, bank, bank2):
+    response = user_client.get(BANKS_URL)
+    
+    banks = Bank.objects.all().order_by('id')
+    serializer = BankSerializer(banks, many=True)
+
+    assert response.status_code == status.HTTP_200_OK
+    assert len(response.data['results']) == 2
+    assert response.data['results'] == serializer.data
+
+
+def test_get_conveyance_matters(user_client, conveyance_matter, conveyance_matters):
+    response = user_client.get(CONVEYANCES_URL)
+
+    matters = ConveyanceMatter.objects.all().order_by('-created_at')
+    serializer = ConveyanceMatterSerializer(matters, many=True)
+
+    assert response.status_code == status.HTTP_200_OK
+    assert len(response.data['results']) == 2
+    assert response.data['results'] == serializer.data
+
+
+def test_get_matters_view(user_client, sample_matter, sample_matter2, sample_matter3):
+    response = user_client.get(MATTERS_URL)
+
+    matters = Matter.objects.all().order_by('-created_at')
+    serializer = MatterSerializer(matters, many=True)
+
+    assert response.status_code == status.HTTP_200_OK
+    print(response.data)
+    assert len(response.data['results']) == 3
+    assert response.data['results'] == serializer.data
+
+
+def test_create_bank(user_client, bank_payload):
+    payload = bank_payload
+    response = user_client.post(BANKS_URL, payload)
+
+    assert response.status_code == status.HTTP_201_CREATED
+    bank = Bank.objects.get(id=response.data['id'])
+    for key in payload.keys():
+        assert payload[key] == getattr(bank, key)
+
+
+def test_edit_bank(user_client, edit_bank, bank):
+    payload = edit_bank
+    url = bank_detail_url(bank.id)
+    response = user_client.put(url, payload)
+    bank.refresh_from_db()
+
+    assert response.status_code == status.HTTP_200_OK
+    assert bank.name == payload['name']
+
+
+def test_create_convenience_matter_no_matter(user_client, conveyance_matter_payload):
+    payload = conveyance_matter_payload
+    response = user_client.post(CONVEYANCES_URL, payload)
+
+    assert response.status_code == status.HTTP_400_BAD_REQUEST
+
+
+def test_create_convenience_matter_one_matter(user_client, conveyance_matter_one_matter_payload):
+    payload = conveyance_matter_one_matter_payload
+    response = user_client.post(CONVEYANCES_URL, payload)
+
+    assert response.status_code == status.HTTP_201_CREATED
+
+def test_create_convenience_matter_with_two_matters(user_client, conveyance_two_matters_payload):
+    payload = conveyance_two_matters_payload
+    response = user_client.post(CONVEYANCES_URL, payload)
+
+    assert response.status_code == status.HTTP_201_CREATED
+
+
+def test_edit_conveyance_matter(user_client, edit_conveyance_matter_payload, basic_conveyance_matter):
+    payload = edit_conveyance_matter_payload
+    url = conveyance_matter_detail_url(basic_conveyance_matter.id)
+    response = user_client.patch(url, payload)
+
+    assert response.status_code == status.HTTP_200_OK
+    matters = basic_conveyance_matter.matters.all()
+    assert len(matters) == 1
+
+
+def test_create_matter(user_client, matter_payload):
+    payload = matter_payload
+    response = user_client.post(MATTERS_URL, payload)
+
+    assert response.status_code == status.HTTP_201_CREATED
+
+
+@pytest.mark.skip
+def test_edit_matter(user_client, sample_matter):
+    data = {
+        "name": "Mortgage Bond",
+        "stages": {
+            "acknowledge_instructions": {
+                "comment": "Acknowledge Instructions received.",
+                "done": "true"
+            },
+            "statement_issued": {
+                "comment": "null",
+                "done": "false"
+            },
+            "power_of_attorney_signed": {
+                "comment": "null",
+                "done": "false"
+            },
+            "statement_paid": {
+                "comment": "null",
+                "done": "false"
+            },
+            "documents_lodged": {
+                "comment": "null",
+                "done": "false"
+            },
+            "documents_queried": {
+                "comment": "null",
+                "user": "null",
+                "done": "false"
+            },
+            "documents_registered": {
+                "comment": "null",
+                "done": "false"
+            },
+            "documents_delivered_to_bank": {
+                "comment": "null",
+                "done": "false"
+            }
+        }
+    }
+
+    payload = json.dumps(data)
+
+    url = matter_detail_url(sample_matter.id)
+    response = user_client.patch(url, payload, format="json")
+
+    assert response.status_code == status.HTTP_200_OK

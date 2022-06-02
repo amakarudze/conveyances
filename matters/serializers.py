@@ -1,6 +1,6 @@
 from rest_framework import serializers
 
-from .models import Bank, ConveyanceMatter
+from .models import Bank, ConveyanceMatter, Matter
 
 
 class BankSerializer(serializers.ModelSerializer):
@@ -27,6 +27,13 @@ class ConveyanceMatterSerializer(serializers.ModelSerializer):
         read_only_fields = ("id", "created_at", "last_updated")
 
 
-class MatterSerializer(serializers.Serializer):
+class BaseMatterSerializer(serializers.Serializer):
     name = serializers.CharField(max_length=255)
     stages = serializers.DictField()
+
+
+class MatterSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Matter
+        fields = ("id", "name", "stages", "created_at", "last_updated")
+        read_only_fields = ("created_at", "created_by", "last_updated")

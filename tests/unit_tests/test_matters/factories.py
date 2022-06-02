@@ -1,3 +1,4 @@
+from calendar import c
 import factory
 
 from faker import Factory as FakerFactory
@@ -22,7 +23,6 @@ class ConveyanceMatterFactory(factory.django.DjangoModelFactory):
         model = ConveyanceMatter
 
     title = factory.LazyAttribute(lambda x: faker.sentence(nb_words=20))
-    matters = factory.LazyAttribute(lambda x: faker.sentence(nb_words=20))
     created_by = factory.SubFactory(UserFactory)
     bank = factory.SubFactory(BankFactory)
 

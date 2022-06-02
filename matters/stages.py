@@ -1,7 +1,4 @@
-import json
-
 from dataclasses import dataclass
-from datetime import datetime
 from typing import Dict, Iterable, List, Text
 
 
@@ -96,23 +93,19 @@ matters = {
 @dataclass
 class Stage:
     comment: Text = None
-    date_updated: datetime = None
-    user: Text = None
-    done: bool = None
-
-    def default(self):
-        pass
+    done: bool = False
 
 
 @dataclass
-class Matter:
+class BaseMatter:
     name: Text
     stages: Dict
 
 
-def create_conveyance_object(name: str, stages: List) -> Iterable[Matter]:
+def create_conveyance_object(name: str, stages: List) -> Iterable[BaseMatter]:
     matter_stages = {}
     for stage in stages:
         matter_stages[stage] = vars(Stage())
-    convenyance_matter = Matter(name, matter_stages)
+
+    convenyance_matter = BaseMatter(name, matter_stages)
     return convenyance_matter

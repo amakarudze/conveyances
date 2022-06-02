@@ -9,8 +9,9 @@ app_name = "matters"
 router = DefaultRouter()
 router.register("conveyance_matters", views.ConveyanceMatterViewSet)
 router.register("banks", views.BankViewSet)
+router.register("matters", views.MatterViewSet)
 
 urlpatterns = [
     path("", include(router.urls)),
-    path("matters/", views.MatterView.as_view(), name="matters"),
+    path("base_matters/", views.BaseMatterView.as_view(), name="base_matters"),
 ]
