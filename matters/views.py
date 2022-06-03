@@ -73,5 +73,16 @@ class MatterViewSet(
     permission_classes = (IsAuthenticated,)
     serializer_class = MatterSerializer
 
+    def get(self, request):
+        conveyance_matters = []
+        for key in matters.keys():
+            conveyance_matter = create_conveyance_object(
+                matters[key]["name"], matters[key]["stages"]
+            )
+            conveyance_matters.append(conveyance_matter)
+        results = BaseMatterSerializer(conveyance_matters, many=True).data
+
+        return results, self.queryset
+
     def perform_create(self, serializer):
         return serializer.save(created_by=self.request.user)

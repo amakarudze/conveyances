@@ -137,57 +137,19 @@ def test_edit_conveyance_matter(user_client, edit_conveyance_matter_payload, bas
     assert len(matters) == 1
 
 
-def test_create_matter(user_client, matter_payload):
-    payload = matter_payload
-    response = user_client.post(MATTERS_URL, payload)
+def test_create_matter(user_client):
+    with open("tests/unit_tests/test_matters/transfer.json") as p:
+        payload = json.load(p)
+        response = user_client.post(MATTERS_URL, payload, format="json")
 
     assert response.status_code == status.HTTP_201_CREATED
 
 
-@pytest.mark.skip
-def test_edit_matter(user_client, sample_matter):
-    data = {
-        "name": "Mortgage Bond",
-        "stages": {
-            "acknowledge_instructions": {
-                "comment": "Acknowledge Instructions received.",
-                "done": "true"
-            },
-            "statement_issued": {
-                "comment": "null",
-                "done": "false"
-            },
-            "power_of_attorney_signed": {
-                "comment": "null",
-                "done": "false"
-            },
-            "statement_paid": {
-                "comment": "null",
-                "done": "false"
-            },
-            "documents_lodged": {
-                "comment": "null",
-                "done": "false"
-            },
-            "documents_queried": {
-                "comment": "null",
-                "user": "null",
-                "done": "false"
-            },
-            "documents_registered": {
-                "comment": "null",
-                "done": "false"
-            },
-            "documents_delivered_to_bank": {
-                "comment": "null",
-                "done": "false"
-            }
-        }
-    }
+def test_edit_matter(user_client, sample_matter2):
+    with open("tests/unit_tests/test_matters/mortgage_bond.json") as p:
+        payload = json.load(p)
 
-    payload = json.dumps(data)
-
-    url = matter_detail_url(sample_matter.id)
-    response = user_client.patch(url, payload, format="json")
+        url = matter_detail_url(sample_matter2.id)
+        response = user_client.patch(url, payload, format="json")
 
     assert response.status_code == status.HTTP_200_OK

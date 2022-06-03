@@ -267,11 +267,3 @@ def edit_conveyance_matter_payload(bank, sample_matter):
     return {
         "matters": [sample_matter.id]
     }
-
-
-@pytest.fixture
-def matter_payload(mortgage_bond_object):
-    return {
-        "name": mortgage_bond_object.name,
-        "stages": mortgage_bond_object.stages
-    }
