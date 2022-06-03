@@ -141,18 +141,14 @@ def bank2(db):
 @pytest.fixture
 def sample_matter(db, transfer_object, user):
     return Matter.objects.create(
-        name="Transfer",
-        stages=transfer_object.stages,
-        created_by=user
+        name="Transfer", stages=transfer_object.stages, created_by=user
     )
 
 
 @pytest.fixture
 def sample_matter2(db, mortgage_bond_object, user):
     return Matter.objects.create(
-        name="Mortgage Bond",
-        stages=mortgage_bond_object.stages,
-        created_by=user
+        name="Mortgage Bond", stages=mortgage_bond_object.stages, created_by=user
     )
 
 
@@ -160,8 +156,8 @@ def sample_matter2(db, mortgage_bond_object, user):
 def sample_matter3(db, mortgage_bond_other_lawyers_object, user2):
     return Matter.objects.create(
         name="Mortgage Bond Other Lawyers Transferring",
-        stages = mortgage_bond_other_lawyers_object.stages,
-        created_by=user2
+        stages=mortgage_bond_other_lawyers_object.stages,
+        created_by=user2,
     )
 
 
@@ -187,13 +183,11 @@ def basic_conveyance_matter(db, bank, user):
 
 
 @pytest.fixture
-def conveyance_matters(
-    db, bank, user2, sample_matter2, sample_matter3
-):
+def conveyance_matters(db, bank, user2, sample_matter2, sample_matter3):
     matter = ConveyanceMatter.objects.create(
         title="Mortgage Bond and Mortgage Bond Other Lawyers between John Doe and First Capital Bank",
         created_by=user2,
-        bank=bank
+        bank=bank,
     )
     matter.matters.add(sample_matter2.id)
     matter.matters.add(sample_matter3.id)
@@ -205,7 +199,7 @@ def matter(db, user, mortgage_bond_object):
     return Matter.objects.create(
         created_by=user,
         name=mortgage_bond_object.name,
-        stages=mortgage_bond_object.stages
+        stages=mortgage_bond_object.stages,
     )
 
 
@@ -223,17 +217,12 @@ def conveyances():
 
 @pytest.fixture
 def bank_payload():
-    return {
-        'name': 'CBZ'
-    }
+    return {"name": "CBZ"}
 
 
 @pytest.fixture
 def edit_bank(bank):
-    return {
-        'id': bank.id,
-        'name': 'First Capital Bank Zimbabwe'
-    }
+    return {"id": bank.id, "name": "First Capital Bank Zimbabwe"}
 
 
 @pytest.fixture
@@ -249,7 +238,7 @@ def conveyance_matter_one_matter_payload(bank, sample_matter):
     return {
         "title": "Nortgage Bond between Jane Doe and First Capital Bank",
         "bank": bank.id,
-        "matters": [sample_matter.id]
+        "matters": [sample_matter.id],
     }
 
 
@@ -258,12 +247,10 @@ def conveyance_two_matters_payload(bank2, sample_matter2, sample_matter3):
     return {
         "title": "Deeds Transfer between Jane Doe and Stanbic Bank",
         "bank": bank2.id,
-        "matters": [sample_matter2.id, sample_matter3.id]
+        "matters": [sample_matter2.id, sample_matter3.id],
     }
 
 
 @pytest.fixture
 def edit_conveyance_matter_payload(bank, sample_matter):
-    return {
-        "matters": [sample_matter.id]
-    }
+    return {"matters": [sample_matter.id]}

@@ -22,7 +22,7 @@ class Matter(models.Model):
 
 class ConveyanceMatter(models.Model):
     title = models.CharField(max_length=255)
-    matters = models.ManyToManyField('Matter')
+    matters = models.ManyToManyField("Matter")
     created_at = models.DateTimeField(auto_now_add=True)
     last_updated = models.DateTimeField(auto_now=True)
     created_by = models.ForeignKey(get_user_model(), on_delete=models.CASCADE)

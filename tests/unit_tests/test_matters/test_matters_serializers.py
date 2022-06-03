@@ -4,7 +4,7 @@ from matters.serializers import (
     BankSerializer,
     ConveyanceMatterSerializer,
     BaseMatterSerializer,
-    MatterSerializer
+    MatterSerializer,
 )
 from .factories import BankFactory, ConveyanceMatterFactory
 
@@ -62,7 +62,7 @@ def test_matter_serialized_data(user, transfer_object):
     valid_serialized_data = {
         "name": transfer_object.name,
         "created_by": user,
-        "stages": transfer_object.stages
+        "stages": transfer_object.stages,
     }
 
     serializer = MatterSerializer(data=valid_serialized_data)
@@ -75,13 +75,13 @@ def test_matter_serialized_data(user, transfer_object):
 def test_serialize_base_matter(transfer_object):
     serializer = BaseMatterSerializer(transfer_object)
     assert serializer.data
-    
+
 
 @pytest.mark.unit
 def test_base_matter_serialized_data(transfer_object):
     valid_serialized_data = {
         "name": transfer_object.name,
-        "stages": transfer_object.stages
+        "stages": transfer_object.stages,
     }
 
     serializer = BaseMatterSerializer(data=valid_serialized_data)

@@ -3,7 +3,12 @@ from rest_framework.permissions import IsAuthenticated
 from rest_framework.response import Response
 
 from .models import Bank, ConveyanceMatter, Matter
-from .serializers import BankSerializer, ConveyanceMatterSerializer, BaseMatterSerializer, MatterSerializer
+from .serializers import (
+    BankSerializer,
+    ConveyanceMatterSerializer,
+    BaseMatterSerializer,
+    MatterSerializer,
+)
 from .stages import create_conveyance_object, matters
 
 
@@ -12,7 +17,7 @@ class BankViewSet(
     mixins.CreateModelMixin,
     mixins.ListModelMixin,
     mixins.RetrieveModelMixin,
-    mixins.UpdateModelMixin
+    mixins.UpdateModelMixin,
 ):
     permission_classes = (IsAuthenticated,)
     queryset = Bank.objects.all().order_by("id")
@@ -26,7 +31,7 @@ class ConveyanceMatterViewSet(
     mixins.RetrieveModelMixin,
     mixins.UpdateModelMixin,
 ):
-    queryset = ConveyanceMatter.objects.all().order_by('-created_at')
+    queryset = ConveyanceMatter.objects.all().order_by("-created_at")
     serializer_class = ConveyanceMatterSerializer
     permission_classes = (IsAuthenticated,)
 
@@ -36,12 +41,9 @@ class ConveyanceMatterViewSet(
         queryset = self.queryset
 
         if bank:
-            return queryset.filter(bank__icontains=bank
-            ).order_by("-created_at")
+            return queryset.filter(bank__icontains=bank).order_by("-created_at")
         if title:
-            return queryset.filter(
-                title__icontains=title
-            ).order_by("-created_at")
+            return queryset.filter(title__icontains=title).order_by("-created_at")
         return queryset.filter(complete=False).order_by("-created_at")
 
     def perform_create(self, serializer):
