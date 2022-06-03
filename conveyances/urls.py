@@ -25,4 +25,5 @@ urlpatterns = [
         TemplateView.as_view(template_name="index.html"),
         name="app",
     ),
+    path("matters/", include("matters.urls", namespace="matters")),
 ]

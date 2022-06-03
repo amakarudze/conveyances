@@ -1,5 +1,4 @@
 from dataclasses import dataclass
-from datetime import datetime
 from typing import Dict, Iterable, List, Text
 
 
@@ -74,31 +73,39 @@ mortgage_bond_cancellation = [
 ]
 
 matters = {
-    "transfer": transfer,
-    "mortgage_bond": mortgage_bond,
-    "mortgage_bond_other_lawyers": mortgage_bond_other_lawyers,
-    "lost_deed_application": lost_deed_application,
-    "mortgage_bond_cancellation": mortgage_bond_cancellation,
+    "transfer": {"name": "Transfer", "stages": transfer},
+    "mortgage_bond": {"name": "Mortgage Bond", "stages": mortgage_bond},
+    "mortgage_bond_other_lawyers": {
+        "name": "Mortgage Bond with Other Lawyers Transfering",
+        "stages": mortgage_bond_other_lawyers,
+    },
+    "lost_deed_application": {
+        "name": "Lost Deed Application",
+        "stages": lost_deed_application,
+    },
+    " mortgage_bond_cancellation": {
+        "name": "Mortgage Bond Cancellation",
+        "stages": mortgage_bond_cancellation,
+    },
 }
 
 
 @dataclass
 class Stage:
     comment: Text = None
-    date_updated: datetime = None
-    user: Text = None
-    done: bool = None
+    done: bool = False
 
 
 @dataclass
-class Matter:
+class BaseMatter:
     name: Text
     stages: Dict
 
 
-def create_conveyance_object(name: str, stages: List) -> Iterable[Matter]:
+def create_conveyance_object(name: str, stages: List) -> Iterable[BaseMatter]:
     matter_stages = {}
     for stage in stages:
-        matter_stages[stage] = Stage()
-    convenyance_matter = Matter(name, matter_stages)
+        matter_stages[stage] = vars(Stage())
+
+    convenyance_matter = BaseMatter(name, matter_stages)
     return convenyance_matter

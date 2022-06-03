@@ -1,0 +1,61 @@
+{
+    "name": "Richard Bucket - Transfer",
+    "stages": {
+        "acknowledge_instructions": {
+            "comment": "Received and filed.",
+            "done": true
+        },
+        "rates_application": {
+            "comment": null,
+            "done": false
+        },
+        "transfer_document_signed": {
+            "comment": null,
+            "done": false
+        },
+        "statement_issued": {
+            "comment": null,
+            "done": false
+        },
+        "statement_paid": {
+            "comment": null,
+            "done": false
+        },
+        "cgt_documents_submitted": {
+            "comment": null,
+            "done": false
+        },
+        "interviews_conducted": {
+            "comment": null,
+            "done": false
+        },
+        "cgt_assessment_collected": {
+            "comment": null,
+            "done": false
+        },
+        "assessment_paid": {
+            "comment": null,
+            "done": false
+        },
+        "rates_certificate_collected": {
+            "comment": null,
+            "done": false
+        },
+        "documents_lodged": {
+            "comment": null,
+            "done": false
+        },
+        "documents_queried": {
+            "comment": null,
+            "done": false
+        },
+        "documents_registered": {
+            "comment": null,
+            "done": false
+        },
+        "owner_collected_deed": {
+            "comment": null,
+            "done": false
+        }
+    }
+}
