@@ -24,6 +24,8 @@ django-webpack-loader==1.5.0
     # via -r requirements.in
 djangorestframework==3.13.1
     # via -r requirements.in
+drf-writable-nested==0.6.3
+    # via -r requirements.in
 factory-boy==3.2.1
     # via
     #   -r requirements.in

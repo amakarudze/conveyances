@@ -3,73 +3,74 @@ from typing import Dict, Iterable, List, Text
 
 
 transfer = [
-    "acknowledge_instructions",
-    "rates_application",
-    "transfer_document_signed",
-    "statement_issued",
-    "statement_paid",
-    "cgt_documents_submitted",
-    "interviews_conducted",
-    "cgt_assessment_collected",
-    "assessment_paid",
-    "rates_certificate_collected",
-    "documents_lodged",
-    "documents_queried",
-    "documents_registered",
-    "owner_collected_deed",
+    "Acknowledge Instructions",
+    "Rates Application",
+    "Transfer Document Signed",
+    "Statement Issued",
+    "Statement Paid",
+    "CGT Documents Submitted",
+    "Interviews Conducted",
+    "CGT Assessment Collected",
+    "Assessment Paid",
+    "Rates Certificate Collected",
+    "Documents Lodged",
+    "Documents Queried",
+    "Documents Registered",
+    "Owner Collected Deed",
 ]
 
 mortgage_bond = [
-    "acknowledge_instructions",
-    "statement_issued",
-    "power_of_attorney_signed",
-    "statement_paid",
-    "documents_lodged",
-    "documents_queried",
-    "documents_registered",
-    "documents_delivered_to_bank",
+    "Acknowledge Instructions",
+    "Statement Issued",
+    "Power of Attorney Signed",
+    "Statement Paid",
+    "Documents Lodged",
+    "Documents Queried",
+    "Documents Registered",
+    "Documents Delivered to Bank",
 ]
 
 mortgage_bond_other_lawyers = [
-    "acknowledge_instructions",
-    "power_of_attorney_signed",
-    "transfer_document_signed",
-    "statement_issued",
-    "statement_paid",
-    "cgt_documents_submitted",
-    "interviews_conducted",
-    "cgt_assessment_collected",
-    "assessment_paid",
-    "cgt_collected",
-    "rates_certificate_collected",
-    "documents_lodged",
-    "documents_queried",
-    "documents_registered",
-    "documents_delivered_to_bank",
+    "Acknowledge Instructions",
+    "Power of Attorney Signed",
+    "Transfer Document Signed",
+    "Statement Issued",
+    "Statement Paid",
+    "CGT Documents Submitted",
+    "Interviews Conducted",
+    "CGT Assessment Collected",
+    "Assessment Paid",
+    "CGT Collected",
+    "Rates Certificate Collected",
+    "Documents Lodged",
+    "Documents Queried",
+    "Documents Registered",
+    "Documents Delivered to Bank",
 ]
 
 lost_deed_application = [
-    "acknowledge_instructions",
-    "statement_issued",
-    "statement_paid",
-    "adverts_sent_out",
-    "adverts_published",
-    "affidavit_signed",
-    "documents_lodged",
-    "documents_queried",
-    "documents_registered",
-    "owner_collected_deed",
+    "Acknowledge Instructions",
+    "Statement Issued",
+    "Statement Paid",
+    "Adverts Sent Out",
+    "Adverts Published",
+    "Affidavit Signed",
+    "Documents Lodged",
+    "Documents Queried",
+    "Documents Registered",
+    "Owner Collected Deed",
 ]
 mortgage_bond_cancellation = [
-    "acknowledge_instructions",
-    "statement_issued",
-    "statement_paid",
-    "consent_available" "documents_lodged",
-    "documents_queried",
-    "documents_registered",
-    "documents_delivered_to_bank",
-    "owner_collected_deed",
-    "documents_co_lodged",
+    "Acknowledge Instructions",
+    "Statement Issued",
+    "Statement Paid",
+    "Consent Aailable",
+    "Documents Lodged",
+    "Documents Queried",
+    "Documents Registered",
+    "Documents Delivered to Bank",
+    "Owner Collected Deed",
+    "Documents Co-lodged",
 ]
 
 matters = {
@@ -90,22 +91,24 @@ matters = {
 }
 
 
-@dataclass
 class Stage:
-    comment: Text = None
-    done: bool = False
+    def __init__(self, step, stage):
+        self.stage = stage
+        self.step = step
+        self.comment: Text = None
+        self.done: bool = False
 
 
 @dataclass
 class BaseMatter:
     name: Text
-    stages: Dict
+    stages: List
 
 
 def create_conveyance_object(name: str, stages: List) -> Iterable[BaseMatter]:
-    matter_stages = {}
-    for stage in stages:
-        matter_stages[stage] = vars(Stage())
+    matter_stages = []
+    for i, stage in enumerate(stages):
+        matter_stages.append(vars(Stage(i + 1, stage)))
 
     convenyance_matter = BaseMatter(name, matter_stages)
     return convenyance_matter

@@ -1,41 +1,1944 @@
 {
   "status": "done",
   "assets": {
-    "app-eeb40f36f09ef6b03998.js": {
-      "name": "app-eeb40f36f09ef6b03998.js",
-      "path": "/Users/anna/code/danziger/frontend/dist/app-eeb40f36f09ef6b03998.js",
-      "publicPath": "http://127.0.0.1:8080/app-eeb40f36f09ef6b03998.js"
+    "app-5ff02502da47db36a3cb.js": {
+      "name": "app-5ff02502da47db36a3cb.js",
+      "path": "/Users/anna/code/danziger/frontend/dist/app-5ff02502da47db36a3cb.js",
+      "publicPath": "http://127.0.0.1:8080/app-5ff02502da47db36a3cb.js"
     },
-    "src_views_MatterEditorView_vue.bundle.js": {
-      "name": "src_views_MatterEditorView_vue.bundle.js",
-      "path": "/Users/anna/code/danziger/frontend/dist/src_views_MatterEditorView_vue.bundle.js",
-      "publicPath": "http://127.0.0.1:8080/src_views_MatterEditorView_vue.bundle.js"
+    "src_views_BankView_vue.bundle.js": {
+      "name": "src_views_BankView_vue.bundle.js",
+      "path": "/Users/anna/code/danziger/frontend/dist/src_views_BankView_vue.bundle.js",
+      "publicPath": "http://127.0.0.1:8080/src_views_BankView_vue.bundle.js"
     },
     "src_views_MatterView_vue.bundle.js": {
       "name": "src_views_MatterView_vue.bundle.js",
       "path": "/Users/anna/code/danziger/frontend/dist/src_views_MatterView_vue.bundle.js",
       "publicPath": "http://127.0.0.1:8080/src_views_MatterView_vue.bundle.js"
     },
-    "app-eeb40f36f09ef6b03998.js.map": {
-      "name": "app-eeb40f36f09ef6b03998.js.map",
-      "path": "/Users/anna/code/danziger/frontend/dist/app-eeb40f36f09ef6b03998.js.map",
-      "publicPath": "http://127.0.0.1:8080/app-eeb40f36f09ef6b03998.js.map"
+    "src_views_ConveyanceMatterView_vue.bundle.js": {
+      "name": "src_views_ConveyanceMatterView_vue.bundle.js",
+      "path": "/Users/anna/code/danziger/frontend/dist/src_views_ConveyanceMatterView_vue.bundle.js",
+      "publicPath": "http://127.0.0.1:8080/src_views_ConveyanceMatterView_vue.bundle.js"
     },
-    "src_views_MatterEditorView_vue.bundle.js.map": {
-      "name": "src_views_MatterEditorView_vue.bundle.js.map",
-      "path": "/Users/anna/code/danziger/frontend/dist/src_views_MatterEditorView_vue.bundle.js.map",
-      "publicPath": "http://127.0.0.1:8080/src_views_MatterEditorView_vue.bundle.js.map"
+    "src_views_LogoutView_vue.bundle.js": {
+      "name": "src_views_LogoutView_vue.bundle.js",
+      "path": "/Users/anna/code/danziger/frontend/dist/src_views_LogoutView_vue.bundle.js",
+      "publicPath": "http://127.0.0.1:8080/src_views_LogoutView_vue.bundle.js"
+    },
+    "src_views_BanksView_vue.bundle.js": {
+      "name": "src_views_BanksView_vue.bundle.js",
+      "path": "/Users/anna/code/danziger/frontend/dist/src_views_BanksView_vue.bundle.js",
+      "publicPath": "http://127.0.0.1:8080/src_views_BanksView_vue.bundle.js"
+    },
+    "app-5ff02502da47db36a3cb.js.map": {
+      "name": "app-5ff02502da47db36a3cb.js.map",
+      "path": "/Users/anna/code/danziger/frontend/dist/app-5ff02502da47db36a3cb.js.map",
+      "publicPath": "http://127.0.0.1:8080/app-5ff02502da47db36a3cb.js.map"
+    },
+    "src_views_BankView_vue.bundle.js.map": {
+      "name": "src_views_BankView_vue.bundle.js.map",
+      "path": "/Users/anna/code/danziger/frontend/dist/src_views_BankView_vue.bundle.js.map",
+      "publicPath": "http://127.0.0.1:8080/src_views_BankView_vue.bundle.js.map"
     },
     "src_views_MatterView_vue.bundle.js.map": {
       "name": "src_views_MatterView_vue.bundle.js.map",
       "path": "/Users/anna/code/danziger/frontend/dist/src_views_MatterView_vue.bundle.js.map",
       "publicPath": "http://127.0.0.1:8080/src_views_MatterView_vue.bundle.js.map"
+    },
+    "src_views_ConveyanceMatterView_vue.bundle.js.map": {
+      "name": "src_views_ConveyanceMatterView_vue.bundle.js.map",
+      "path": "/Users/anna/code/danziger/frontend/dist/src_views_ConveyanceMatterView_vue.bundle.js.map",
+      "publicPath": "http://127.0.0.1:8080/src_views_ConveyanceMatterView_vue.bundle.js.map"
+    },
+    "src_views_LogoutView_vue.bundle.js.map": {
+      "name": "src_views_LogoutView_vue.bundle.js.map",
+      "path": "/Users/anna/code/danziger/frontend/dist/src_views_LogoutView_vue.bundle.js.map",
+      "publicPath": "http://127.0.0.1:8080/src_views_LogoutView_vue.bundle.js.map"
+    },
+    "src_views_BanksView_vue.bundle.js.map": {
+      "name": "src_views_BanksView_vue.bundle.js.map",
+      "path": "/Users/anna/code/danziger/frontend/dist/src_views_BanksView_vue.bundle.js.map",
+      "publicPath": "http://127.0.0.1:8080/src_views_BanksView_vue.bundle.js.map"
+    },
+    "app-1e5ce7d366eab43b12ba.js": {
+      "name": "app-1e5ce7d366eab43b12ba.js",
+      "path": "/Users/anna/code/danziger/frontend/dist/app-1e5ce7d366eab43b12ba.js",
+      "publicPath": "http://127.0.0.1:8080/app-1e5ce7d366eab43b12ba.js"
+    },
+    "app.5ff02502da47db36a3cb.hot-update.js": {
+      "name": "app.5ff02502da47db36a3cb.hot-update.js",
+      "path": "/Users/anna/code/danziger/frontend/dist/app.5ff02502da47db36a3cb.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/app.5ff02502da47db36a3cb.hot-update.js"
+    },
+    "app.5ff02502da47db36a3cb.hot-update.json": {
+      "name": "app.5ff02502da47db36a3cb.hot-update.json",
+      "path": "/Users/anna/code/danziger/frontend/dist/app.5ff02502da47db36a3cb.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/app.5ff02502da47db36a3cb.hot-update.json"
+    },
+    "app-1e5ce7d366eab43b12ba.js.map": {
+      "name": "app-1e5ce7d366eab43b12ba.js.map",
+      "path": "/Users/anna/code/danziger/frontend/dist/app-1e5ce7d366eab43b12ba.js.map",
+      "publicPath": "http://127.0.0.1:8080/app-1e5ce7d366eab43b12ba.js.map"
+    },
+    "app.5ff02502da47db36a3cb.hot-update.js.map": {
+      "name": "app.5ff02502da47db36a3cb.hot-update.js.map",
+      "path": "/Users/anna/code/danziger/frontend/dist/app.5ff02502da47db36a3cb.hot-update.js.map",
+      "publicPath": "http://127.0.0.1:8080/app.5ff02502da47db36a3cb.hot-update.js.map"
+    },
+    "app-bfd7855c3fdb32092b0c.js": {
+      "name": "app-bfd7855c3fdb32092b0c.js",
+      "path": "/Users/anna/code/danziger/frontend/dist/app-bfd7855c3fdb32092b0c.js",
+      "publicPath": "http://127.0.0.1:8080/app-bfd7855c3fdb32092b0c.js"
+    },
+    "app.1e5ce7d366eab43b12ba.hot-update.js": {
+      "name": "app.1e5ce7d366eab43b12ba.hot-update.js",
+      "path": "/Users/anna/code/danziger/frontend/dist/app.1e5ce7d366eab43b12ba.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/app.1e5ce7d366eab43b12ba.hot-update.js"
+    },
+    "src_views_BankView_vue.1e5ce7d366eab43b12ba.hot-update.js": {
+      "name": "src_views_BankView_vue.1e5ce7d366eab43b12ba.hot-update.js",
+      "path": "/Users/anna/code/danziger/frontend/dist/src_views_BankView_vue.1e5ce7d366eab43b12ba.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/src_views_BankView_vue.1e5ce7d366eab43b12ba.hot-update.js"
+    },
+    "app.1e5ce7d366eab43b12ba.hot-update.json": {
+      "name": "app.1e5ce7d366eab43b12ba.hot-update.json",
+      "path": "/Users/anna/code/danziger/frontend/dist/app.1e5ce7d366eab43b12ba.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/app.1e5ce7d366eab43b12ba.hot-update.json"
+    },
+    "app-bfd7855c3fdb32092b0c.js.map": {
+      "name": "app-bfd7855c3fdb32092b0c.js.map",
+      "path": "/Users/anna/code/danziger/frontend/dist/app-bfd7855c3fdb32092b0c.js.map",
+      "publicPath": "http://127.0.0.1:8080/app-bfd7855c3fdb32092b0c.js.map"
+    },
+    "app.1e5ce7d366eab43b12ba.hot-update.js.map": {
+      "name": "app.1e5ce7d366eab43b12ba.hot-update.js.map",
+      "path": "/Users/anna/code/danziger/frontend/dist/app.1e5ce7d366eab43b12ba.hot-update.js.map",
+      "publicPath": "http://127.0.0.1:8080/app.1e5ce7d366eab43b12ba.hot-update.js.map"
+    },
+    "src_views_BankView_vue.1e5ce7d366eab43b12ba.hot-update.js.map": {
+      "name": "src_views_BankView_vue.1e5ce7d366eab43b12ba.hot-update.js.map",
+      "path": "/Users/anna/code/danziger/frontend/dist/src_views_BankView_vue.1e5ce7d366eab43b12ba.hot-update.js.map",
+      "publicPath": "http://127.0.0.1:8080/src_views_BankView_vue.1e5ce7d366eab43b12ba.hot-update.js.map"
+    },
+    "app-eb4a6cff7cd0ab0386c2.js": {
+      "name": "app-eb4a6cff7cd0ab0386c2.js",
+      "path": "/Users/anna/code/danziger/frontend/dist/app-eb4a6cff7cd0ab0386c2.js",
+      "publicPath": "http://127.0.0.1:8080/app-eb4a6cff7cd0ab0386c2.js"
+    },
+    "app.bfd7855c3fdb32092b0c.hot-update.js": {
+      "name": "app.bfd7855c3fdb32092b0c.hot-update.js",
+      "path": "/Users/anna/code/danziger/frontend/dist/app.bfd7855c3fdb32092b0c.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/app.bfd7855c3fdb32092b0c.hot-update.js"
+    },
+    "app.bfd7855c3fdb32092b0c.hot-update.json": {
+      "name": "app.bfd7855c3fdb32092b0c.hot-update.json",
+      "path": "/Users/anna/code/danziger/frontend/dist/app.bfd7855c3fdb32092b0c.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/app.bfd7855c3fdb32092b0c.hot-update.json"
+    },
+    "app-eb4a6cff7cd0ab0386c2.js.map": {
+      "name": "app-eb4a6cff7cd0ab0386c2.js.map",
+      "path": "/Users/anna/code/danziger/frontend/dist/app-eb4a6cff7cd0ab0386c2.js.map",
+      "publicPath": "http://127.0.0.1:8080/app-eb4a6cff7cd0ab0386c2.js.map"
+    },
+    "app.bfd7855c3fdb32092b0c.hot-update.js.map": {
+      "name": "app.bfd7855c3fdb32092b0c.hot-update.js.map",
+      "path": "/Users/anna/code/danziger/frontend/dist/app.bfd7855c3fdb32092b0c.hot-update.js.map",
+      "publicPath": "http://127.0.0.1:8080/app.bfd7855c3fdb32092b0c.hot-update.js.map"
+    },
+    "app-88640fbf262bd97afcde.js": {
+      "name": "app-88640fbf262bd97afcde.js",
+      "path": "/Users/anna/code/danziger/frontend/dist/app-88640fbf262bd97afcde.js",
+      "publicPath": "http://127.0.0.1:8080/app-88640fbf262bd97afcde.js"
+    },
+    "app.eb4a6cff7cd0ab0386c2.hot-update.js": {
+      "name": "app.eb4a6cff7cd0ab0386c2.hot-update.js",
+      "path": "/Users/anna/code/danziger/frontend/dist/app.eb4a6cff7cd0ab0386c2.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/app.eb4a6cff7cd0ab0386c2.hot-update.js"
+    },
+    "src_views_ConveyanceMatterView_vue.eb4a6cff7cd0ab0386c2.hot-update.js": {
+      "name": "src_views_ConveyanceMatterView_vue.eb4a6cff7cd0ab0386c2.hot-update.js",
+      "path": "/Users/anna/code/danziger/frontend/dist/src_views_ConveyanceMatterView_vue.eb4a6cff7cd0ab0386c2.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/src_views_ConveyanceMatterView_vue.eb4a6cff7cd0ab0386c2.hot-update.js"
+    },
+    "app.eb4a6cff7cd0ab0386c2.hot-update.json": {
+      "name": "app.eb4a6cff7cd0ab0386c2.hot-update.json",
+      "path": "/Users/anna/code/danziger/frontend/dist/app.eb4a6cff7cd0ab0386c2.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/app.eb4a6cff7cd0ab0386c2.hot-update.json"
+    },
+    "app-88640fbf262bd97afcde.js.map": {
+      "name": "app-88640fbf262bd97afcde.js.map",
+      "path": "/Users/anna/code/danziger/frontend/dist/app-88640fbf262bd97afcde.js.map",
+      "publicPath": "http://127.0.0.1:8080/app-88640fbf262bd97afcde.js.map"
+    },
+    "app.eb4a6cff7cd0ab0386c2.hot-update.js.map": {
+      "name": "app.eb4a6cff7cd0ab0386c2.hot-update.js.map",
+      "path": "/Users/anna/code/danziger/frontend/dist/app.eb4a6cff7cd0ab0386c2.hot-update.js.map",
+      "publicPath": "http://127.0.0.1:8080/app.eb4a6cff7cd0ab0386c2.hot-update.js.map"
+    },
+    "src_views_ConveyanceMatterView_vue.eb4a6cff7cd0ab0386c2.hot-update.js.map": {
+      "name": "src_views_ConveyanceMatterView_vue.eb4a6cff7cd0ab0386c2.hot-update.js.map",
+      "path": "/Users/anna/code/danziger/frontend/dist/src_views_ConveyanceMatterView_vue.eb4a6cff7cd0ab0386c2.hot-update.js.map",
+      "publicPath": "http://127.0.0.1:8080/src_views_ConveyanceMatterView_vue.eb4a6cff7cd0ab0386c2.hot-update.js.map"
+    },
+    "app-6a5101c2f2a65caf2fae.js": {
+      "name": "app-6a5101c2f2a65caf2fae.js",
+      "path": "/Users/anna/code/danziger/frontend/dist/app-6a5101c2f2a65caf2fae.js",
+      "publicPath": "http://127.0.0.1:8080/app-6a5101c2f2a65caf2fae.js"
+    },
+    "app.88640fbf262bd97afcde.hot-update.js": {
+      "name": "app.88640fbf262bd97afcde.hot-update.js",
+      "path": "/Users/anna/code/danziger/frontend/dist/app.88640fbf262bd97afcde.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/app.88640fbf262bd97afcde.hot-update.js"
+    },
+    "src_views_BankView_vue.88640fbf262bd97afcde.hot-update.js": {
+      "name": "src_views_BankView_vue.88640fbf262bd97afcde.hot-update.js",
+      "path": "/Users/anna/code/danziger/frontend/dist/src_views_BankView_vue.88640fbf262bd97afcde.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/src_views_BankView_vue.88640fbf262bd97afcde.hot-update.js"
+    },
+    "app.88640fbf262bd97afcde.hot-update.json": {
+      "name": "app.88640fbf262bd97afcde.hot-update.json",
+      "path": "/Users/anna/code/danziger/frontend/dist/app.88640fbf262bd97afcde.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/app.88640fbf262bd97afcde.hot-update.json"
+    },
+    "app-6a5101c2f2a65caf2fae.js.map": {
+      "name": "app-6a5101c2f2a65caf2fae.js.map",
+      "path": "/Users/anna/code/danziger/frontend/dist/app-6a5101c2f2a65caf2fae.js.map",
+      "publicPath": "http://127.0.0.1:8080/app-6a5101c2f2a65caf2fae.js.map"
+    },
+    "app.88640fbf262bd97afcde.hot-update.js.map": {
+      "name": "app.88640fbf262bd97afcde.hot-update.js.map",
+      "path": "/Users/anna/code/danziger/frontend/dist/app.88640fbf262bd97afcde.hot-update.js.map",
+      "publicPath": "http://127.0.0.1:8080/app.88640fbf262bd97afcde.hot-update.js.map"
+    },
+    "src_views_BankView_vue.88640fbf262bd97afcde.hot-update.js.map": {
+      "name": "src_views_BankView_vue.88640fbf262bd97afcde.hot-update.js.map",
+      "path": "/Users/anna/code/danziger/frontend/dist/src_views_BankView_vue.88640fbf262bd97afcde.hot-update.js.map",
+      "publicPath": "http://127.0.0.1:8080/src_views_BankView_vue.88640fbf262bd97afcde.hot-update.js.map"
+    },
+    "app-96e38f447bd0e7aeefec.js": {
+      "name": "app-96e38f447bd0e7aeefec.js",
+      "path": "/Users/anna/code/danziger/frontend/dist/app-96e38f447bd0e7aeefec.js",
+      "publicPath": "http://127.0.0.1:8080/app-96e38f447bd0e7aeefec.js"
+    },
+    "app.6a5101c2f2a65caf2fae.hot-update.js": {
+      "name": "app.6a5101c2f2a65caf2fae.hot-update.js",
+      "path": "/Users/anna/code/danziger/frontend/dist/app.6a5101c2f2a65caf2fae.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/app.6a5101c2f2a65caf2fae.hot-update.js"
+    },
+    "src_views_MatterView_vue.6a5101c2f2a65caf2fae.hot-update.js": {
+      "name": "src_views_MatterView_vue.6a5101c2f2a65caf2fae.hot-update.js",
+      "path": "/Users/anna/code/danziger/frontend/dist/src_views_MatterView_vue.6a5101c2f2a65caf2fae.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/src_views_MatterView_vue.6a5101c2f2a65caf2fae.hot-update.js"
+    },
+    "app.6a5101c2f2a65caf2fae.hot-update.json": {
+      "name": "app.6a5101c2f2a65caf2fae.hot-update.json",
+      "path": "/Users/anna/code/danziger/frontend/dist/app.6a5101c2f2a65caf2fae.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/app.6a5101c2f2a65caf2fae.hot-update.json"
+    },
+    "app-96e38f447bd0e7aeefec.js.map": {
+      "name": "app-96e38f447bd0e7aeefec.js.map",
+      "path": "/Users/anna/code/danziger/frontend/dist/app-96e38f447bd0e7aeefec.js.map",
+      "publicPath": "http://127.0.0.1:8080/app-96e38f447bd0e7aeefec.js.map"
+    },
+    "app.6a5101c2f2a65caf2fae.hot-update.js.map": {
+      "name": "app.6a5101c2f2a65caf2fae.hot-update.js.map",
+      "path": "/Users/anna/code/danziger/frontend/dist/app.6a5101c2f2a65caf2fae.hot-update.js.map",
+      "publicPath": "http://127.0.0.1:8080/app.6a5101c2f2a65caf2fae.hot-update.js.map"
+    },
+    "src_views_MatterView_vue.6a5101c2f2a65caf2fae.hot-update.js.map": {
+      "name": "src_views_MatterView_vue.6a5101c2f2a65caf2fae.hot-update.js.map",
+      "path": "/Users/anna/code/danziger/frontend/dist/src_views_MatterView_vue.6a5101c2f2a65caf2fae.hot-update.js.map",
+      "publicPath": "http://127.0.0.1:8080/src_views_MatterView_vue.6a5101c2f2a65caf2fae.hot-update.js.map"
+    },
+    "app-0b2bcbdc2c5f8c9fdf1c.js": {
+      "name": "app-0b2bcbdc2c5f8c9fdf1c.js",
+      "path": "/Users/anna/code/danziger/frontend/dist/app-0b2bcbdc2c5f8c9fdf1c.js",
+      "publicPath": "http://127.0.0.1:8080/app-0b2bcbdc2c5f8c9fdf1c.js"
+    },
+    "app.96e38f447bd0e7aeefec.hot-update.js": {
+      "name": "app.96e38f447bd0e7aeefec.hot-update.js",
+      "path": "/Users/anna/code/danziger/frontend/dist/app.96e38f447bd0e7aeefec.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/app.96e38f447bd0e7aeefec.hot-update.js"
+    },
+    "src_views_BanksView_vue.96e38f447bd0e7aeefec.hot-update.js": {
+      "name": "src_views_BanksView_vue.96e38f447bd0e7aeefec.hot-update.js",
+      "path": "/Users/anna/code/danziger/frontend/dist/src_views_BanksView_vue.96e38f447bd0e7aeefec.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/src_views_BanksView_vue.96e38f447bd0e7aeefec.hot-update.js"
+    },
+    "app.96e38f447bd0e7aeefec.hot-update.json": {
+      "name": "app.96e38f447bd0e7aeefec.hot-update.json",
+      "path": "/Users/anna/code/danziger/frontend/dist/app.96e38f447bd0e7aeefec.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/app.96e38f447bd0e7aeefec.hot-update.json"
+    },
+    "app-0b2bcbdc2c5f8c9fdf1c.js.map": {
+      "name": "app-0b2bcbdc2c5f8c9fdf1c.js.map",
+      "path": "/Users/anna/code/danziger/frontend/dist/app-0b2bcbdc2c5f8c9fdf1c.js.map",
+      "publicPath": "http://127.0.0.1:8080/app-0b2bcbdc2c5f8c9fdf1c.js.map"
+    },
+    "app.96e38f447bd0e7aeefec.hot-update.js.map": {
+      "name": "app.96e38f447bd0e7aeefec.hot-update.js.map",
+      "path": "/Users/anna/code/danziger/frontend/dist/app.96e38f447bd0e7aeefec.hot-update.js.map",
+      "publicPath": "http://127.0.0.1:8080/app.96e38f447bd0e7aeefec.hot-update.js.map"
+    },
+    "src_views_BanksView_vue.96e38f447bd0e7aeefec.hot-update.js.map": {
+      "name": "src_views_BanksView_vue.96e38f447bd0e7aeefec.hot-update.js.map",
+      "path": "/Users/anna/code/danziger/frontend/dist/src_views_BanksView_vue.96e38f447bd0e7aeefec.hot-update.js.map",
+      "publicPath": "http://127.0.0.1:8080/src_views_BanksView_vue.96e38f447bd0e7aeefec.hot-update.js.map"
+    },
+    "app-79af74fe4dd346714178.js": {
+      "name": "app-79af74fe4dd346714178.js",
+      "path": "/Users/anna/code/danziger/frontend/dist/app-79af74fe4dd346714178.js",
+      "publicPath": "http://127.0.0.1:8080/app-79af74fe4dd346714178.js"
+    },
+    "app.0b2bcbdc2c5f8c9fdf1c.hot-update.js": {
+      "name": "app.0b2bcbdc2c5f8c9fdf1c.hot-update.js",
+      "path": "/Users/anna/code/danziger/frontend/dist/app.0b2bcbdc2c5f8c9fdf1c.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/app.0b2bcbdc2c5f8c9fdf1c.hot-update.js"
+    },
+    "src_views_ConveyanceMatterView_vue.0b2bcbdc2c5f8c9fdf1c.hot-update.js": {
+      "name": "src_views_ConveyanceMatterView_vue.0b2bcbdc2c5f8c9fdf1c.hot-update.js",
+      "path": "/Users/anna/code/danziger/frontend/dist/src_views_ConveyanceMatterView_vue.0b2bcbdc2c5f8c9fdf1c.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/src_views_ConveyanceMatterView_vue.0b2bcbdc2c5f8c9fdf1c.hot-update.js"
+    },
+    "app.0b2bcbdc2c5f8c9fdf1c.hot-update.json": {
+      "name": "app.0b2bcbdc2c5f8c9fdf1c.hot-update.json",
+      "path": "/Users/anna/code/danziger/frontend/dist/app.0b2bcbdc2c5f8c9fdf1c.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/app.0b2bcbdc2c5f8c9fdf1c.hot-update.json"
+    },
+    "app-79af74fe4dd346714178.js.map": {
+      "name": "app-79af74fe4dd346714178.js.map",
+      "path": "/Users/anna/code/danziger/frontend/dist/app-79af74fe4dd346714178.js.map",
+      "publicPath": "http://127.0.0.1:8080/app-79af74fe4dd346714178.js.map"
+    },
+    "app.0b2bcbdc2c5f8c9fdf1c.hot-update.js.map": {
+      "name": "app.0b2bcbdc2c5f8c9fdf1c.hot-update.js.map",
+      "path": "/Users/anna/code/danziger/frontend/dist/app.0b2bcbdc2c5f8c9fdf1c.hot-update.js.map",
+      "publicPath": "http://127.0.0.1:8080/app.0b2bcbdc2c5f8c9fdf1c.hot-update.js.map"
+    },
+    "src_views_ConveyanceMatterView_vue.0b2bcbdc2c5f8c9fdf1c.hot-update.js.map": {
+      "name": "src_views_ConveyanceMatterView_vue.0b2bcbdc2c5f8c9fdf1c.hot-update.js.map",
+      "path": "/Users/anna/code/danziger/frontend/dist/src_views_ConveyanceMatterView_vue.0b2bcbdc2c5f8c9fdf1c.hot-update.js.map",
+      "publicPath": "http://127.0.0.1:8080/src_views_ConveyanceMatterView_vue.0b2bcbdc2c5f8c9fdf1c.hot-update.js.map"
+    },
+    "app-6dd56bc4f2d9ae1d5984.js": {
+      "name": "app-6dd56bc4f2d9ae1d5984.js",
+      "path": "/Users/anna/code/danziger/frontend/dist/app-6dd56bc4f2d9ae1d5984.js",
+      "publicPath": "http://127.0.0.1:8080/app-6dd56bc4f2d9ae1d5984.js"
+    },
+    "app.79af74fe4dd346714178.hot-update.js": {
+      "name": "app.79af74fe4dd346714178.hot-update.js",
+      "path": "/Users/anna/code/danziger/frontend/dist/app.79af74fe4dd346714178.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/app.79af74fe4dd346714178.hot-update.js"
+    },
+    "src_views_ConveyanceMatterView_vue.79af74fe4dd346714178.hot-update.js": {
+      "name": "src_views_ConveyanceMatterView_vue.79af74fe4dd346714178.hot-update.js",
+      "path": "/Users/anna/code/danziger/frontend/dist/src_views_ConveyanceMatterView_vue.79af74fe4dd346714178.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/src_views_ConveyanceMatterView_vue.79af74fe4dd346714178.hot-update.js"
+    },
+    "app.79af74fe4dd346714178.hot-update.json": {
+      "name": "app.79af74fe4dd346714178.hot-update.json",
+      "path": "/Users/anna/code/danziger/frontend/dist/app.79af74fe4dd346714178.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/app.79af74fe4dd346714178.hot-update.json"
+    },
+    "app-6dd56bc4f2d9ae1d5984.js.map": {
+      "name": "app-6dd56bc4f2d9ae1d5984.js.map",
+      "path": "/Users/anna/code/danziger/frontend/dist/app-6dd56bc4f2d9ae1d5984.js.map",
+      "publicPath": "http://127.0.0.1:8080/app-6dd56bc4f2d9ae1d5984.js.map"
+    },
+    "app.79af74fe4dd346714178.hot-update.js.map": {
+      "name": "app.79af74fe4dd346714178.hot-update.js.map",
+      "path": "/Users/anna/code/danziger/frontend/dist/app.79af74fe4dd346714178.hot-update.js.map",
+      "publicPath": "http://127.0.0.1:8080/app.79af74fe4dd346714178.hot-update.js.map"
+    },
+    "src_views_ConveyanceMatterView_vue.79af74fe4dd346714178.hot-update.js.map": {
+      "name": "src_views_ConveyanceMatterView_vue.79af74fe4dd346714178.hot-update.js.map",
+      "path": "/Users/anna/code/danziger/frontend/dist/src_views_ConveyanceMatterView_vue.79af74fe4dd346714178.hot-update.js.map",
+      "publicPath": "http://127.0.0.1:8080/src_views_ConveyanceMatterView_vue.79af74fe4dd346714178.hot-update.js.map"
+    },
+    "app-0c50f1ea386c266eac88.js": {
+      "name": "app-0c50f1ea386c266eac88.js",
+      "path": "/Users/anna/code/danziger/frontend/dist/app-0c50f1ea386c266eac88.js",
+      "publicPath": "http://127.0.0.1:8080/app-0c50f1ea386c266eac88.js"
+    },
+    "app.6dd56bc4f2d9ae1d5984.hot-update.js": {
+      "name": "app.6dd56bc4f2d9ae1d5984.hot-update.js",
+      "path": "/Users/anna/code/danziger/frontend/dist/app.6dd56bc4f2d9ae1d5984.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/app.6dd56bc4f2d9ae1d5984.hot-update.js"
+    },
+    "src_views_ConveyanceMatterView_vue.6dd56bc4f2d9ae1d5984.hot-update.js": {
+      "name": "src_views_ConveyanceMatterView_vue.6dd56bc4f2d9ae1d5984.hot-update.js",
+      "path": "/Users/anna/code/danziger/frontend/dist/src_views_ConveyanceMatterView_vue.6dd56bc4f2d9ae1d5984.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/src_views_ConveyanceMatterView_vue.6dd56bc4f2d9ae1d5984.hot-update.js"
+    },
+    "app.6dd56bc4f2d9ae1d5984.hot-update.json": {
+      "name": "app.6dd56bc4f2d9ae1d5984.hot-update.json",
+      "path": "/Users/anna/code/danziger/frontend/dist/app.6dd56bc4f2d9ae1d5984.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/app.6dd56bc4f2d9ae1d5984.hot-update.json"
+    },
+    "app-0c50f1ea386c266eac88.js.map": {
+      "name": "app-0c50f1ea386c266eac88.js.map",
+      "path": "/Users/anna/code/danziger/frontend/dist/app-0c50f1ea386c266eac88.js.map",
+      "publicPath": "http://127.0.0.1:8080/app-0c50f1ea386c266eac88.js.map"
+    },
+    "app.6dd56bc4f2d9ae1d5984.hot-update.js.map": {
+      "name": "app.6dd56bc4f2d9ae1d5984.hot-update.js.map",
+      "path": "/Users/anna/code/danziger/frontend/dist/app.6dd56bc4f2d9ae1d5984.hot-update.js.map",
+      "publicPath": "http://127.0.0.1:8080/app.6dd56bc4f2d9ae1d5984.hot-update.js.map"
+    },
+    "src_views_ConveyanceMatterView_vue.6dd56bc4f2d9ae1d5984.hot-update.js.map": {
+      "name": "src_views_ConveyanceMatterView_vue.6dd56bc4f2d9ae1d5984.hot-update.js.map",
+      "path": "/Users/anna/code/danziger/frontend/dist/src_views_ConveyanceMatterView_vue.6dd56bc4f2d9ae1d5984.hot-update.js.map",
+      "publicPath": "http://127.0.0.1:8080/src_views_ConveyanceMatterView_vue.6dd56bc4f2d9ae1d5984.hot-update.js.map"
+    },
+    "app-12c2fbe35dd2ff6f3a90.js": {
+      "name": "app-12c2fbe35dd2ff6f3a90.js",
+      "path": "/Users/anna/code/danziger/frontend/dist/app-12c2fbe35dd2ff6f3a90.js",
+      "publicPath": "http://127.0.0.1:8080/app-12c2fbe35dd2ff6f3a90.js"
+    },
+    "app.0c50f1ea386c266eac88.hot-update.js": {
+      "name": "app.0c50f1ea386c266eac88.hot-update.js",
+      "path": "/Users/anna/code/danziger/frontend/dist/app.0c50f1ea386c266eac88.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/app.0c50f1ea386c266eac88.hot-update.js"
+    },
+    "src_views_ConveyanceMatterView_vue.0c50f1ea386c266eac88.hot-update.js": {
+      "name": "src_views_ConveyanceMatterView_vue.0c50f1ea386c266eac88.hot-update.js",
+      "path": "/Users/anna/code/danziger/frontend/dist/src_views_ConveyanceMatterView_vue.0c50f1ea386c266eac88.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/src_views_ConveyanceMatterView_vue.0c50f1ea386c266eac88.hot-update.js"
+    },
+    "app.0c50f1ea386c266eac88.hot-update.json": {
+      "name": "app.0c50f1ea386c266eac88.hot-update.json",
+      "path": "/Users/anna/code/danziger/frontend/dist/app.0c50f1ea386c266eac88.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/app.0c50f1ea386c266eac88.hot-update.json"
+    },
+    "app-12c2fbe35dd2ff6f3a90.js.map": {
+      "name": "app-12c2fbe35dd2ff6f3a90.js.map",
+      "path": "/Users/anna/code/danziger/frontend/dist/app-12c2fbe35dd2ff6f3a90.js.map",
+      "publicPath": "http://127.0.0.1:8080/app-12c2fbe35dd2ff6f3a90.js.map"
+    },
+    "app.0c50f1ea386c266eac88.hot-update.js.map": {
+      "name": "app.0c50f1ea386c266eac88.hot-update.js.map",
+      "path": "/Users/anna/code/danziger/frontend/dist/app.0c50f1ea386c266eac88.hot-update.js.map",
+      "publicPath": "http://127.0.0.1:8080/app.0c50f1ea386c266eac88.hot-update.js.map"
+    },
+    "src_views_ConveyanceMatterView_vue.0c50f1ea386c266eac88.hot-update.js.map": {
+      "name": "src_views_ConveyanceMatterView_vue.0c50f1ea386c266eac88.hot-update.js.map",
+      "path": "/Users/anna/code/danziger/frontend/dist/src_views_ConveyanceMatterView_vue.0c50f1ea386c266eac88.hot-update.js.map",
+      "publicPath": "http://127.0.0.1:8080/src_views_ConveyanceMatterView_vue.0c50f1ea386c266eac88.hot-update.js.map"
+    },
+    "app-49fcdebf9b461748fe98.js": {
+      "name": "app-49fcdebf9b461748fe98.js",
+      "path": "/Users/anna/code/danziger/frontend/dist/app-49fcdebf9b461748fe98.js",
+      "publicPath": "http://127.0.0.1:8080/app-49fcdebf9b461748fe98.js"
+    },
+    "app.12c2fbe35dd2ff6f3a90.hot-update.js": {
+      "name": "app.12c2fbe35dd2ff6f3a90.hot-update.js",
+      "path": "/Users/anna/code/danziger/frontend/dist/app.12c2fbe35dd2ff6f3a90.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/app.12c2fbe35dd2ff6f3a90.hot-update.js"
+    },
+    "src_views_ConveyanceMatterView_vue.12c2fbe35dd2ff6f3a90.hot-update.js": {
+      "name": "src_views_ConveyanceMatterView_vue.12c2fbe35dd2ff6f3a90.hot-update.js",
+      "path": "/Users/anna/code/danziger/frontend/dist/src_views_ConveyanceMatterView_vue.12c2fbe35dd2ff6f3a90.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/src_views_ConveyanceMatterView_vue.12c2fbe35dd2ff6f3a90.hot-update.js"
+    },
+    "app.12c2fbe35dd2ff6f3a90.hot-update.json": {
+      "name": "app.12c2fbe35dd2ff6f3a90.hot-update.json",
+      "path": "/Users/anna/code/danziger/frontend/dist/app.12c2fbe35dd2ff6f3a90.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/app.12c2fbe35dd2ff6f3a90.hot-update.json"
+    },
+    "app-49fcdebf9b461748fe98.js.map": {
+      "name": "app-49fcdebf9b461748fe98.js.map",
+      "path": "/Users/anna/code/danziger/frontend/dist/app-49fcdebf9b461748fe98.js.map",
+      "publicPath": "http://127.0.0.1:8080/app-49fcdebf9b461748fe98.js.map"
+    },
+    "app.12c2fbe35dd2ff6f3a90.hot-update.js.map": {
+      "name": "app.12c2fbe35dd2ff6f3a90.hot-update.js.map",
+      "path": "/Users/anna/code/danziger/frontend/dist/app.12c2fbe35dd2ff6f3a90.hot-update.js.map",
+      "publicPath": "http://127.0.0.1:8080/app.12c2fbe35dd2ff6f3a90.hot-update.js.map"
+    },
+    "src_views_ConveyanceMatterView_vue.12c2fbe35dd2ff6f3a90.hot-update.js.map": {
+      "name": "src_views_ConveyanceMatterView_vue.12c2fbe35dd2ff6f3a90.hot-update.js.map",
+      "path": "/Users/anna/code/danziger/frontend/dist/src_views_ConveyanceMatterView_vue.12c2fbe35dd2ff6f3a90.hot-update.js.map",
+      "publicPath": "http://127.0.0.1:8080/src_views_ConveyanceMatterView_vue.12c2fbe35dd2ff6f3a90.hot-update.js.map"
+    },
+    "app-0ae7f613ef14161d4029.js": {
+      "name": "app-0ae7f613ef14161d4029.js",
+      "path": "/Users/anna/code/danziger/frontend/dist/app-0ae7f613ef14161d4029.js",
+      "publicPath": "http://127.0.0.1:8080/app-0ae7f613ef14161d4029.js"
+    },
+    "app.49fcdebf9b461748fe98.hot-update.js": {
+      "name": "app.49fcdebf9b461748fe98.hot-update.js",
+      "path": "/Users/anna/code/danziger/frontend/dist/app.49fcdebf9b461748fe98.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/app.49fcdebf9b461748fe98.hot-update.js"
+    },
+    "src_views_ConveyanceMatterView_vue.49fcdebf9b461748fe98.hot-update.js": {
+      "name": "src_views_ConveyanceMatterView_vue.49fcdebf9b461748fe98.hot-update.js",
+      "path": "/Users/anna/code/danziger/frontend/dist/src_views_ConveyanceMatterView_vue.49fcdebf9b461748fe98.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/src_views_ConveyanceMatterView_vue.49fcdebf9b461748fe98.hot-update.js"
+    },
+    "app.49fcdebf9b461748fe98.hot-update.json": {
+      "name": "app.49fcdebf9b461748fe98.hot-update.json",
+      "path": "/Users/anna/code/danziger/frontend/dist/app.49fcdebf9b461748fe98.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/app.49fcdebf9b461748fe98.hot-update.json"
+    },
+    "app-0ae7f613ef14161d4029.js.map": {
+      "name": "app-0ae7f613ef14161d4029.js.map",
+      "path": "/Users/anna/code/danziger/frontend/dist/app-0ae7f613ef14161d4029.js.map",
+      "publicPath": "http://127.0.0.1:8080/app-0ae7f613ef14161d4029.js.map"
+    },
+    "app.49fcdebf9b461748fe98.hot-update.js.map": {
+      "name": "app.49fcdebf9b461748fe98.hot-update.js.map",
+      "path": "/Users/anna/code/danziger/frontend/dist/app.49fcdebf9b461748fe98.hot-update.js.map",
+      "publicPath": "http://127.0.0.1:8080/app.49fcdebf9b461748fe98.hot-update.js.map"
+    },
+    "src_views_ConveyanceMatterView_vue.49fcdebf9b461748fe98.hot-update.js.map": {
+      "name": "src_views_ConveyanceMatterView_vue.49fcdebf9b461748fe98.hot-update.js.map",
+      "path": "/Users/anna/code/danziger/frontend/dist/src_views_ConveyanceMatterView_vue.49fcdebf9b461748fe98.hot-update.js.map",
+      "publicPath": "http://127.0.0.1:8080/src_views_ConveyanceMatterView_vue.49fcdebf9b461748fe98.hot-update.js.map"
+    },
+    "app-d0414a8b25c69bebf2f0.js": {
+      "name": "app-d0414a8b25c69bebf2f0.js",
+      "path": "/Users/anna/code/danziger/frontend/dist/app-d0414a8b25c69bebf2f0.js",
+      "publicPath": "http://127.0.0.1:8080/app-d0414a8b25c69bebf2f0.js"
+    },
+    "app.0ae7f613ef14161d4029.hot-update.js": {
+      "name": "app.0ae7f613ef14161d4029.hot-update.js",
+      "path": "/Users/anna/code/danziger/frontend/dist/app.0ae7f613ef14161d4029.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/app.0ae7f613ef14161d4029.hot-update.js"
+    },
+    "src_views_ConveyanceMatterView_vue.0ae7f613ef14161d4029.hot-update.js": {
+      "name": "src_views_ConveyanceMatterView_vue.0ae7f613ef14161d4029.hot-update.js",
+      "path": "/Users/anna/code/danziger/frontend/dist/src_views_ConveyanceMatterView_vue.0ae7f613ef14161d4029.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/src_views_ConveyanceMatterView_vue.0ae7f613ef14161d4029.hot-update.js"
+    },
+    "app.0ae7f613ef14161d4029.hot-update.json": {
+      "name": "app.0ae7f613ef14161d4029.hot-update.json",
+      "path": "/Users/anna/code/danziger/frontend/dist/app.0ae7f613ef14161d4029.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/app.0ae7f613ef14161d4029.hot-update.json"
+    },
+    "app-d0414a8b25c69bebf2f0.js.map": {
+      "name": "app-d0414a8b25c69bebf2f0.js.map",
+      "path": "/Users/anna/code/danziger/frontend/dist/app-d0414a8b25c69bebf2f0.js.map",
+      "publicPath": "http://127.0.0.1:8080/app-d0414a8b25c69bebf2f0.js.map"
+    },
+    "app.0ae7f613ef14161d4029.hot-update.js.map": {
+      "name": "app.0ae7f613ef14161d4029.hot-update.js.map",
+      "path": "/Users/anna/code/danziger/frontend/dist/app.0ae7f613ef14161d4029.hot-update.js.map",
+      "publicPath": "http://127.0.0.1:8080/app.0ae7f613ef14161d4029.hot-update.js.map"
+    },
+    "src_views_ConveyanceMatterView_vue.0ae7f613ef14161d4029.hot-update.js.map": {
+      "name": "src_views_ConveyanceMatterView_vue.0ae7f613ef14161d4029.hot-update.js.map",
+      "path": "/Users/anna/code/danziger/frontend/dist/src_views_ConveyanceMatterView_vue.0ae7f613ef14161d4029.hot-update.js.map",
+      "publicPath": "http://127.0.0.1:8080/src_views_ConveyanceMatterView_vue.0ae7f613ef14161d4029.hot-update.js.map"
+    },
+    "app-f668ac1b072d8260d386.js": {
+      "name": "app-f668ac1b072d8260d386.js",
+      "path": "/Users/anna/code/danziger/frontend/dist/app-f668ac1b072d8260d386.js",
+      "publicPath": "http://127.0.0.1:8080/app-f668ac1b072d8260d386.js"
+    },
+    "app.ee7ded19ae2949128a65.hot-update.js": {
+      "name": "app.ee7ded19ae2949128a65.hot-update.js",
+      "path": "/Users/anna/code/danziger/frontend/dist/app.ee7ded19ae2949128a65.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/app.ee7ded19ae2949128a65.hot-update.js"
+    },
+    "src_views_ConveyanceMatterView_vue.ee7ded19ae2949128a65.hot-update.js": {
+      "name": "src_views_ConveyanceMatterView_vue.ee7ded19ae2949128a65.hot-update.js",
+      "path": "/Users/anna/code/danziger/frontend/dist/src_views_ConveyanceMatterView_vue.ee7ded19ae2949128a65.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/src_views_ConveyanceMatterView_vue.ee7ded19ae2949128a65.hot-update.js"
+    },
+    "app.ee7ded19ae2949128a65.hot-update.json": {
+      "name": "app.ee7ded19ae2949128a65.hot-update.json",
+      "path": "/Users/anna/code/danziger/frontend/dist/app.ee7ded19ae2949128a65.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/app.ee7ded19ae2949128a65.hot-update.json"
+    },
+    "app-f668ac1b072d8260d386.js.map": {
+      "name": "app-f668ac1b072d8260d386.js.map",
+      "path": "/Users/anna/code/danziger/frontend/dist/app-f668ac1b072d8260d386.js.map",
+      "publicPath": "http://127.0.0.1:8080/app-f668ac1b072d8260d386.js.map"
+    },
+    "app.ee7ded19ae2949128a65.hot-update.js.map": {
+      "name": "app.ee7ded19ae2949128a65.hot-update.js.map",
+      "path": "/Users/anna/code/danziger/frontend/dist/app.ee7ded19ae2949128a65.hot-update.js.map",
+      "publicPath": "http://127.0.0.1:8080/app.ee7ded19ae2949128a65.hot-update.js.map"
+    },
+    "src_views_ConveyanceMatterView_vue.ee7ded19ae2949128a65.hot-update.js.map": {
+      "name": "src_views_ConveyanceMatterView_vue.ee7ded19ae2949128a65.hot-update.js.map",
+      "path": "/Users/anna/code/danziger/frontend/dist/src_views_ConveyanceMatterView_vue.ee7ded19ae2949128a65.hot-update.js.map",
+      "publicPath": "http://127.0.0.1:8080/src_views_ConveyanceMatterView_vue.ee7ded19ae2949128a65.hot-update.js.map"
+    },
+    "app-2a9b0d3d30afe913ef61.js": {
+      "name": "app-2a9b0d3d30afe913ef61.js",
+      "path": "/Users/anna/code/danziger/frontend/dist/app-2a9b0d3d30afe913ef61.js",
+      "publicPath": "http://127.0.0.1:8080/app-2a9b0d3d30afe913ef61.js"
+    },
+    "app.f668ac1b072d8260d386.hot-update.js": {
+      "name": "app.f668ac1b072d8260d386.hot-update.js",
+      "path": "/Users/anna/code/danziger/frontend/dist/app.f668ac1b072d8260d386.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/app.f668ac1b072d8260d386.hot-update.js"
+    },
+    "src_views_ConveyanceMatterView_vue.f668ac1b072d8260d386.hot-update.js": {
+      "name": "src_views_ConveyanceMatterView_vue.f668ac1b072d8260d386.hot-update.js",
+      "path": "/Users/anna/code/danziger/frontend/dist/src_views_ConveyanceMatterView_vue.f668ac1b072d8260d386.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/src_views_ConveyanceMatterView_vue.f668ac1b072d8260d386.hot-update.js"
+    },
+    "app.f668ac1b072d8260d386.hot-update.json": {
+      "name": "app.f668ac1b072d8260d386.hot-update.json",
+      "path": "/Users/anna/code/danziger/frontend/dist/app.f668ac1b072d8260d386.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/app.f668ac1b072d8260d386.hot-update.json"
+    },
+    "app-2a9b0d3d30afe913ef61.js.map": {
+      "name": "app-2a9b0d3d30afe913ef61.js.map",
+      "path": "/Users/anna/code/danziger/frontend/dist/app-2a9b0d3d30afe913ef61.js.map",
+      "publicPath": "http://127.0.0.1:8080/app-2a9b0d3d30afe913ef61.js.map"
+    },
+    "app.f668ac1b072d8260d386.hot-update.js.map": {
+      "name": "app.f668ac1b072d8260d386.hot-update.js.map",
+      "path": "/Users/anna/code/danziger/frontend/dist/app.f668ac1b072d8260d386.hot-update.js.map",
+      "publicPath": "http://127.0.0.1:8080/app.f668ac1b072d8260d386.hot-update.js.map"
+    },
+    "src_views_ConveyanceMatterView_vue.f668ac1b072d8260d386.hot-update.js.map": {
+      "name": "src_views_ConveyanceMatterView_vue.f668ac1b072d8260d386.hot-update.js.map",
+      "path": "/Users/anna/code/danziger/frontend/dist/src_views_ConveyanceMatterView_vue.f668ac1b072d8260d386.hot-update.js.map",
+      "publicPath": "http://127.0.0.1:8080/src_views_ConveyanceMatterView_vue.f668ac1b072d8260d386.hot-update.js.map"
+    },
+    "app-b49e3f1ed02525bb3157.js": {
+      "name": "app-b49e3f1ed02525bb3157.js",
+      "path": "/Users/anna/code/danziger/frontend/dist/app-b49e3f1ed02525bb3157.js",
+      "publicPath": "http://127.0.0.1:8080/app-b49e3f1ed02525bb3157.js"
+    },
+    "app.2a9b0d3d30afe913ef61.hot-update.js": {
+      "name": "app.2a9b0d3d30afe913ef61.hot-update.js",
+      "path": "/Users/anna/code/danziger/frontend/dist/app.2a9b0d3d30afe913ef61.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/app.2a9b0d3d30afe913ef61.hot-update.js"
+    },
+    "src_views_ConveyanceMatterView_vue.2a9b0d3d30afe913ef61.hot-update.js": {
+      "name": "src_views_ConveyanceMatterView_vue.2a9b0d3d30afe913ef61.hot-update.js",
+      "path": "/Users/anna/code/danziger/frontend/dist/src_views_ConveyanceMatterView_vue.2a9b0d3d30afe913ef61.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/src_views_ConveyanceMatterView_vue.2a9b0d3d30afe913ef61.hot-update.js"
+    },
+    "app.2a9b0d3d30afe913ef61.hot-update.json": {
+      "name": "app.2a9b0d3d30afe913ef61.hot-update.json",
+      "path": "/Users/anna/code/danziger/frontend/dist/app.2a9b0d3d30afe913ef61.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/app.2a9b0d3d30afe913ef61.hot-update.json"
+    },
+    "app-b49e3f1ed02525bb3157.js.map": {
+      "name": "app-b49e3f1ed02525bb3157.js.map",
+      "path": "/Users/anna/code/danziger/frontend/dist/app-b49e3f1ed02525bb3157.js.map",
+      "publicPath": "http://127.0.0.1:8080/app-b49e3f1ed02525bb3157.js.map"
+    },
+    "app.2a9b0d3d30afe913ef61.hot-update.js.map": {
+      "name": "app.2a9b0d3d30afe913ef61.hot-update.js.map",
+      "path": "/Users/anna/code/danziger/frontend/dist/app.2a9b0d3d30afe913ef61.hot-update.js.map",
+      "publicPath": "http://127.0.0.1:8080/app.2a9b0d3d30afe913ef61.hot-update.js.map"
+    },
+    "src_views_ConveyanceMatterView_vue.2a9b0d3d30afe913ef61.hot-update.js.map": {
+      "name": "src_views_ConveyanceMatterView_vue.2a9b0d3d30afe913ef61.hot-update.js.map",
+      "path": "/Users/anna/code/danziger/frontend/dist/src_views_ConveyanceMatterView_vue.2a9b0d3d30afe913ef61.hot-update.js.map",
+      "publicPath": "http://127.0.0.1:8080/src_views_ConveyanceMatterView_vue.2a9b0d3d30afe913ef61.hot-update.js.map"
+    },
+    "app-1506f8cc9268a58a25db.js": {
+      "name": "app-1506f8cc9268a58a25db.js",
+      "path": "/Users/anna/code/danziger/frontend/dist/app-1506f8cc9268a58a25db.js",
+      "publicPath": "http://127.0.0.1:8080/app-1506f8cc9268a58a25db.js"
+    },
+    "app.b49e3f1ed02525bb3157.hot-update.js": {
+      "name": "app.b49e3f1ed02525bb3157.hot-update.js",
+      "path": "/Users/anna/code/danziger/frontend/dist/app.b49e3f1ed02525bb3157.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/app.b49e3f1ed02525bb3157.hot-update.js"
+    },
+    "src_views_ConveyanceMatterView_vue.b49e3f1ed02525bb3157.hot-update.js": {
+      "name": "src_views_ConveyanceMatterView_vue.b49e3f1ed02525bb3157.hot-update.js",
+      "path": "/Users/anna/code/danziger/frontend/dist/src_views_ConveyanceMatterView_vue.b49e3f1ed02525bb3157.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/src_views_ConveyanceMatterView_vue.b49e3f1ed02525bb3157.hot-update.js"
+    },
+    "app.b49e3f1ed02525bb3157.hot-update.json": {
+      "name": "app.b49e3f1ed02525bb3157.hot-update.json",
+      "path": "/Users/anna/code/danziger/frontend/dist/app.b49e3f1ed02525bb3157.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/app.b49e3f1ed02525bb3157.hot-update.json"
+    },
+    "app-1506f8cc9268a58a25db.js.map": {
+      "name": "app-1506f8cc9268a58a25db.js.map",
+      "path": "/Users/anna/code/danziger/frontend/dist/app-1506f8cc9268a58a25db.js.map",
+      "publicPath": "http://127.0.0.1:8080/app-1506f8cc9268a58a25db.js.map"
+    },
+    "app.b49e3f1ed02525bb3157.hot-update.js.map": {
+      "name": "app.b49e3f1ed02525bb3157.hot-update.js.map",
+      "path": "/Users/anna/code/danziger/frontend/dist/app.b49e3f1ed02525bb3157.hot-update.js.map",
+      "publicPath": "http://127.0.0.1:8080/app.b49e3f1ed02525bb3157.hot-update.js.map"
+    },
+    "src_views_ConveyanceMatterView_vue.b49e3f1ed02525bb3157.hot-update.js.map": {
+      "name": "src_views_ConveyanceMatterView_vue.b49e3f1ed02525bb3157.hot-update.js.map",
+      "path": "/Users/anna/code/danziger/frontend/dist/src_views_ConveyanceMatterView_vue.b49e3f1ed02525bb3157.hot-update.js.map",
+      "publicPath": "http://127.0.0.1:8080/src_views_ConveyanceMatterView_vue.b49e3f1ed02525bb3157.hot-update.js.map"
+    },
+    "app-487620b49cf161688860.js": {
+      "name": "app-487620b49cf161688860.js",
+      "path": "/Users/anna/code/danziger/frontend/dist/app-487620b49cf161688860.js",
+      "publicPath": "http://127.0.0.1:8080/app-487620b49cf161688860.js"
+    },
+    "app.1506f8cc9268a58a25db.hot-update.js": {
+      "name": "app.1506f8cc9268a58a25db.hot-update.js",
+      "path": "/Users/anna/code/danziger/frontend/dist/app.1506f8cc9268a58a25db.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/app.1506f8cc9268a58a25db.hot-update.js"
+    },
+    "src_views_ConveyanceMatterView_vue.1506f8cc9268a58a25db.hot-update.js": {
+      "name": "src_views_ConveyanceMatterView_vue.1506f8cc9268a58a25db.hot-update.js",
+      "path": "/Users/anna/code/danziger/frontend/dist/src_views_ConveyanceMatterView_vue.1506f8cc9268a58a25db.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/src_views_ConveyanceMatterView_vue.1506f8cc9268a58a25db.hot-update.js"
+    },
+    "app.1506f8cc9268a58a25db.hot-update.json": {
+      "name": "app.1506f8cc9268a58a25db.hot-update.json",
+      "path": "/Users/anna/code/danziger/frontend/dist/app.1506f8cc9268a58a25db.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/app.1506f8cc9268a58a25db.hot-update.json"
+    },
+    "app-487620b49cf161688860.js.map": {
+      "name": "app-487620b49cf161688860.js.map",
+      "path": "/Users/anna/code/danziger/frontend/dist/app-487620b49cf161688860.js.map",
+      "publicPath": "http://127.0.0.1:8080/app-487620b49cf161688860.js.map"
+    },
+    "app.1506f8cc9268a58a25db.hot-update.js.map": {
+      "name": "app.1506f8cc9268a58a25db.hot-update.js.map",
+      "path": "/Users/anna/code/danziger/frontend/dist/app.1506f8cc9268a58a25db.hot-update.js.map",
+      "publicPath": "http://127.0.0.1:8080/app.1506f8cc9268a58a25db.hot-update.js.map"
+    },
+    "src_views_ConveyanceMatterView_vue.1506f8cc9268a58a25db.hot-update.js.map": {
+      "name": "src_views_ConveyanceMatterView_vue.1506f8cc9268a58a25db.hot-update.js.map",
+      "path": "/Users/anna/code/danziger/frontend/dist/src_views_ConveyanceMatterView_vue.1506f8cc9268a58a25db.hot-update.js.map",
+      "publicPath": "http://127.0.0.1:8080/src_views_ConveyanceMatterView_vue.1506f8cc9268a58a25db.hot-update.js.map"
+    },
+    "app-a94d21128dd48a84e385.js": {
+      "name": "app-a94d21128dd48a84e385.js",
+      "path": "/Users/anna/code/danziger/frontend/dist/app-a94d21128dd48a84e385.js",
+      "publicPath": "http://127.0.0.1:8080/app-a94d21128dd48a84e385.js"
+    },
+    "app.487620b49cf161688860.hot-update.js": {
+      "name": "app.487620b49cf161688860.hot-update.js",
+      "path": "/Users/anna/code/danziger/frontend/dist/app.487620b49cf161688860.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/app.487620b49cf161688860.hot-update.js"
+    },
+    "src_views_ConveyanceMatterView_vue.487620b49cf161688860.hot-update.js": {
+      "name": "src_views_ConveyanceMatterView_vue.487620b49cf161688860.hot-update.js",
+      "path": "/Users/anna/code/danziger/frontend/dist/src_views_ConveyanceMatterView_vue.487620b49cf161688860.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/src_views_ConveyanceMatterView_vue.487620b49cf161688860.hot-update.js"
+    },
+    "app.487620b49cf161688860.hot-update.json": {
+      "name": "app.487620b49cf161688860.hot-update.json",
+      "path": "/Users/anna/code/danziger/frontend/dist/app.487620b49cf161688860.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/app.487620b49cf161688860.hot-update.json"
+    },
+    "app-a94d21128dd48a84e385.js.map": {
+      "name": "app-a94d21128dd48a84e385.js.map",
+      "path": "/Users/anna/code/danziger/frontend/dist/app-a94d21128dd48a84e385.js.map",
+      "publicPath": "http://127.0.0.1:8080/app-a94d21128dd48a84e385.js.map"
+    },
+    "app.487620b49cf161688860.hot-update.js.map": {
+      "name": "app.487620b49cf161688860.hot-update.js.map",
+      "path": "/Users/anna/code/danziger/frontend/dist/app.487620b49cf161688860.hot-update.js.map",
+      "publicPath": "http://127.0.0.1:8080/app.487620b49cf161688860.hot-update.js.map"
+    },
+    "src_views_ConveyanceMatterView_vue.487620b49cf161688860.hot-update.js.map": {
+      "name": "src_views_ConveyanceMatterView_vue.487620b49cf161688860.hot-update.js.map",
+      "path": "/Users/anna/code/danziger/frontend/dist/src_views_ConveyanceMatterView_vue.487620b49cf161688860.hot-update.js.map",
+      "publicPath": "http://127.0.0.1:8080/src_views_ConveyanceMatterView_vue.487620b49cf161688860.hot-update.js.map"
+    },
+    "app-7191acebec8f67b11473.js": {
+      "name": "app-7191acebec8f67b11473.js",
+      "path": "/Users/anna/code/danziger/frontend/dist/app-7191acebec8f67b11473.js",
+      "publicPath": "http://127.0.0.1:8080/app-7191acebec8f67b11473.js"
+    },
+    "app.a94d21128dd48a84e385.hot-update.js": {
+      "name": "app.a94d21128dd48a84e385.hot-update.js",
+      "path": "/Users/anna/code/danziger/frontend/dist/app.a94d21128dd48a84e385.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/app.a94d21128dd48a84e385.hot-update.js"
+    },
+    "src_views_ConveyanceMatterView_vue.a94d21128dd48a84e385.hot-update.js": {
+      "name": "src_views_ConveyanceMatterView_vue.a94d21128dd48a84e385.hot-update.js",
+      "path": "/Users/anna/code/danziger/frontend/dist/src_views_ConveyanceMatterView_vue.a94d21128dd48a84e385.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/src_views_ConveyanceMatterView_vue.a94d21128dd48a84e385.hot-update.js"
+    },
+    "app.a94d21128dd48a84e385.hot-update.json": {
+      "name": "app.a94d21128dd48a84e385.hot-update.json",
+      "path": "/Users/anna/code/danziger/frontend/dist/app.a94d21128dd48a84e385.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/app.a94d21128dd48a84e385.hot-update.json"
+    },
+    "app-7191acebec8f67b11473.js.map": {
+      "name": "app-7191acebec8f67b11473.js.map",
+      "path": "/Users/anna/code/danziger/frontend/dist/app-7191acebec8f67b11473.js.map",
+      "publicPath": "http://127.0.0.1:8080/app-7191acebec8f67b11473.js.map"
+    },
+    "app.a94d21128dd48a84e385.hot-update.js.map": {
+      "name": "app.a94d21128dd48a84e385.hot-update.js.map",
+      "path": "/Users/anna/code/danziger/frontend/dist/app.a94d21128dd48a84e385.hot-update.js.map",
+      "publicPath": "http://127.0.0.1:8080/app.a94d21128dd48a84e385.hot-update.js.map"
+    },
+    "src_views_ConveyanceMatterView_vue.a94d21128dd48a84e385.hot-update.js.map": {
+      "name": "src_views_ConveyanceMatterView_vue.a94d21128dd48a84e385.hot-update.js.map",
+      "path": "/Users/anna/code/danziger/frontend/dist/src_views_ConveyanceMatterView_vue.a94d21128dd48a84e385.hot-update.js.map",
+      "publicPath": "http://127.0.0.1:8080/src_views_ConveyanceMatterView_vue.a94d21128dd48a84e385.hot-update.js.map"
+    },
+    "app-76ebe17e5f2087861c04.js": {
+      "name": "app-76ebe17e5f2087861c04.js",
+      "path": "/Users/anna/code/danziger/frontend/dist/app-76ebe17e5f2087861c04.js",
+      "publicPath": "http://127.0.0.1:8080/app-76ebe17e5f2087861c04.js"
+    },
+    "app.7191acebec8f67b11473.hot-update.js": {
+      "name": "app.7191acebec8f67b11473.hot-update.js",
+      "path": "/Users/anna/code/danziger/frontend/dist/app.7191acebec8f67b11473.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/app.7191acebec8f67b11473.hot-update.js"
+    },
+    "src_views_ConveyanceMatterView_vue.7191acebec8f67b11473.hot-update.js": {
+      "name": "src_views_ConveyanceMatterView_vue.7191acebec8f67b11473.hot-update.js",
+      "path": "/Users/anna/code/danziger/frontend/dist/src_views_ConveyanceMatterView_vue.7191acebec8f67b11473.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/src_views_ConveyanceMatterView_vue.7191acebec8f67b11473.hot-update.js"
+    },
+    "app.7191acebec8f67b11473.hot-update.json": {
+      "name": "app.7191acebec8f67b11473.hot-update.json",
+      "path": "/Users/anna/code/danziger/frontend/dist/app.7191acebec8f67b11473.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/app.7191acebec8f67b11473.hot-update.json"
+    },
+    "app-76ebe17e5f2087861c04.js.map": {
+      "name": "app-76ebe17e5f2087861c04.js.map",
+      "path": "/Users/anna/code/danziger/frontend/dist/app-76ebe17e5f2087861c04.js.map",
+      "publicPath": "http://127.0.0.1:8080/app-76ebe17e5f2087861c04.js.map"
+    },
+    "app.7191acebec8f67b11473.hot-update.js.map": {
+      "name": "app.7191acebec8f67b11473.hot-update.js.map",
+      "path": "/Users/anna/code/danziger/frontend/dist/app.7191acebec8f67b11473.hot-update.js.map",
+      "publicPath": "http://127.0.0.1:8080/app.7191acebec8f67b11473.hot-update.js.map"
+    },
+    "src_views_ConveyanceMatterView_vue.7191acebec8f67b11473.hot-update.js.map": {
+      "name": "src_views_ConveyanceMatterView_vue.7191acebec8f67b11473.hot-update.js.map",
+      "path": "/Users/anna/code/danziger/frontend/dist/src_views_ConveyanceMatterView_vue.7191acebec8f67b11473.hot-update.js.map",
+      "publicPath": "http://127.0.0.1:8080/src_views_ConveyanceMatterView_vue.7191acebec8f67b11473.hot-update.js.map"
+    },
+    "app-3c1e7866426ddacf2097.js": {
+      "name": "app-3c1e7866426ddacf2097.js",
+      "path": "/Users/anna/code/danziger/frontend/dist/app-3c1e7866426ddacf2097.js",
+      "publicPath": "http://127.0.0.1:8080/app-3c1e7866426ddacf2097.js"
+    },
+    "app.76ebe17e5f2087861c04.hot-update.js": {
+      "name": "app.76ebe17e5f2087861c04.hot-update.js",
+      "path": "/Users/anna/code/danziger/frontend/dist/app.76ebe17e5f2087861c04.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/app.76ebe17e5f2087861c04.hot-update.js"
+    },
+    "src_views_ConveyanceMatterView_vue.76ebe17e5f2087861c04.hot-update.js": {
+      "name": "src_views_ConveyanceMatterView_vue.76ebe17e5f2087861c04.hot-update.js",
+      "path": "/Users/anna/code/danziger/frontend/dist/src_views_ConveyanceMatterView_vue.76ebe17e5f2087861c04.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/src_views_ConveyanceMatterView_vue.76ebe17e5f2087861c04.hot-update.js"
+    },
+    "app.76ebe17e5f2087861c04.hot-update.json": {
+      "name": "app.76ebe17e5f2087861c04.hot-update.json",
+      "path": "/Users/anna/code/danziger/frontend/dist/app.76ebe17e5f2087861c04.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/app.76ebe17e5f2087861c04.hot-update.json"
+    },
+    "app-3c1e7866426ddacf2097.js.map": {
+      "name": "app-3c1e7866426ddacf2097.js.map",
+      "path": "/Users/anna/code/danziger/frontend/dist/app-3c1e7866426ddacf2097.js.map",
+      "publicPath": "http://127.0.0.1:8080/app-3c1e7866426ddacf2097.js.map"
+    },
+    "app.76ebe17e5f2087861c04.hot-update.js.map": {
+      "name": "app.76ebe17e5f2087861c04.hot-update.js.map",
+      "path": "/Users/anna/code/danziger/frontend/dist/app.76ebe17e5f2087861c04.hot-update.js.map",
+      "publicPath": "http://127.0.0.1:8080/app.76ebe17e5f2087861c04.hot-update.js.map"
+    },
+    "src_views_ConveyanceMatterView_vue.76ebe17e5f2087861c04.hot-update.js.map": {
+      "name": "src_views_ConveyanceMatterView_vue.76ebe17e5f2087861c04.hot-update.js.map",
+      "path": "/Users/anna/code/danziger/frontend/dist/src_views_ConveyanceMatterView_vue.76ebe17e5f2087861c04.hot-update.js.map",
+      "publicPath": "http://127.0.0.1:8080/src_views_ConveyanceMatterView_vue.76ebe17e5f2087861c04.hot-update.js.map"
+    },
+    "app-a2fc9d86e6be8b81ca2c.js": {
+      "name": "app-a2fc9d86e6be8b81ca2c.js",
+      "path": "/Users/anna/code/danziger/frontend/dist/app-a2fc9d86e6be8b81ca2c.js",
+      "publicPath": "http://127.0.0.1:8080/app-a2fc9d86e6be8b81ca2c.js"
+    },
+    "app.3c1e7866426ddacf2097.hot-update.js": {
+      "name": "app.3c1e7866426ddacf2097.hot-update.js",
+      "path": "/Users/anna/code/danziger/frontend/dist/app.3c1e7866426ddacf2097.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/app.3c1e7866426ddacf2097.hot-update.js"
+    },
+    "src_views_ConveyanceMatterView_vue.3c1e7866426ddacf2097.hot-update.js": {
+      "name": "src_views_ConveyanceMatterView_vue.3c1e7866426ddacf2097.hot-update.js",
+      "path": "/Users/anna/code/danziger/frontend/dist/src_views_ConveyanceMatterView_vue.3c1e7866426ddacf2097.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/src_views_ConveyanceMatterView_vue.3c1e7866426ddacf2097.hot-update.js"
+    },
+    "app.3c1e7866426ddacf2097.hot-update.json": {
+      "name": "app.3c1e7866426ddacf2097.hot-update.json",
+      "path": "/Users/anna/code/danziger/frontend/dist/app.3c1e7866426ddacf2097.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/app.3c1e7866426ddacf2097.hot-update.json"
+    },
+    "app-a2fc9d86e6be8b81ca2c.js.map": {
+      "name": "app-a2fc9d86e6be8b81ca2c.js.map",
+      "path": "/Users/anna/code/danziger/frontend/dist/app-a2fc9d86e6be8b81ca2c.js.map",
+      "publicPath": "http://127.0.0.1:8080/app-a2fc9d86e6be8b81ca2c.js.map"
+    },
+    "app.3c1e7866426ddacf2097.hot-update.js.map": {
+      "name": "app.3c1e7866426ddacf2097.hot-update.js.map",
+      "path": "/Users/anna/code/danziger/frontend/dist/app.3c1e7866426ddacf2097.hot-update.js.map",
+      "publicPath": "http://127.0.0.1:8080/app.3c1e7866426ddacf2097.hot-update.js.map"
+    },
+    "src_views_ConveyanceMatterView_vue.3c1e7866426ddacf2097.hot-update.js.map": {
+      "name": "src_views_ConveyanceMatterView_vue.3c1e7866426ddacf2097.hot-update.js.map",
+      "path": "/Users/anna/code/danziger/frontend/dist/src_views_ConveyanceMatterView_vue.3c1e7866426ddacf2097.hot-update.js.map",
+      "publicPath": "http://127.0.0.1:8080/src_views_ConveyanceMatterView_vue.3c1e7866426ddacf2097.hot-update.js.map"
+    },
+    "app-076d46b4bddcb0aa32fe.js": {
+      "name": "app-076d46b4bddcb0aa32fe.js",
+      "path": "/Users/anna/code/danziger/frontend/dist/app-076d46b4bddcb0aa32fe.js",
+      "publicPath": "http://127.0.0.1:8080/app-076d46b4bddcb0aa32fe.js"
+    },
+    "app.a2fc9d86e6be8b81ca2c.hot-update.js": {
+      "name": "app.a2fc9d86e6be8b81ca2c.hot-update.js",
+      "path": "/Users/anna/code/danziger/frontend/dist/app.a2fc9d86e6be8b81ca2c.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/app.a2fc9d86e6be8b81ca2c.hot-update.js"
+    },
+    "src_views_ConveyanceMatterView_vue.a2fc9d86e6be8b81ca2c.hot-update.js": {
+      "name": "src_views_ConveyanceMatterView_vue.a2fc9d86e6be8b81ca2c.hot-update.js",
+      "path": "/Users/anna/code/danziger/frontend/dist/src_views_ConveyanceMatterView_vue.a2fc9d86e6be8b81ca2c.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/src_views_ConveyanceMatterView_vue.a2fc9d86e6be8b81ca2c.hot-update.js"
+    },
+    "app.a2fc9d86e6be8b81ca2c.hot-update.json": {
+      "name": "app.a2fc9d86e6be8b81ca2c.hot-update.json",
+      "path": "/Users/anna/code/danziger/frontend/dist/app.a2fc9d86e6be8b81ca2c.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/app.a2fc9d86e6be8b81ca2c.hot-update.json"
+    },
+    "app-076d46b4bddcb0aa32fe.js.map": {
+      "name": "app-076d46b4bddcb0aa32fe.js.map",
+      "path": "/Users/anna/code/danziger/frontend/dist/app-076d46b4bddcb0aa32fe.js.map",
+      "publicPath": "http://127.0.0.1:8080/app-076d46b4bddcb0aa32fe.js.map"
+    },
+    "app.a2fc9d86e6be8b81ca2c.hot-update.js.map": {
+      "name": "app.a2fc9d86e6be8b81ca2c.hot-update.js.map",
+      "path": "/Users/anna/code/danziger/frontend/dist/app.a2fc9d86e6be8b81ca2c.hot-update.js.map",
+      "publicPath": "http://127.0.0.1:8080/app.a2fc9d86e6be8b81ca2c.hot-update.js.map"
+    },
+    "src_views_ConveyanceMatterView_vue.a2fc9d86e6be8b81ca2c.hot-update.js.map": {
+      "name": "src_views_ConveyanceMatterView_vue.a2fc9d86e6be8b81ca2c.hot-update.js.map",
+      "path": "/Users/anna/code/danziger/frontend/dist/src_views_ConveyanceMatterView_vue.a2fc9d86e6be8b81ca2c.hot-update.js.map",
+      "publicPath": "http://127.0.0.1:8080/src_views_ConveyanceMatterView_vue.a2fc9d86e6be8b81ca2c.hot-update.js.map"
+    },
+    "app-81e9858102a1cf43f8d0.js": {
+      "name": "app-81e9858102a1cf43f8d0.js",
+      "path": "/Users/anna/code/danziger/frontend/dist/app-81e9858102a1cf43f8d0.js",
+      "publicPath": "http://127.0.0.1:8080/app-81e9858102a1cf43f8d0.js"
+    },
+    "app.076d46b4bddcb0aa32fe.hot-update.js": {
+      "name": "app.076d46b4bddcb0aa32fe.hot-update.js",
+      "path": "/Users/anna/code/danziger/frontend/dist/app.076d46b4bddcb0aa32fe.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/app.076d46b4bddcb0aa32fe.hot-update.js"
+    },
+    "src_views_ConveyanceMatterView_vue.076d46b4bddcb0aa32fe.hot-update.js": {
+      "name": "src_views_ConveyanceMatterView_vue.076d46b4bddcb0aa32fe.hot-update.js",
+      "path": "/Users/anna/code/danziger/frontend/dist/src_views_ConveyanceMatterView_vue.076d46b4bddcb0aa32fe.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/src_views_ConveyanceMatterView_vue.076d46b4bddcb0aa32fe.hot-update.js"
+    },
+    "app.076d46b4bddcb0aa32fe.hot-update.json": {
+      "name": "app.076d46b4bddcb0aa32fe.hot-update.json",
+      "path": "/Users/anna/code/danziger/frontend/dist/app.076d46b4bddcb0aa32fe.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/app.076d46b4bddcb0aa32fe.hot-update.json"
+    },
+    "app-81e9858102a1cf43f8d0.js.map": {
+      "name": "app-81e9858102a1cf43f8d0.js.map",
+      "path": "/Users/anna/code/danziger/frontend/dist/app-81e9858102a1cf43f8d0.js.map",
+      "publicPath": "http://127.0.0.1:8080/app-81e9858102a1cf43f8d0.js.map"
+    },
+    "app.076d46b4bddcb0aa32fe.hot-update.js.map": {
+      "name": "app.076d46b4bddcb0aa32fe.hot-update.js.map",
+      "path": "/Users/anna/code/danziger/frontend/dist/app.076d46b4bddcb0aa32fe.hot-update.js.map",
+      "publicPath": "http://127.0.0.1:8080/app.076d46b4bddcb0aa32fe.hot-update.js.map"
+    },
+    "src_views_ConveyanceMatterView_vue.076d46b4bddcb0aa32fe.hot-update.js.map": {
+      "name": "src_views_ConveyanceMatterView_vue.076d46b4bddcb0aa32fe.hot-update.js.map",
+      "path": "/Users/anna/code/danziger/frontend/dist/src_views_ConveyanceMatterView_vue.076d46b4bddcb0aa32fe.hot-update.js.map",
+      "publicPath": "http://127.0.0.1:8080/src_views_ConveyanceMatterView_vue.076d46b4bddcb0aa32fe.hot-update.js.map"
+    },
+    "app-a2f2248e1f637c2944a6.js": {
+      "name": "app-a2f2248e1f637c2944a6.js",
+      "path": "/Users/anna/code/danziger/frontend/dist/app-a2f2248e1f637c2944a6.js",
+      "publicPath": "http://127.0.0.1:8080/app-a2f2248e1f637c2944a6.js"
+    },
+    "app.81e9858102a1cf43f8d0.hot-update.js": {
+      "name": "app.81e9858102a1cf43f8d0.hot-update.js",
+      "path": "/Users/anna/code/danziger/frontend/dist/app.81e9858102a1cf43f8d0.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/app.81e9858102a1cf43f8d0.hot-update.js"
+    },
+    "src_views_ConveyanceMatterView_vue.81e9858102a1cf43f8d0.hot-update.js": {
+      "name": "src_views_ConveyanceMatterView_vue.81e9858102a1cf43f8d0.hot-update.js",
+      "path": "/Users/anna/code/danziger/frontend/dist/src_views_ConveyanceMatterView_vue.81e9858102a1cf43f8d0.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/src_views_ConveyanceMatterView_vue.81e9858102a1cf43f8d0.hot-update.js"
+    },
+    "app.81e9858102a1cf43f8d0.hot-update.json": {
+      "name": "app.81e9858102a1cf43f8d0.hot-update.json",
+      "path": "/Users/anna/code/danziger/frontend/dist/app.81e9858102a1cf43f8d0.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/app.81e9858102a1cf43f8d0.hot-update.json"
+    },
+    "app-a2f2248e1f637c2944a6.js.map": {
+      "name": "app-a2f2248e1f637c2944a6.js.map",
+      "path": "/Users/anna/code/danziger/frontend/dist/app-a2f2248e1f637c2944a6.js.map",
+      "publicPath": "http://127.0.0.1:8080/app-a2f2248e1f637c2944a6.js.map"
+    },
+    "app.81e9858102a1cf43f8d0.hot-update.js.map": {
+      "name": "app.81e9858102a1cf43f8d0.hot-update.js.map",
+      "path": "/Users/anna/code/danziger/frontend/dist/app.81e9858102a1cf43f8d0.hot-update.js.map",
+      "publicPath": "http://127.0.0.1:8080/app.81e9858102a1cf43f8d0.hot-update.js.map"
+    },
+    "src_views_ConveyanceMatterView_vue.81e9858102a1cf43f8d0.hot-update.js.map": {
+      "name": "src_views_ConveyanceMatterView_vue.81e9858102a1cf43f8d0.hot-update.js.map",
+      "path": "/Users/anna/code/danziger/frontend/dist/src_views_ConveyanceMatterView_vue.81e9858102a1cf43f8d0.hot-update.js.map",
+      "publicPath": "http://127.0.0.1:8080/src_views_ConveyanceMatterView_vue.81e9858102a1cf43f8d0.hot-update.js.map"
+    },
+    "app-0f9eab05cb551125c310.js": {
+      "name": "app-0f9eab05cb551125c310.js",
+      "path": "/Users/anna/code/danziger/frontend/dist/app-0f9eab05cb551125c310.js",
+      "publicPath": "http://127.0.0.1:8080/app-0f9eab05cb551125c310.js"
+    },
+    "app.a2f2248e1f637c2944a6.hot-update.js": {
+      "name": "app.a2f2248e1f637c2944a6.hot-update.js",
+      "path": "/Users/anna/code/danziger/frontend/dist/app.a2f2248e1f637c2944a6.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/app.a2f2248e1f637c2944a6.hot-update.js"
+    },
+    "src_views_ConveyanceMatterView_vue.a2f2248e1f637c2944a6.hot-update.js": {
+      "name": "src_views_ConveyanceMatterView_vue.a2f2248e1f637c2944a6.hot-update.js",
+      "path": "/Users/anna/code/danziger/frontend/dist/src_views_ConveyanceMatterView_vue.a2f2248e1f637c2944a6.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/src_views_ConveyanceMatterView_vue.a2f2248e1f637c2944a6.hot-update.js"
+    },
+    "app.a2f2248e1f637c2944a6.hot-update.json": {
+      "name": "app.a2f2248e1f637c2944a6.hot-update.json",
+      "path": "/Users/anna/code/danziger/frontend/dist/app.a2f2248e1f637c2944a6.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/app.a2f2248e1f637c2944a6.hot-update.json"
+    },
+    "app-0f9eab05cb551125c310.js.map": {
+      "name": "app-0f9eab05cb551125c310.js.map",
+      "path": "/Users/anna/code/danziger/frontend/dist/app-0f9eab05cb551125c310.js.map",
+      "publicPath": "http://127.0.0.1:8080/app-0f9eab05cb551125c310.js.map"
+    },
+    "app.a2f2248e1f637c2944a6.hot-update.js.map": {
+      "name": "app.a2f2248e1f637c2944a6.hot-update.js.map",
+      "path": "/Users/anna/code/danziger/frontend/dist/app.a2f2248e1f637c2944a6.hot-update.js.map",
+      "publicPath": "http://127.0.0.1:8080/app.a2f2248e1f637c2944a6.hot-update.js.map"
+    },
+    "src_views_ConveyanceMatterView_vue.a2f2248e1f637c2944a6.hot-update.js.map": {
+      "name": "src_views_ConveyanceMatterView_vue.a2f2248e1f637c2944a6.hot-update.js.map",
+      "path": "/Users/anna/code/danziger/frontend/dist/src_views_ConveyanceMatterView_vue.a2f2248e1f637c2944a6.hot-update.js.map",
+      "publicPath": "http://127.0.0.1:8080/src_views_ConveyanceMatterView_vue.a2f2248e1f637c2944a6.hot-update.js.map"
+    },
+    "app-0c40e232fefe614b182d.js": {
+      "name": "app-0c40e232fefe614b182d.js",
+      "path": "/Users/anna/code/danziger/frontend/dist/app-0c40e232fefe614b182d.js",
+      "publicPath": "http://127.0.0.1:8080/app-0c40e232fefe614b182d.js"
+    },
+    "app.0f9eab05cb551125c310.hot-update.js": {
+      "name": "app.0f9eab05cb551125c310.hot-update.js",
+      "path": "/Users/anna/code/danziger/frontend/dist/app.0f9eab05cb551125c310.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/app.0f9eab05cb551125c310.hot-update.js"
+    },
+    "src_views_ConveyanceMatterView_vue.0f9eab05cb551125c310.hot-update.js": {
+      "name": "src_views_ConveyanceMatterView_vue.0f9eab05cb551125c310.hot-update.js",
+      "path": "/Users/anna/code/danziger/frontend/dist/src_views_ConveyanceMatterView_vue.0f9eab05cb551125c310.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/src_views_ConveyanceMatterView_vue.0f9eab05cb551125c310.hot-update.js"
+    },
+    "app.0f9eab05cb551125c310.hot-update.json": {
+      "name": "app.0f9eab05cb551125c310.hot-update.json",
+      "path": "/Users/anna/code/danziger/frontend/dist/app.0f9eab05cb551125c310.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/app.0f9eab05cb551125c310.hot-update.json"
+    },
+    "app-0c40e232fefe614b182d.js.map": {
+      "name": "app-0c40e232fefe614b182d.js.map",
+      "path": "/Users/anna/code/danziger/frontend/dist/app-0c40e232fefe614b182d.js.map",
+      "publicPath": "http://127.0.0.1:8080/app-0c40e232fefe614b182d.js.map"
+    },
+    "app.0f9eab05cb551125c310.hot-update.js.map": {
+      "name": "app.0f9eab05cb551125c310.hot-update.js.map",
+      "path": "/Users/anna/code/danziger/frontend/dist/app.0f9eab05cb551125c310.hot-update.js.map",
+      "publicPath": "http://127.0.0.1:8080/app.0f9eab05cb551125c310.hot-update.js.map"
+    },
+    "src_views_ConveyanceMatterView_vue.0f9eab05cb551125c310.hot-update.js.map": {
+      "name": "src_views_ConveyanceMatterView_vue.0f9eab05cb551125c310.hot-update.js.map",
+      "path": "/Users/anna/code/danziger/frontend/dist/src_views_ConveyanceMatterView_vue.0f9eab05cb551125c310.hot-update.js.map",
+      "publicPath": "http://127.0.0.1:8080/src_views_ConveyanceMatterView_vue.0f9eab05cb551125c310.hot-update.js.map"
+    },
+    "app-dfd96c2ca4908d95c8c9.js": {
+      "name": "app-dfd96c2ca4908d95c8c9.js",
+      "path": "/Users/anna/code/danziger/frontend/dist/app-dfd96c2ca4908d95c8c9.js",
+      "publicPath": "http://127.0.0.1:8080/app-dfd96c2ca4908d95c8c9.js"
+    },
+    "app.0c40e232fefe614b182d.hot-update.js": {
+      "name": "app.0c40e232fefe614b182d.hot-update.js",
+      "path": "/Users/anna/code/danziger/frontend/dist/app.0c40e232fefe614b182d.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/app.0c40e232fefe614b182d.hot-update.js"
+    },
+    "src_views_BankView_vue.0c40e232fefe614b182d.hot-update.js": {
+      "name": "src_views_BankView_vue.0c40e232fefe614b182d.hot-update.js",
+      "path": "/Users/anna/code/danziger/frontend/dist/src_views_BankView_vue.0c40e232fefe614b182d.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/src_views_BankView_vue.0c40e232fefe614b182d.hot-update.js"
+    },
+    "app.0c40e232fefe614b182d.hot-update.json": {
+      "name": "app.0c40e232fefe614b182d.hot-update.json",
+      "path": "/Users/anna/code/danziger/frontend/dist/app.0c40e232fefe614b182d.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/app.0c40e232fefe614b182d.hot-update.json"
+    },
+    "app-dfd96c2ca4908d95c8c9.js.map": {
+      "name": "app-dfd96c2ca4908d95c8c9.js.map",
+      "path": "/Users/anna/code/danziger/frontend/dist/app-dfd96c2ca4908d95c8c9.js.map",
+      "publicPath": "http://127.0.0.1:8080/app-dfd96c2ca4908d95c8c9.js.map"
+    },
+    "app.0c40e232fefe614b182d.hot-update.js.map": {
+      "name": "app.0c40e232fefe614b182d.hot-update.js.map",
+      "path": "/Users/anna/code/danziger/frontend/dist/app.0c40e232fefe614b182d.hot-update.js.map",
+      "publicPath": "http://127.0.0.1:8080/app.0c40e232fefe614b182d.hot-update.js.map"
+    },
+    "src_views_BankView_vue.0c40e232fefe614b182d.hot-update.js.map": {
+      "name": "src_views_BankView_vue.0c40e232fefe614b182d.hot-update.js.map",
+      "path": "/Users/anna/code/danziger/frontend/dist/src_views_BankView_vue.0c40e232fefe614b182d.hot-update.js.map",
+      "publicPath": "http://127.0.0.1:8080/src_views_BankView_vue.0c40e232fefe614b182d.hot-update.js.map"
+    },
+    "app-93d7c6430f351df25de9.js": {
+      "name": "app-93d7c6430f351df25de9.js",
+      "path": "/Users/anna/code/danziger/frontend/dist/app-93d7c6430f351df25de9.js",
+      "publicPath": "http://127.0.0.1:8080/app-93d7c6430f351df25de9.js"
+    },
+    "app.dfd96c2ca4908d95c8c9.hot-update.js": {
+      "name": "app.dfd96c2ca4908d95c8c9.hot-update.js",
+      "path": "/Users/anna/code/danziger/frontend/dist/app.dfd96c2ca4908d95c8c9.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/app.dfd96c2ca4908d95c8c9.hot-update.js"
+    },
+    "src_views_BankView_vue.dfd96c2ca4908d95c8c9.hot-update.js": {
+      "name": "src_views_BankView_vue.dfd96c2ca4908d95c8c9.hot-update.js",
+      "path": "/Users/anna/code/danziger/frontend/dist/src_views_BankView_vue.dfd96c2ca4908d95c8c9.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/src_views_BankView_vue.dfd96c2ca4908d95c8c9.hot-update.js"
+    },
+    "app.dfd96c2ca4908d95c8c9.hot-update.json": {
+      "name": "app.dfd96c2ca4908d95c8c9.hot-update.json",
+      "path": "/Users/anna/code/danziger/frontend/dist/app.dfd96c2ca4908d95c8c9.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/app.dfd96c2ca4908d95c8c9.hot-update.json"
+    },
+    "app-93d7c6430f351df25de9.js.map": {
+      "name": "app-93d7c6430f351df25de9.js.map",
+      "path": "/Users/anna/code/danziger/frontend/dist/app-93d7c6430f351df25de9.js.map",
+      "publicPath": "http://127.0.0.1:8080/app-93d7c6430f351df25de9.js.map"
+    },
+    "app.dfd96c2ca4908d95c8c9.hot-update.js.map": {
+      "name": "app.dfd96c2ca4908d95c8c9.hot-update.js.map",
+      "path": "/Users/anna/code/danziger/frontend/dist/app.dfd96c2ca4908d95c8c9.hot-update.js.map",
+      "publicPath": "http://127.0.0.1:8080/app.dfd96c2ca4908d95c8c9.hot-update.js.map"
+    },
+    "src_views_BankView_vue.dfd96c2ca4908d95c8c9.hot-update.js.map": {
+      "name": "src_views_BankView_vue.dfd96c2ca4908d95c8c9.hot-update.js.map",
+      "path": "/Users/anna/code/danziger/frontend/dist/src_views_BankView_vue.dfd96c2ca4908d95c8c9.hot-update.js.map",
+      "publicPath": "http://127.0.0.1:8080/src_views_BankView_vue.dfd96c2ca4908d95c8c9.hot-update.js.map"
+    },
+    "app-cc144764fae6d8896be3.js": {
+      "name": "app-cc144764fae6d8896be3.js",
+      "path": "/Users/anna/code/danziger/frontend/dist/app-cc144764fae6d8896be3.js",
+      "publicPath": "http://127.0.0.1:8080/app-cc144764fae6d8896be3.js"
+    },
+    "app.93d7c6430f351df25de9.hot-update.js": {
+      "name": "app.93d7c6430f351df25de9.hot-update.js",
+      "path": "/Users/anna/code/danziger/frontend/dist/app.93d7c6430f351df25de9.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/app.93d7c6430f351df25de9.hot-update.js"
+    },
+    "src_views_MatterView_vue.93d7c6430f351df25de9.hot-update.js": {
+      "name": "src_views_MatterView_vue.93d7c6430f351df25de9.hot-update.js",
+      "path": "/Users/anna/code/danziger/frontend/dist/src_views_MatterView_vue.93d7c6430f351df25de9.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/src_views_MatterView_vue.93d7c6430f351df25de9.hot-update.js"
+    },
+    "app.93d7c6430f351df25de9.hot-update.json": {
+      "name": "app.93d7c6430f351df25de9.hot-update.json",
+      "path": "/Users/anna/code/danziger/frontend/dist/app.93d7c6430f351df25de9.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/app.93d7c6430f351df25de9.hot-update.json"
+    },
+    "app-cc144764fae6d8896be3.js.map": {
+      "name": "app-cc144764fae6d8896be3.js.map",
+      "path": "/Users/anna/code/danziger/frontend/dist/app-cc144764fae6d8896be3.js.map",
+      "publicPath": "http://127.0.0.1:8080/app-cc144764fae6d8896be3.js.map"
+    },
+    "app.93d7c6430f351df25de9.hot-update.js.map": {
+      "name": "app.93d7c6430f351df25de9.hot-update.js.map",
+      "path": "/Users/anna/code/danziger/frontend/dist/app.93d7c6430f351df25de9.hot-update.js.map",
+      "publicPath": "http://127.0.0.1:8080/app.93d7c6430f351df25de9.hot-update.js.map"
+    },
+    "src_views_MatterView_vue.93d7c6430f351df25de9.hot-update.js.map": {
+      "name": "src_views_MatterView_vue.93d7c6430f351df25de9.hot-update.js.map",
+      "path": "/Users/anna/code/danziger/frontend/dist/src_views_MatterView_vue.93d7c6430f351df25de9.hot-update.js.map",
+      "publicPath": "http://127.0.0.1:8080/src_views_MatterView_vue.93d7c6430f351df25de9.hot-update.js.map"
+    },
+    "app-1b4c69639d29eb238062.js": {
+      "name": "app-1b4c69639d29eb238062.js",
+      "path": "/Users/anna/code/danziger/frontend/dist/app-1b4c69639d29eb238062.js",
+      "publicPath": "http://127.0.0.1:8080/app-1b4c69639d29eb238062.js"
+    },
+    "app.cc144764fae6d8896be3.hot-update.js": {
+      "name": "app.cc144764fae6d8896be3.hot-update.js",
+      "path": "/Users/anna/code/danziger/frontend/dist/app.cc144764fae6d8896be3.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/app.cc144764fae6d8896be3.hot-update.js"
+    },
+    "src_views_MatterView_vue.cc144764fae6d8896be3.hot-update.js": {
+      "name": "src_views_MatterView_vue.cc144764fae6d8896be3.hot-update.js",
+      "path": "/Users/anna/code/danziger/frontend/dist/src_views_MatterView_vue.cc144764fae6d8896be3.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/src_views_MatterView_vue.cc144764fae6d8896be3.hot-update.js"
+    },
+    "app.cc144764fae6d8896be3.hot-update.json": {
+      "name": "app.cc144764fae6d8896be3.hot-update.json",
+      "path": "/Users/anna/code/danziger/frontend/dist/app.cc144764fae6d8896be3.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/app.cc144764fae6d8896be3.hot-update.json"
+    },
+    "app-1b4c69639d29eb238062.js.map": {
+      "name": "app-1b4c69639d29eb238062.js.map",
+      "path": "/Users/anna/code/danziger/frontend/dist/app-1b4c69639d29eb238062.js.map",
+      "publicPath": "http://127.0.0.1:8080/app-1b4c69639d29eb238062.js.map"
+    },
+    "app.cc144764fae6d8896be3.hot-update.js.map": {
+      "name": "app.cc144764fae6d8896be3.hot-update.js.map",
+      "path": "/Users/anna/code/danziger/frontend/dist/app.cc144764fae6d8896be3.hot-update.js.map",
+      "publicPath": "http://127.0.0.1:8080/app.cc144764fae6d8896be3.hot-update.js.map"
+    },
+    "src_views_MatterView_vue.cc144764fae6d8896be3.hot-update.js.map": {
+      "name": "src_views_MatterView_vue.cc144764fae6d8896be3.hot-update.js.map",
+      "path": "/Users/anna/code/danziger/frontend/dist/src_views_MatterView_vue.cc144764fae6d8896be3.hot-update.js.map",
+      "publicPath": "http://127.0.0.1:8080/src_views_MatterView_vue.cc144764fae6d8896be3.hot-update.js.map"
+    },
+    "app-763e2a106084ed15be23.js": {
+      "name": "app-763e2a106084ed15be23.js",
+      "path": "/Users/anna/code/danziger/frontend/dist/app-763e2a106084ed15be23.js",
+      "publicPath": "http://127.0.0.1:8080/app-763e2a106084ed15be23.js"
+    },
+    "app.1b4c69639d29eb238062.hot-update.js": {
+      "name": "app.1b4c69639d29eb238062.hot-update.js",
+      "path": "/Users/anna/code/danziger/frontend/dist/app.1b4c69639d29eb238062.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/app.1b4c69639d29eb238062.hot-update.js"
+    },
+    "src_views_MatterView_vue.1b4c69639d29eb238062.hot-update.js": {
+      "name": "src_views_MatterView_vue.1b4c69639d29eb238062.hot-update.js",
+      "path": "/Users/anna/code/danziger/frontend/dist/src_views_MatterView_vue.1b4c69639d29eb238062.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/src_views_MatterView_vue.1b4c69639d29eb238062.hot-update.js"
+    },
+    "app.1b4c69639d29eb238062.hot-update.json": {
+      "name": "app.1b4c69639d29eb238062.hot-update.json",
+      "path": "/Users/anna/code/danziger/frontend/dist/app.1b4c69639d29eb238062.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/app.1b4c69639d29eb238062.hot-update.json"
+    },
+    "app-763e2a106084ed15be23.js.map": {
+      "name": "app-763e2a106084ed15be23.js.map",
+      "path": "/Users/anna/code/danziger/frontend/dist/app-763e2a106084ed15be23.js.map",
+      "publicPath": "http://127.0.0.1:8080/app-763e2a106084ed15be23.js.map"
+    },
+    "app.1b4c69639d29eb238062.hot-update.js.map": {
+      "name": "app.1b4c69639d29eb238062.hot-update.js.map",
+      "path": "/Users/anna/code/danziger/frontend/dist/app.1b4c69639d29eb238062.hot-update.js.map",
+      "publicPath": "http://127.0.0.1:8080/app.1b4c69639d29eb238062.hot-update.js.map"
+    },
+    "src_views_MatterView_vue.1b4c69639d29eb238062.hot-update.js.map": {
+      "name": "src_views_MatterView_vue.1b4c69639d29eb238062.hot-update.js.map",
+      "path": "/Users/anna/code/danziger/frontend/dist/src_views_MatterView_vue.1b4c69639d29eb238062.hot-update.js.map",
+      "publicPath": "http://127.0.0.1:8080/src_views_MatterView_vue.1b4c69639d29eb238062.hot-update.js.map"
+    },
+    "app-82fcb4923bbefef84945.js": {
+      "name": "app-82fcb4923bbefef84945.js",
+      "path": "/Users/anna/code/danziger/frontend/dist/app-82fcb4923bbefef84945.js",
+      "publicPath": "http://127.0.0.1:8080/app-82fcb4923bbefef84945.js"
+    },
+    "app.763e2a106084ed15be23.hot-update.js": {
+      "name": "app.763e2a106084ed15be23.hot-update.js",
+      "path": "/Users/anna/code/danziger/frontend/dist/app.763e2a106084ed15be23.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/app.763e2a106084ed15be23.hot-update.js"
+    },
+    "src_views_MatterView_vue.763e2a106084ed15be23.hot-update.js": {
+      "name": "src_views_MatterView_vue.763e2a106084ed15be23.hot-update.js",
+      "path": "/Users/anna/code/danziger/frontend/dist/src_views_MatterView_vue.763e2a106084ed15be23.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/src_views_MatterView_vue.763e2a106084ed15be23.hot-update.js"
+    },
+    "app.763e2a106084ed15be23.hot-update.json": {
+      "name": "app.763e2a106084ed15be23.hot-update.json",
+      "path": "/Users/anna/code/danziger/frontend/dist/app.763e2a106084ed15be23.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/app.763e2a106084ed15be23.hot-update.json"
+    },
+    "app-82fcb4923bbefef84945.js.map": {
+      "name": "app-82fcb4923bbefef84945.js.map",
+      "path": "/Users/anna/code/danziger/frontend/dist/app-82fcb4923bbefef84945.js.map",
+      "publicPath": "http://127.0.0.1:8080/app-82fcb4923bbefef84945.js.map"
+    },
+    "app.763e2a106084ed15be23.hot-update.js.map": {
+      "name": "app.763e2a106084ed15be23.hot-update.js.map",
+      "path": "/Users/anna/code/danziger/frontend/dist/app.763e2a106084ed15be23.hot-update.js.map",
+      "publicPath": "http://127.0.0.1:8080/app.763e2a106084ed15be23.hot-update.js.map"
+    },
+    "src_views_MatterView_vue.763e2a106084ed15be23.hot-update.js.map": {
+      "name": "src_views_MatterView_vue.763e2a106084ed15be23.hot-update.js.map",
+      "path": "/Users/anna/code/danziger/frontend/dist/src_views_MatterView_vue.763e2a106084ed15be23.hot-update.js.map",
+      "publicPath": "http://127.0.0.1:8080/src_views_MatterView_vue.763e2a106084ed15be23.hot-update.js.map"
+    },
+    "app-914a7a2e0121cc2494f1.js": {
+      "name": "app-914a7a2e0121cc2494f1.js",
+      "path": "/Users/anna/code/danziger/frontend/dist/app-914a7a2e0121cc2494f1.js",
+      "publicPath": "http://127.0.0.1:8080/app-914a7a2e0121cc2494f1.js"
+    },
+    "app.82fcb4923bbefef84945.hot-update.js": {
+      "name": "app.82fcb4923bbefef84945.hot-update.js",
+      "path": "/Users/anna/code/danziger/frontend/dist/app.82fcb4923bbefef84945.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/app.82fcb4923bbefef84945.hot-update.js"
+    },
+    "src_views_MatterView_vue.82fcb4923bbefef84945.hot-update.js": {
+      "name": "src_views_MatterView_vue.82fcb4923bbefef84945.hot-update.js",
+      "path": "/Users/anna/code/danziger/frontend/dist/src_views_MatterView_vue.82fcb4923bbefef84945.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/src_views_MatterView_vue.82fcb4923bbefef84945.hot-update.js"
+    },
+    "app.82fcb4923bbefef84945.hot-update.json": {
+      "name": "app.82fcb4923bbefef84945.hot-update.json",
+      "path": "/Users/anna/code/danziger/frontend/dist/app.82fcb4923bbefef84945.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/app.82fcb4923bbefef84945.hot-update.json"
+    },
+    "app-914a7a2e0121cc2494f1.js.map": {
+      "name": "app-914a7a2e0121cc2494f1.js.map",
+      "path": "/Users/anna/code/danziger/frontend/dist/app-914a7a2e0121cc2494f1.js.map",
+      "publicPath": "http://127.0.0.1:8080/app-914a7a2e0121cc2494f1.js.map"
+    },
+    "app.82fcb4923bbefef84945.hot-update.js.map": {
+      "name": "app.82fcb4923bbefef84945.hot-update.js.map",
+      "path": "/Users/anna/code/danziger/frontend/dist/app.82fcb4923bbefef84945.hot-update.js.map",
+      "publicPath": "http://127.0.0.1:8080/app.82fcb4923bbefef84945.hot-update.js.map"
+    },
+    "src_views_MatterView_vue.82fcb4923bbefef84945.hot-update.js.map": {
+      "name": "src_views_MatterView_vue.82fcb4923bbefef84945.hot-update.js.map",
+      "path": "/Users/anna/code/danziger/frontend/dist/src_views_MatterView_vue.82fcb4923bbefef84945.hot-update.js.map",
+      "publicPath": "http://127.0.0.1:8080/src_views_MatterView_vue.82fcb4923bbefef84945.hot-update.js.map"
+    },
+    "app-e91fd339766541cf10a7.js": {
+      "name": "app-e91fd339766541cf10a7.js",
+      "path": "/Users/anna/code/danziger/frontend/dist/app-e91fd339766541cf10a7.js",
+      "publicPath": "http://127.0.0.1:8080/app-e91fd339766541cf10a7.js"
+    },
+    "app.914a7a2e0121cc2494f1.hot-update.js": {
+      "name": "app.914a7a2e0121cc2494f1.hot-update.js",
+      "path": "/Users/anna/code/danziger/frontend/dist/app.914a7a2e0121cc2494f1.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/app.914a7a2e0121cc2494f1.hot-update.js"
+    },
+    "src_views_ConveyanceMatterView_vue.914a7a2e0121cc2494f1.hot-update.js": {
+      "name": "src_views_ConveyanceMatterView_vue.914a7a2e0121cc2494f1.hot-update.js",
+      "path": "/Users/anna/code/danziger/frontend/dist/src_views_ConveyanceMatterView_vue.914a7a2e0121cc2494f1.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/src_views_ConveyanceMatterView_vue.914a7a2e0121cc2494f1.hot-update.js"
+    },
+    "app.914a7a2e0121cc2494f1.hot-update.json": {
+      "name": "app.914a7a2e0121cc2494f1.hot-update.json",
+      "path": "/Users/anna/code/danziger/frontend/dist/app.914a7a2e0121cc2494f1.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/app.914a7a2e0121cc2494f1.hot-update.json"
+    },
+    "app-e91fd339766541cf10a7.js.map": {
+      "name": "app-e91fd339766541cf10a7.js.map",
+      "path": "/Users/anna/code/danziger/frontend/dist/app-e91fd339766541cf10a7.js.map",
+      "publicPath": "http://127.0.0.1:8080/app-e91fd339766541cf10a7.js.map"
+    },
+    "app.914a7a2e0121cc2494f1.hot-update.js.map": {
+      "name": "app.914a7a2e0121cc2494f1.hot-update.js.map",
+      "path": "/Users/anna/code/danziger/frontend/dist/app.914a7a2e0121cc2494f1.hot-update.js.map",
+      "publicPath": "http://127.0.0.1:8080/app.914a7a2e0121cc2494f1.hot-update.js.map"
+    },
+    "src_views_ConveyanceMatterView_vue.914a7a2e0121cc2494f1.hot-update.js.map": {
+      "name": "src_views_ConveyanceMatterView_vue.914a7a2e0121cc2494f1.hot-update.js.map",
+      "path": "/Users/anna/code/danziger/frontend/dist/src_views_ConveyanceMatterView_vue.914a7a2e0121cc2494f1.hot-update.js.map",
+      "publicPath": "http://127.0.0.1:8080/src_views_ConveyanceMatterView_vue.914a7a2e0121cc2494f1.hot-update.js.map"
+    },
+    "app-58506dc340084e38b263.js": {
+      "name": "app-58506dc340084e38b263.js",
+      "path": "/Users/anna/code/danziger/frontend/dist/app-58506dc340084e38b263.js",
+      "publicPath": "http://127.0.0.1:8080/app-58506dc340084e38b263.js"
+    },
+    "app.e91fd339766541cf10a7.hot-update.js": {
+      "name": "app.e91fd339766541cf10a7.hot-update.js",
+      "path": "/Users/anna/code/danziger/frontend/dist/app.e91fd339766541cf10a7.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/app.e91fd339766541cf10a7.hot-update.js"
+    },
+    "src_views_ConveyanceMatterView_vue.e91fd339766541cf10a7.hot-update.js": {
+      "name": "src_views_ConveyanceMatterView_vue.e91fd339766541cf10a7.hot-update.js",
+      "path": "/Users/anna/code/danziger/frontend/dist/src_views_ConveyanceMatterView_vue.e91fd339766541cf10a7.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/src_views_ConveyanceMatterView_vue.e91fd339766541cf10a7.hot-update.js"
+    },
+    "app.e91fd339766541cf10a7.hot-update.json": {
+      "name": "app.e91fd339766541cf10a7.hot-update.json",
+      "path": "/Users/anna/code/danziger/frontend/dist/app.e91fd339766541cf10a7.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/app.e91fd339766541cf10a7.hot-update.json"
+    },
+    "app-58506dc340084e38b263.js.map": {
+      "name": "app-58506dc340084e38b263.js.map",
+      "path": "/Users/anna/code/danziger/frontend/dist/app-58506dc340084e38b263.js.map",
+      "publicPath": "http://127.0.0.1:8080/app-58506dc340084e38b263.js.map"
+    },
+    "app.e91fd339766541cf10a7.hot-update.js.map": {
+      "name": "app.e91fd339766541cf10a7.hot-update.js.map",
+      "path": "/Users/anna/code/danziger/frontend/dist/app.e91fd339766541cf10a7.hot-update.js.map",
+      "publicPath": "http://127.0.0.1:8080/app.e91fd339766541cf10a7.hot-update.js.map"
+    },
+    "src_views_ConveyanceMatterView_vue.e91fd339766541cf10a7.hot-update.js.map": {
+      "name": "src_views_ConveyanceMatterView_vue.e91fd339766541cf10a7.hot-update.js.map",
+      "path": "/Users/anna/code/danziger/frontend/dist/src_views_ConveyanceMatterView_vue.e91fd339766541cf10a7.hot-update.js.map",
+      "publicPath": "http://127.0.0.1:8080/src_views_ConveyanceMatterView_vue.e91fd339766541cf10a7.hot-update.js.map"
+    },
+    "app-28f7289ca8dc291d900d.js": {
+      "name": "app-28f7289ca8dc291d900d.js",
+      "path": "/Users/anna/code/danziger/frontend/dist/app-28f7289ca8dc291d900d.js",
+      "publicPath": "http://127.0.0.1:8080/app-28f7289ca8dc291d900d.js"
+    },
+    "app.58506dc340084e38b263.hot-update.js": {
+      "name": "app.58506dc340084e38b263.hot-update.js",
+      "path": "/Users/anna/code/danziger/frontend/dist/app.58506dc340084e38b263.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/app.58506dc340084e38b263.hot-update.js"
+    },
+    "src_views_ConveyanceMatterView_vue.58506dc340084e38b263.hot-update.js": {
+      "name": "src_views_ConveyanceMatterView_vue.58506dc340084e38b263.hot-update.js",
+      "path": "/Users/anna/code/danziger/frontend/dist/src_views_ConveyanceMatterView_vue.58506dc340084e38b263.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/src_views_ConveyanceMatterView_vue.58506dc340084e38b263.hot-update.js"
+    },
+    "app.58506dc340084e38b263.hot-update.json": {
+      "name": "app.58506dc340084e38b263.hot-update.json",
+      "path": "/Users/anna/code/danziger/frontend/dist/app.58506dc340084e38b263.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/app.58506dc340084e38b263.hot-update.json"
+    },
+    "app-28f7289ca8dc291d900d.js.map": {
+      "name": "app-28f7289ca8dc291d900d.js.map",
+      "path": "/Users/anna/code/danziger/frontend/dist/app-28f7289ca8dc291d900d.js.map",
+      "publicPath": "http://127.0.0.1:8080/app-28f7289ca8dc291d900d.js.map"
+    },
+    "app.58506dc340084e38b263.hot-update.js.map": {
+      "name": "app.58506dc340084e38b263.hot-update.js.map",
+      "path": "/Users/anna/code/danziger/frontend/dist/app.58506dc340084e38b263.hot-update.js.map",
+      "publicPath": "http://127.0.0.1:8080/app.58506dc340084e38b263.hot-update.js.map"
+    },
+    "src_views_ConveyanceMatterView_vue.58506dc340084e38b263.hot-update.js.map": {
+      "name": "src_views_ConveyanceMatterView_vue.58506dc340084e38b263.hot-update.js.map",
+      "path": "/Users/anna/code/danziger/frontend/dist/src_views_ConveyanceMatterView_vue.58506dc340084e38b263.hot-update.js.map",
+      "publicPath": "http://127.0.0.1:8080/src_views_ConveyanceMatterView_vue.58506dc340084e38b263.hot-update.js.map"
+    },
+    "app-9f4d8c60be60d347bfc7.js": {
+      "name": "app-9f4d8c60be60d347bfc7.js",
+      "path": "/Users/anna/code/danziger/frontend/dist/app-9f4d8c60be60d347bfc7.js",
+      "publicPath": "http://127.0.0.1:8080/app-9f4d8c60be60d347bfc7.js"
+    },
+    "app.28f7289ca8dc291d900d.hot-update.js": {
+      "name": "app.28f7289ca8dc291d900d.hot-update.js",
+      "path": "/Users/anna/code/danziger/frontend/dist/app.28f7289ca8dc291d900d.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/app.28f7289ca8dc291d900d.hot-update.js"
+    },
+    "src_views_ConveyanceMatterView_vue.28f7289ca8dc291d900d.hot-update.js": {
+      "name": "src_views_ConveyanceMatterView_vue.28f7289ca8dc291d900d.hot-update.js",
+      "path": "/Users/anna/code/danziger/frontend/dist/src_views_ConveyanceMatterView_vue.28f7289ca8dc291d900d.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/src_views_ConveyanceMatterView_vue.28f7289ca8dc291d900d.hot-update.js"
+    },
+    "app.28f7289ca8dc291d900d.hot-update.json": {
+      "name": "app.28f7289ca8dc291d900d.hot-update.json",
+      "path": "/Users/anna/code/danziger/frontend/dist/app.28f7289ca8dc291d900d.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/app.28f7289ca8dc291d900d.hot-update.json"
+    },
+    "app-9f4d8c60be60d347bfc7.js.map": {
+      "name": "app-9f4d8c60be60d347bfc7.js.map",
+      "path": "/Users/anna/code/danziger/frontend/dist/app-9f4d8c60be60d347bfc7.js.map",
+      "publicPath": "http://127.0.0.1:8080/app-9f4d8c60be60d347bfc7.js.map"
+    },
+    "app.28f7289ca8dc291d900d.hot-update.js.map": {
+      "name": "app.28f7289ca8dc291d900d.hot-update.js.map",
+      "path": "/Users/anna/code/danziger/frontend/dist/app.28f7289ca8dc291d900d.hot-update.js.map",
+      "publicPath": "http://127.0.0.1:8080/app.28f7289ca8dc291d900d.hot-update.js.map"
+    },
+    "src_views_ConveyanceMatterView_vue.28f7289ca8dc291d900d.hot-update.js.map": {
+      "name": "src_views_ConveyanceMatterView_vue.28f7289ca8dc291d900d.hot-update.js.map",
+      "path": "/Users/anna/code/danziger/frontend/dist/src_views_ConveyanceMatterView_vue.28f7289ca8dc291d900d.hot-update.js.map",
+      "publicPath": "http://127.0.0.1:8080/src_views_ConveyanceMatterView_vue.28f7289ca8dc291d900d.hot-update.js.map"
+    },
+    "app-4074423252fab3d91c4b.js": {
+      "name": "app-4074423252fab3d91c4b.js",
+      "path": "/Users/anna/code/danziger/frontend/dist/app-4074423252fab3d91c4b.js",
+      "publicPath": "http://127.0.0.1:8080/app-4074423252fab3d91c4b.js"
+    },
+    "app.9f4d8c60be60d347bfc7.hot-update.js": {
+      "name": "app.9f4d8c60be60d347bfc7.hot-update.js",
+      "path": "/Users/anna/code/danziger/frontend/dist/app.9f4d8c60be60d347bfc7.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/app.9f4d8c60be60d347bfc7.hot-update.js"
+    },
+    "src_views_ConveyanceMatterView_vue.9f4d8c60be60d347bfc7.hot-update.js": {
+      "name": "src_views_ConveyanceMatterView_vue.9f4d8c60be60d347bfc7.hot-update.js",
+      "path": "/Users/anna/code/danziger/frontend/dist/src_views_ConveyanceMatterView_vue.9f4d8c60be60d347bfc7.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/src_views_ConveyanceMatterView_vue.9f4d8c60be60d347bfc7.hot-update.js"
+    },
+    "app.9f4d8c60be60d347bfc7.hot-update.json": {
+      "name": "app.9f4d8c60be60d347bfc7.hot-update.json",
+      "path": "/Users/anna/code/danziger/frontend/dist/app.9f4d8c60be60d347bfc7.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/app.9f4d8c60be60d347bfc7.hot-update.json"
+    },
+    "app-4074423252fab3d91c4b.js.map": {
+      "name": "app-4074423252fab3d91c4b.js.map",
+      "path": "/Users/anna/code/danziger/frontend/dist/app-4074423252fab3d91c4b.js.map",
+      "publicPath": "http://127.0.0.1:8080/app-4074423252fab3d91c4b.js.map"
+    },
+    "app.9f4d8c60be60d347bfc7.hot-update.js.map": {
+      "name": "app.9f4d8c60be60d347bfc7.hot-update.js.map",
+      "path": "/Users/anna/code/danziger/frontend/dist/app.9f4d8c60be60d347bfc7.hot-update.js.map",
+      "publicPath": "http://127.0.0.1:8080/app.9f4d8c60be60d347bfc7.hot-update.js.map"
+    },
+    "src_views_ConveyanceMatterView_vue.9f4d8c60be60d347bfc7.hot-update.js.map": {
+      "name": "src_views_ConveyanceMatterView_vue.9f4d8c60be60d347bfc7.hot-update.js.map",
+      "path": "/Users/anna/code/danziger/frontend/dist/src_views_ConveyanceMatterView_vue.9f4d8c60be60d347bfc7.hot-update.js.map",
+      "publicPath": "http://127.0.0.1:8080/src_views_ConveyanceMatterView_vue.9f4d8c60be60d347bfc7.hot-update.js.map"
+    },
+    "app-fb5f4470cfeca1ab84b8.js": {
+      "name": "app-fb5f4470cfeca1ab84b8.js",
+      "path": "/Users/anna/code/danziger/frontend/dist/app-fb5f4470cfeca1ab84b8.js",
+      "publicPath": "http://127.0.0.1:8080/app-fb5f4470cfeca1ab84b8.js"
+    },
+    "app.4074423252fab3d91c4b.hot-update.js": {
+      "name": "app.4074423252fab3d91c4b.hot-update.js",
+      "path": "/Users/anna/code/danziger/frontend/dist/app.4074423252fab3d91c4b.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/app.4074423252fab3d91c4b.hot-update.js"
+    },
+    "src_views_ConveyanceMatterView_vue.4074423252fab3d91c4b.hot-update.js": {
+      "name": "src_views_ConveyanceMatterView_vue.4074423252fab3d91c4b.hot-update.js",
+      "path": "/Users/anna/code/danziger/frontend/dist/src_views_ConveyanceMatterView_vue.4074423252fab3d91c4b.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/src_views_ConveyanceMatterView_vue.4074423252fab3d91c4b.hot-update.js"
+    },
+    "app.4074423252fab3d91c4b.hot-update.json": {
+      "name": "app.4074423252fab3d91c4b.hot-update.json",
+      "path": "/Users/anna/code/danziger/frontend/dist/app.4074423252fab3d91c4b.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/app.4074423252fab3d91c4b.hot-update.json"
+    },
+    "app-fb5f4470cfeca1ab84b8.js.map": {
+      "name": "app-fb5f4470cfeca1ab84b8.js.map",
+      "path": "/Users/anna/code/danziger/frontend/dist/app-fb5f4470cfeca1ab84b8.js.map",
+      "publicPath": "http://127.0.0.1:8080/app-fb5f4470cfeca1ab84b8.js.map"
+    },
+    "app.4074423252fab3d91c4b.hot-update.js.map": {
+      "name": "app.4074423252fab3d91c4b.hot-update.js.map",
+      "path": "/Users/anna/code/danziger/frontend/dist/app.4074423252fab3d91c4b.hot-update.js.map",
+      "publicPath": "http://127.0.0.1:8080/app.4074423252fab3d91c4b.hot-update.js.map"
+    },
+    "src_views_ConveyanceMatterView_vue.4074423252fab3d91c4b.hot-update.js.map": {
+      "name": "src_views_ConveyanceMatterView_vue.4074423252fab3d91c4b.hot-update.js.map",
+      "path": "/Users/anna/code/danziger/frontend/dist/src_views_ConveyanceMatterView_vue.4074423252fab3d91c4b.hot-update.js.map",
+      "publicPath": "http://127.0.0.1:8080/src_views_ConveyanceMatterView_vue.4074423252fab3d91c4b.hot-update.js.map"
+    },
+    "app-f65aef67ceedfb9490a4.js": {
+      "name": "app-f65aef67ceedfb9490a4.js",
+      "path": "/Users/anna/code/danziger/frontend/dist/app-f65aef67ceedfb9490a4.js",
+      "publicPath": "http://127.0.0.1:8080/app-f65aef67ceedfb9490a4.js"
+    },
+    "app.fb5f4470cfeca1ab84b8.hot-update.js": {
+      "name": "app.fb5f4470cfeca1ab84b8.hot-update.js",
+      "path": "/Users/anna/code/danziger/frontend/dist/app.fb5f4470cfeca1ab84b8.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/app.fb5f4470cfeca1ab84b8.hot-update.js"
+    },
+    "src_views_ConveyanceMatterView_vue.fb5f4470cfeca1ab84b8.hot-update.js": {
+      "name": "src_views_ConveyanceMatterView_vue.fb5f4470cfeca1ab84b8.hot-update.js",
+      "path": "/Users/anna/code/danziger/frontend/dist/src_views_ConveyanceMatterView_vue.fb5f4470cfeca1ab84b8.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/src_views_ConveyanceMatterView_vue.fb5f4470cfeca1ab84b8.hot-update.js"
+    },
+    "app.fb5f4470cfeca1ab84b8.hot-update.json": {
+      "name": "app.fb5f4470cfeca1ab84b8.hot-update.json",
+      "path": "/Users/anna/code/danziger/frontend/dist/app.fb5f4470cfeca1ab84b8.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/app.fb5f4470cfeca1ab84b8.hot-update.json"
+    },
+    "app-f65aef67ceedfb9490a4.js.map": {
+      "name": "app-f65aef67ceedfb9490a4.js.map",
+      "path": "/Users/anna/code/danziger/frontend/dist/app-f65aef67ceedfb9490a4.js.map",
+      "publicPath": "http://127.0.0.1:8080/app-f65aef67ceedfb9490a4.js.map"
+    },
+    "app.fb5f4470cfeca1ab84b8.hot-update.js.map": {
+      "name": "app.fb5f4470cfeca1ab84b8.hot-update.js.map",
+      "path": "/Users/anna/code/danziger/frontend/dist/app.fb5f4470cfeca1ab84b8.hot-update.js.map",
+      "publicPath": "http://127.0.0.1:8080/app.fb5f4470cfeca1ab84b8.hot-update.js.map"
+    },
+    "src_views_ConveyanceMatterView_vue.fb5f4470cfeca1ab84b8.hot-update.js.map": {
+      "name": "src_views_ConveyanceMatterView_vue.fb5f4470cfeca1ab84b8.hot-update.js.map",
+      "path": "/Users/anna/code/danziger/frontend/dist/src_views_ConveyanceMatterView_vue.fb5f4470cfeca1ab84b8.hot-update.js.map",
+      "publicPath": "http://127.0.0.1:8080/src_views_ConveyanceMatterView_vue.fb5f4470cfeca1ab84b8.hot-update.js.map"
+    },
+    "app-6942af292f55db973e2f.js": {
+      "name": "app-6942af292f55db973e2f.js",
+      "path": "/Users/anna/code/danziger/frontend/dist/app-6942af292f55db973e2f.js",
+      "publicPath": "http://127.0.0.1:8080/app-6942af292f55db973e2f.js"
+    },
+    "app.f65aef67ceedfb9490a4.hot-update.js": {
+      "name": "app.f65aef67ceedfb9490a4.hot-update.js",
+      "path": "/Users/anna/code/danziger/frontend/dist/app.f65aef67ceedfb9490a4.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/app.f65aef67ceedfb9490a4.hot-update.js"
+    },
+    "src_views_ConveyanceMatterView_vue.f65aef67ceedfb9490a4.hot-update.js": {
+      "name": "src_views_ConveyanceMatterView_vue.f65aef67ceedfb9490a4.hot-update.js",
+      "path": "/Users/anna/code/danziger/frontend/dist/src_views_ConveyanceMatterView_vue.f65aef67ceedfb9490a4.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/src_views_ConveyanceMatterView_vue.f65aef67ceedfb9490a4.hot-update.js"
+    },
+    "app.f65aef67ceedfb9490a4.hot-update.json": {
+      "name": "app.f65aef67ceedfb9490a4.hot-update.json",
+      "path": "/Users/anna/code/danziger/frontend/dist/app.f65aef67ceedfb9490a4.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/app.f65aef67ceedfb9490a4.hot-update.json"
+    },
+    "app-6942af292f55db973e2f.js.map": {
+      "name": "app-6942af292f55db973e2f.js.map",
+      "path": "/Users/anna/code/danziger/frontend/dist/app-6942af292f55db973e2f.js.map",
+      "publicPath": "http://127.0.0.1:8080/app-6942af292f55db973e2f.js.map"
+    },
+    "app.f65aef67ceedfb9490a4.hot-update.js.map": {
+      "name": "app.f65aef67ceedfb9490a4.hot-update.js.map",
+      "path": "/Users/anna/code/danziger/frontend/dist/app.f65aef67ceedfb9490a4.hot-update.js.map",
+      "publicPath": "http://127.0.0.1:8080/app.f65aef67ceedfb9490a4.hot-update.js.map"
+    },
+    "src_views_ConveyanceMatterView_vue.f65aef67ceedfb9490a4.hot-update.js.map": {
+      "name": "src_views_ConveyanceMatterView_vue.f65aef67ceedfb9490a4.hot-update.js.map",
+      "path": "/Users/anna/code/danziger/frontend/dist/src_views_ConveyanceMatterView_vue.f65aef67ceedfb9490a4.hot-update.js.map",
+      "publicPath": "http://127.0.0.1:8080/src_views_ConveyanceMatterView_vue.f65aef67ceedfb9490a4.hot-update.js.map"
+    },
+    "app-bfe56bebcdd9e4abbdab.js": {
+      "name": "app-bfe56bebcdd9e4abbdab.js",
+      "path": "/Users/anna/code/danziger/frontend/dist/app-bfe56bebcdd9e4abbdab.js",
+      "publicPath": "http://127.0.0.1:8080/app-bfe56bebcdd9e4abbdab.js"
+    },
+    "app.6942af292f55db973e2f.hot-update.js": {
+      "name": "app.6942af292f55db973e2f.hot-update.js",
+      "path": "/Users/anna/code/danziger/frontend/dist/app.6942af292f55db973e2f.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/app.6942af292f55db973e2f.hot-update.js"
+    },
+    "src_views_ConveyanceMatterView_vue.6942af292f55db973e2f.hot-update.js": {
+      "name": "src_views_ConveyanceMatterView_vue.6942af292f55db973e2f.hot-update.js",
+      "path": "/Users/anna/code/danziger/frontend/dist/src_views_ConveyanceMatterView_vue.6942af292f55db973e2f.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/src_views_ConveyanceMatterView_vue.6942af292f55db973e2f.hot-update.js"
+    },
+    "app.6942af292f55db973e2f.hot-update.json": {
+      "name": "app.6942af292f55db973e2f.hot-update.json",
+      "path": "/Users/anna/code/danziger/frontend/dist/app.6942af292f55db973e2f.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/app.6942af292f55db973e2f.hot-update.json"
+    },
+    "app-bfe56bebcdd9e4abbdab.js.map": {
+      "name": "app-bfe56bebcdd9e4abbdab.js.map",
+      "path": "/Users/anna/code/danziger/frontend/dist/app-bfe56bebcdd9e4abbdab.js.map",
+      "publicPath": "http://127.0.0.1:8080/app-bfe56bebcdd9e4abbdab.js.map"
+    },
+    "app.6942af292f55db973e2f.hot-update.js.map": {
+      "name": "app.6942af292f55db973e2f.hot-update.js.map",
+      "path": "/Users/anna/code/danziger/frontend/dist/app.6942af292f55db973e2f.hot-update.js.map",
+      "publicPath": "http://127.0.0.1:8080/app.6942af292f55db973e2f.hot-update.js.map"
+    },
+    "src_views_ConveyanceMatterView_vue.6942af292f55db973e2f.hot-update.js.map": {
+      "name": "src_views_ConveyanceMatterView_vue.6942af292f55db973e2f.hot-update.js.map",
+      "path": "/Users/anna/code/danziger/frontend/dist/src_views_ConveyanceMatterView_vue.6942af292f55db973e2f.hot-update.js.map",
+      "publicPath": "http://127.0.0.1:8080/src_views_ConveyanceMatterView_vue.6942af292f55db973e2f.hot-update.js.map"
+    },
+    "app-86156d922d975540d839.js": {
+      "name": "app-86156d922d975540d839.js",
+      "path": "/Users/anna/code/danziger/frontend/dist/app-86156d922d975540d839.js",
+      "publicPath": "http://127.0.0.1:8080/app-86156d922d975540d839.js"
+    },
+    "app.bfe56bebcdd9e4abbdab.hot-update.js": {
+      "name": "app.bfe56bebcdd9e4abbdab.hot-update.js",
+      "path": "/Users/anna/code/danziger/frontend/dist/app.bfe56bebcdd9e4abbdab.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/app.bfe56bebcdd9e4abbdab.hot-update.js"
+    },
+    "src_views_ConveyanceMatterView_vue.bfe56bebcdd9e4abbdab.hot-update.js": {
+      "name": "src_views_ConveyanceMatterView_vue.bfe56bebcdd9e4abbdab.hot-update.js",
+      "path": "/Users/anna/code/danziger/frontend/dist/src_views_ConveyanceMatterView_vue.bfe56bebcdd9e4abbdab.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/src_views_ConveyanceMatterView_vue.bfe56bebcdd9e4abbdab.hot-update.js"
+    },
+    "app.bfe56bebcdd9e4abbdab.hot-update.json": {
+      "name": "app.bfe56bebcdd9e4abbdab.hot-update.json",
+      "path": "/Users/anna/code/danziger/frontend/dist/app.bfe56bebcdd9e4abbdab.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/app.bfe56bebcdd9e4abbdab.hot-update.json"
+    },
+    "app-86156d922d975540d839.js.map": {
+      "name": "app-86156d922d975540d839.js.map",
+      "path": "/Users/anna/code/danziger/frontend/dist/app-86156d922d975540d839.js.map",
+      "publicPath": "http://127.0.0.1:8080/app-86156d922d975540d839.js.map"
+    },
+    "app.bfe56bebcdd9e4abbdab.hot-update.js.map": {
+      "name": "app.bfe56bebcdd9e4abbdab.hot-update.js.map",
+      "path": "/Users/anna/code/danziger/frontend/dist/app.bfe56bebcdd9e4abbdab.hot-update.js.map",
+      "publicPath": "http://127.0.0.1:8080/app.bfe56bebcdd9e4abbdab.hot-update.js.map"
+    },
+    "src_views_ConveyanceMatterView_vue.bfe56bebcdd9e4abbdab.hot-update.js.map": {
+      "name": "src_views_ConveyanceMatterView_vue.bfe56bebcdd9e4abbdab.hot-update.js.map",
+      "path": "/Users/anna/code/danziger/frontend/dist/src_views_ConveyanceMatterView_vue.bfe56bebcdd9e4abbdab.hot-update.js.map",
+      "publicPath": "http://127.0.0.1:8080/src_views_ConveyanceMatterView_vue.bfe56bebcdd9e4abbdab.hot-update.js.map"
+    },
+    "app-05e4b55e2a3cf997b4e0.js": {
+      "name": "app-05e4b55e2a3cf997b4e0.js",
+      "path": "/Users/anna/code/danziger/frontend/dist/app-05e4b55e2a3cf997b4e0.js",
+      "publicPath": "http://127.0.0.1:8080/app-05e4b55e2a3cf997b4e0.js"
+    },
+    "app.86156d922d975540d839.hot-update.js": {
+      "name": "app.86156d922d975540d839.hot-update.js",
+      "path": "/Users/anna/code/danziger/frontend/dist/app.86156d922d975540d839.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/app.86156d922d975540d839.hot-update.js"
+    },
+    "src_views_ConveyanceMatterView_vue.86156d922d975540d839.hot-update.js": {
+      "name": "src_views_ConveyanceMatterView_vue.86156d922d975540d839.hot-update.js",
+      "path": "/Users/anna/code/danziger/frontend/dist/src_views_ConveyanceMatterView_vue.86156d922d975540d839.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/src_views_ConveyanceMatterView_vue.86156d922d975540d839.hot-update.js"
+    },
+    "app.86156d922d975540d839.hot-update.json": {
+      "name": "app.86156d922d975540d839.hot-update.json",
+      "path": "/Users/anna/code/danziger/frontend/dist/app.86156d922d975540d839.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/app.86156d922d975540d839.hot-update.json"
+    },
+    "app-05e4b55e2a3cf997b4e0.js.map": {
+      "name": "app-05e4b55e2a3cf997b4e0.js.map",
+      "path": "/Users/anna/code/danziger/frontend/dist/app-05e4b55e2a3cf997b4e0.js.map",
+      "publicPath": "http://127.0.0.1:8080/app-05e4b55e2a3cf997b4e0.js.map"
+    },
+    "app.86156d922d975540d839.hot-update.js.map": {
+      "name": "app.86156d922d975540d839.hot-update.js.map",
+      "path": "/Users/anna/code/danziger/frontend/dist/app.86156d922d975540d839.hot-update.js.map",
+      "publicPath": "http://127.0.0.1:8080/app.86156d922d975540d839.hot-update.js.map"
+    },
+    "src_views_ConveyanceMatterView_vue.86156d922d975540d839.hot-update.js.map": {
+      "name": "src_views_ConveyanceMatterView_vue.86156d922d975540d839.hot-update.js.map",
+      "path": "/Users/anna/code/danziger/frontend/dist/src_views_ConveyanceMatterView_vue.86156d922d975540d839.hot-update.js.map",
+      "publicPath": "http://127.0.0.1:8080/src_views_ConveyanceMatterView_vue.86156d922d975540d839.hot-update.js.map"
+    },
+    "app-ba1ed0e370e2f2872cd4.js": {
+      "name": "app-ba1ed0e370e2f2872cd4.js",
+      "path": "/Users/anna/code/danziger/frontend/dist/app-ba1ed0e370e2f2872cd4.js",
+      "publicPath": "http://127.0.0.1:8080/app-ba1ed0e370e2f2872cd4.js"
+    },
+    "app.05e4b55e2a3cf997b4e0.hot-update.js": {
+      "name": "app.05e4b55e2a3cf997b4e0.hot-update.js",
+      "path": "/Users/anna/code/danziger/frontend/dist/app.05e4b55e2a3cf997b4e0.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/app.05e4b55e2a3cf997b4e0.hot-update.js"
+    },
+    "src_views_ConveyanceMatterView_vue.05e4b55e2a3cf997b4e0.hot-update.js": {
+      "name": "src_views_ConveyanceMatterView_vue.05e4b55e2a3cf997b4e0.hot-update.js",
+      "path": "/Users/anna/code/danziger/frontend/dist/src_views_ConveyanceMatterView_vue.05e4b55e2a3cf997b4e0.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/src_views_ConveyanceMatterView_vue.05e4b55e2a3cf997b4e0.hot-update.js"
+    },
+    "app.05e4b55e2a3cf997b4e0.hot-update.json": {
+      "name": "app.05e4b55e2a3cf997b4e0.hot-update.json",
+      "path": "/Users/anna/code/danziger/frontend/dist/app.05e4b55e2a3cf997b4e0.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/app.05e4b55e2a3cf997b4e0.hot-update.json"
+    },
+    "app-ba1ed0e370e2f2872cd4.js.map": {
+      "name": "app-ba1ed0e370e2f2872cd4.js.map",
+      "path": "/Users/anna/code/danziger/frontend/dist/app-ba1ed0e370e2f2872cd4.js.map",
+      "publicPath": "http://127.0.0.1:8080/app-ba1ed0e370e2f2872cd4.js.map"
+    },
+    "app.05e4b55e2a3cf997b4e0.hot-update.js.map": {
+      "name": "app.05e4b55e2a3cf997b4e0.hot-update.js.map",
+      "path": "/Users/anna/code/danziger/frontend/dist/app.05e4b55e2a3cf997b4e0.hot-update.js.map",
+      "publicPath": "http://127.0.0.1:8080/app.05e4b55e2a3cf997b4e0.hot-update.js.map"
+    },
+    "src_views_ConveyanceMatterView_vue.05e4b55e2a3cf997b4e0.hot-update.js.map": {
+      "name": "src_views_ConveyanceMatterView_vue.05e4b55e2a3cf997b4e0.hot-update.js.map",
+      "path": "/Users/anna/code/danziger/frontend/dist/src_views_ConveyanceMatterView_vue.05e4b55e2a3cf997b4e0.hot-update.js.map",
+      "publicPath": "http://127.0.0.1:8080/src_views_ConveyanceMatterView_vue.05e4b55e2a3cf997b4e0.hot-update.js.map"
+    },
+    "app-e1382bda16af588957c2.js": {
+      "name": "app-e1382bda16af588957c2.js",
+      "path": "/Users/anna/code/danziger/frontend/dist/app-e1382bda16af588957c2.js",
+      "publicPath": "http://127.0.0.1:8080/app-e1382bda16af588957c2.js"
+    },
+    "app.ba1ed0e370e2f2872cd4.hot-update.js": {
+      "name": "app.ba1ed0e370e2f2872cd4.hot-update.js",
+      "path": "/Users/anna/code/danziger/frontend/dist/app.ba1ed0e370e2f2872cd4.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/app.ba1ed0e370e2f2872cd4.hot-update.js"
+    },
+    "src_views_ConveyanceMatterView_vue.ba1ed0e370e2f2872cd4.hot-update.js": {
+      "name": "src_views_ConveyanceMatterView_vue.ba1ed0e370e2f2872cd4.hot-update.js",
+      "path": "/Users/anna/code/danziger/frontend/dist/src_views_ConveyanceMatterView_vue.ba1ed0e370e2f2872cd4.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/src_views_ConveyanceMatterView_vue.ba1ed0e370e2f2872cd4.hot-update.js"
+    },
+    "app.ba1ed0e370e2f2872cd4.hot-update.json": {
+      "name": "app.ba1ed0e370e2f2872cd4.hot-update.json",
+      "path": "/Users/anna/code/danziger/frontend/dist/app.ba1ed0e370e2f2872cd4.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/app.ba1ed0e370e2f2872cd4.hot-update.json"
+    },
+    "app-e1382bda16af588957c2.js.map": {
+      "name": "app-e1382bda16af588957c2.js.map",
+      "path": "/Users/anna/code/danziger/frontend/dist/app-e1382bda16af588957c2.js.map",
+      "publicPath": "http://127.0.0.1:8080/app-e1382bda16af588957c2.js.map"
+    },
+    "app.ba1ed0e370e2f2872cd4.hot-update.js.map": {
+      "name": "app.ba1ed0e370e2f2872cd4.hot-update.js.map",
+      "path": "/Users/anna/code/danziger/frontend/dist/app.ba1ed0e370e2f2872cd4.hot-update.js.map",
+      "publicPath": "http://127.0.0.1:8080/app.ba1ed0e370e2f2872cd4.hot-update.js.map"
+    },
+    "src_views_ConveyanceMatterView_vue.ba1ed0e370e2f2872cd4.hot-update.js.map": {
+      "name": "src_views_ConveyanceMatterView_vue.ba1ed0e370e2f2872cd4.hot-update.js.map",
+      "path": "/Users/anna/code/danziger/frontend/dist/src_views_ConveyanceMatterView_vue.ba1ed0e370e2f2872cd4.hot-update.js.map",
+      "publicPath": "http://127.0.0.1:8080/src_views_ConveyanceMatterView_vue.ba1ed0e370e2f2872cd4.hot-update.js.map"
+    },
+    "app-b04b743113de32536b66.js": {
+      "name": "app-b04b743113de32536b66.js",
+      "path": "/Users/anna/code/danziger/frontend/dist/app-b04b743113de32536b66.js",
+      "publicPath": "http://127.0.0.1:8080/app-b04b743113de32536b66.js"
+    },
+    "app.e1382bda16af588957c2.hot-update.js": {
+      "name": "app.e1382bda16af588957c2.hot-update.js",
+      "path": "/Users/anna/code/danziger/frontend/dist/app.e1382bda16af588957c2.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/app.e1382bda16af588957c2.hot-update.js"
+    },
+    "src_views_ConveyanceMatterView_vue.e1382bda16af588957c2.hot-update.js": {
+      "name": "src_views_ConveyanceMatterView_vue.e1382bda16af588957c2.hot-update.js",
+      "path": "/Users/anna/code/danziger/frontend/dist/src_views_ConveyanceMatterView_vue.e1382bda16af588957c2.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/src_views_ConveyanceMatterView_vue.e1382bda16af588957c2.hot-update.js"
+    },
+    "app.e1382bda16af588957c2.hot-update.json": {
+      "name": "app.e1382bda16af588957c2.hot-update.json",
+      "path": "/Users/anna/code/danziger/frontend/dist/app.e1382bda16af588957c2.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/app.e1382bda16af588957c2.hot-update.json"
+    },
+    "app-b04b743113de32536b66.js.map": {
+      "name": "app-b04b743113de32536b66.js.map",
+      "path": "/Users/anna/code/danziger/frontend/dist/app-b04b743113de32536b66.js.map",
+      "publicPath": "http://127.0.0.1:8080/app-b04b743113de32536b66.js.map"
+    },
+    "app.e1382bda16af588957c2.hot-update.js.map": {
+      "name": "app.e1382bda16af588957c2.hot-update.js.map",
+      "path": "/Users/anna/code/danziger/frontend/dist/app.e1382bda16af588957c2.hot-update.js.map",
+      "publicPath": "http://127.0.0.1:8080/app.e1382bda16af588957c2.hot-update.js.map"
+    },
+    "src_views_ConveyanceMatterView_vue.e1382bda16af588957c2.hot-update.js.map": {
+      "name": "src_views_ConveyanceMatterView_vue.e1382bda16af588957c2.hot-update.js.map",
+      "path": "/Users/anna/code/danziger/frontend/dist/src_views_ConveyanceMatterView_vue.e1382bda16af588957c2.hot-update.js.map",
+      "publicPath": "http://127.0.0.1:8080/src_views_ConveyanceMatterView_vue.e1382bda16af588957c2.hot-update.js.map"
+    },
+    "app-45237987cea1a9be816a.js": {
+      "name": "app-45237987cea1a9be816a.js",
+      "path": "/Users/anna/code/danziger/frontend/dist/app-45237987cea1a9be816a.js",
+      "publicPath": "http://127.0.0.1:8080/app-45237987cea1a9be816a.js"
+    },
+    "app.b04b743113de32536b66.hot-update.js": {
+      "name": "app.b04b743113de32536b66.hot-update.js",
+      "path": "/Users/anna/code/danziger/frontend/dist/app.b04b743113de32536b66.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/app.b04b743113de32536b66.hot-update.js"
+    },
+    "src_views_ConveyanceMatterView_vue.b04b743113de32536b66.hot-update.js": {
+      "name": "src_views_ConveyanceMatterView_vue.b04b743113de32536b66.hot-update.js",
+      "path": "/Users/anna/code/danziger/frontend/dist/src_views_ConveyanceMatterView_vue.b04b743113de32536b66.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/src_views_ConveyanceMatterView_vue.b04b743113de32536b66.hot-update.js"
+    },
+    "app.b04b743113de32536b66.hot-update.json": {
+      "name": "app.b04b743113de32536b66.hot-update.json",
+      "path": "/Users/anna/code/danziger/frontend/dist/app.b04b743113de32536b66.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/app.b04b743113de32536b66.hot-update.json"
+    },
+    "app-45237987cea1a9be816a.js.map": {
+      "name": "app-45237987cea1a9be816a.js.map",
+      "path": "/Users/anna/code/danziger/frontend/dist/app-45237987cea1a9be816a.js.map",
+      "publicPath": "http://127.0.0.1:8080/app-45237987cea1a9be816a.js.map"
+    },
+    "app.b04b743113de32536b66.hot-update.js.map": {
+      "name": "app.b04b743113de32536b66.hot-update.js.map",
+      "path": "/Users/anna/code/danziger/frontend/dist/app.b04b743113de32536b66.hot-update.js.map",
+      "publicPath": "http://127.0.0.1:8080/app.b04b743113de32536b66.hot-update.js.map"
+    },
+    "src_views_ConveyanceMatterView_vue.b04b743113de32536b66.hot-update.js.map": {
+      "name": "src_views_ConveyanceMatterView_vue.b04b743113de32536b66.hot-update.js.map",
+      "path": "/Users/anna/code/danziger/frontend/dist/src_views_ConveyanceMatterView_vue.b04b743113de32536b66.hot-update.js.map",
+      "publicPath": "http://127.0.0.1:8080/src_views_ConveyanceMatterView_vue.b04b743113de32536b66.hot-update.js.map"
+    },
+    "app-655dbd34b5c3c6bcf213.js": {
+      "name": "app-655dbd34b5c3c6bcf213.js",
+      "path": "/Users/anna/code/danziger/frontend/dist/app-655dbd34b5c3c6bcf213.js",
+      "publicPath": "http://127.0.0.1:8080/app-655dbd34b5c3c6bcf213.js"
+    },
+    "app.45237987cea1a9be816a.hot-update.js": {
+      "name": "app.45237987cea1a9be816a.hot-update.js",
+      "path": "/Users/anna/code/danziger/frontend/dist/app.45237987cea1a9be816a.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/app.45237987cea1a9be816a.hot-update.js"
+    },
+    "src_views_ConveyanceMatterView_vue.45237987cea1a9be816a.hot-update.js": {
+      "name": "src_views_ConveyanceMatterView_vue.45237987cea1a9be816a.hot-update.js",
+      "path": "/Users/anna/code/danziger/frontend/dist/src_views_ConveyanceMatterView_vue.45237987cea1a9be816a.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/src_views_ConveyanceMatterView_vue.45237987cea1a9be816a.hot-update.js"
+    },
+    "app.45237987cea1a9be816a.hot-update.json": {
+      "name": "app.45237987cea1a9be816a.hot-update.json",
+      "path": "/Users/anna/code/danziger/frontend/dist/app.45237987cea1a9be816a.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/app.45237987cea1a9be816a.hot-update.json"
+    },
+    "app-655dbd34b5c3c6bcf213.js.map": {
+      "name": "app-655dbd34b5c3c6bcf213.js.map",
+      "path": "/Users/anna/code/danziger/frontend/dist/app-655dbd34b5c3c6bcf213.js.map",
+      "publicPath": "http://127.0.0.1:8080/app-655dbd34b5c3c6bcf213.js.map"
+    },
+    "app.45237987cea1a9be816a.hot-update.js.map": {
+      "name": "app.45237987cea1a9be816a.hot-update.js.map",
+      "path": "/Users/anna/code/danziger/frontend/dist/app.45237987cea1a9be816a.hot-update.js.map",
+      "publicPath": "http://127.0.0.1:8080/app.45237987cea1a9be816a.hot-update.js.map"
+    },
+    "src_views_ConveyanceMatterView_vue.45237987cea1a9be816a.hot-update.js.map": {
+      "name": "src_views_ConveyanceMatterView_vue.45237987cea1a9be816a.hot-update.js.map",
+      "path": "/Users/anna/code/danziger/frontend/dist/src_views_ConveyanceMatterView_vue.45237987cea1a9be816a.hot-update.js.map",
+      "publicPath": "http://127.0.0.1:8080/src_views_ConveyanceMatterView_vue.45237987cea1a9be816a.hot-update.js.map"
+    },
+    "app-59afbe1b905d1a1aa5b6.js": {
+      "name": "app-59afbe1b905d1a1aa5b6.js",
+      "path": "/Users/anna/code/danziger/frontend/dist/app-59afbe1b905d1a1aa5b6.js",
+      "publicPath": "http://127.0.0.1:8080/app-59afbe1b905d1a1aa5b6.js"
+    },
+    "app.655dbd34b5c3c6bcf213.hot-update.js": {
+      "name": "app.655dbd34b5c3c6bcf213.hot-update.js",
+      "path": "/Users/anna/code/danziger/frontend/dist/app.655dbd34b5c3c6bcf213.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/app.655dbd34b5c3c6bcf213.hot-update.js"
+    },
+    "src_views_ConveyanceMatterView_vue.655dbd34b5c3c6bcf213.hot-update.js": {
+      "name": "src_views_ConveyanceMatterView_vue.655dbd34b5c3c6bcf213.hot-update.js",
+      "path": "/Users/anna/code/danziger/frontend/dist/src_views_ConveyanceMatterView_vue.655dbd34b5c3c6bcf213.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/src_views_ConveyanceMatterView_vue.655dbd34b5c3c6bcf213.hot-update.js"
+    },
+    "app.655dbd34b5c3c6bcf213.hot-update.json": {
+      "name": "app.655dbd34b5c3c6bcf213.hot-update.json",
+      "path": "/Users/anna/code/danziger/frontend/dist/app.655dbd34b5c3c6bcf213.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/app.655dbd34b5c3c6bcf213.hot-update.json"
+    },
+    "app-59afbe1b905d1a1aa5b6.js.map": {
+      "name": "app-59afbe1b905d1a1aa5b6.js.map",
+      "path": "/Users/anna/code/danziger/frontend/dist/app-59afbe1b905d1a1aa5b6.js.map",
+      "publicPath": "http://127.0.0.1:8080/app-59afbe1b905d1a1aa5b6.js.map"
+    },
+    "app.655dbd34b5c3c6bcf213.hot-update.js.map": {
+      "name": "app.655dbd34b5c3c6bcf213.hot-update.js.map",
+      "path": "/Users/anna/code/danziger/frontend/dist/app.655dbd34b5c3c6bcf213.hot-update.js.map",
+      "publicPath": "http://127.0.0.1:8080/app.655dbd34b5c3c6bcf213.hot-update.js.map"
+    },
+    "src_views_ConveyanceMatterView_vue.655dbd34b5c3c6bcf213.hot-update.js.map": {
+      "name": "src_views_ConveyanceMatterView_vue.655dbd34b5c3c6bcf213.hot-update.js.map",
+      "path": "/Users/anna/code/danziger/frontend/dist/src_views_ConveyanceMatterView_vue.655dbd34b5c3c6bcf213.hot-update.js.map",
+      "publicPath": "http://127.0.0.1:8080/src_views_ConveyanceMatterView_vue.655dbd34b5c3c6bcf213.hot-update.js.map"
+    },
+    "app-0872fd831910372147e4.js": {
+      "name": "app-0872fd831910372147e4.js",
+      "path": "/Users/anna/code/danziger/frontend/dist/app-0872fd831910372147e4.js",
+      "publicPath": "http://127.0.0.1:8080/app-0872fd831910372147e4.js"
+    },
+    "app.59afbe1b905d1a1aa5b6.hot-update.js": {
+      "name": "app.59afbe1b905d1a1aa5b6.hot-update.js",
+      "path": "/Users/anna/code/danziger/frontend/dist/app.59afbe1b905d1a1aa5b6.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/app.59afbe1b905d1a1aa5b6.hot-update.js"
+    },
+    "src_views_ConveyanceMatterView_vue.59afbe1b905d1a1aa5b6.hot-update.js": {
+      "name": "src_views_ConveyanceMatterView_vue.59afbe1b905d1a1aa5b6.hot-update.js",
+      "path": "/Users/anna/code/danziger/frontend/dist/src_views_ConveyanceMatterView_vue.59afbe1b905d1a1aa5b6.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/src_views_ConveyanceMatterView_vue.59afbe1b905d1a1aa5b6.hot-update.js"
+    },
+    "app.59afbe1b905d1a1aa5b6.hot-update.json": {
+      "name": "app.59afbe1b905d1a1aa5b6.hot-update.json",
+      "path": "/Users/anna/code/danziger/frontend/dist/app.59afbe1b905d1a1aa5b6.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/app.59afbe1b905d1a1aa5b6.hot-update.json"
+    },
+    "app-0872fd831910372147e4.js.map": {
+      "name": "app-0872fd831910372147e4.js.map",
+      "path": "/Users/anna/code/danziger/frontend/dist/app-0872fd831910372147e4.js.map",
+      "publicPath": "http://127.0.0.1:8080/app-0872fd831910372147e4.js.map"
+    },
+    "app.59afbe1b905d1a1aa5b6.hot-update.js.map": {
+      "name": "app.59afbe1b905d1a1aa5b6.hot-update.js.map",
+      "path": "/Users/anna/code/danziger/frontend/dist/app.59afbe1b905d1a1aa5b6.hot-update.js.map",
+      "publicPath": "http://127.0.0.1:8080/app.59afbe1b905d1a1aa5b6.hot-update.js.map"
+    },
+    "src_views_ConveyanceMatterView_vue.59afbe1b905d1a1aa5b6.hot-update.js.map": {
+      "name": "src_views_ConveyanceMatterView_vue.59afbe1b905d1a1aa5b6.hot-update.js.map",
+      "path": "/Users/anna/code/danziger/frontend/dist/src_views_ConveyanceMatterView_vue.59afbe1b905d1a1aa5b6.hot-update.js.map",
+      "publicPath": "http://127.0.0.1:8080/src_views_ConveyanceMatterView_vue.59afbe1b905d1a1aa5b6.hot-update.js.map"
     }
   },
   "chunks": {
     "app": [
-      "app-eeb40f36f09ef6b03998.js"
+      "app-0872fd831910372147e4.js",
+      "app.59afbe1b905d1a1aa5b6.hot-update.js"
     ]
   },
-  "publicPath": "http://127.0.0.1:8080/"
+  "publicPath": "http://127.0.0.1:8080/",
+  "error": "ModuleError",
+  "message": "Module Error (from ./node_modules/vue-loader/dist/index.js):\n\nVueCompilerError: \nVueCompilerError: Element is missing end tag.\nat /Users/anna/code/danziger/frontend/src/views/ConveyanceMatterView.vue:38:13\n36 |            <div class=\"col-sm-6\"><p>Comments:</p></div>\n37 |            <div class=\"col-sm-6\">\n38 |              <textarea\n   |              ^\n39 |                  rows=\"3\"\n40 |                  v-model=\"conveyance.comments\"\n\nat /Users/anna/code/danziger/frontend/src/views/ConveyanceMatterView.vue:38:13\n36 |            <div class=\"col-sm-6\"><p>Comments:</p></div>\n37 |            <div class=\"col-sm-6\">\n38 |              <textarea\n   |              ^\n39 |                  rows=\"3\"\n40 |                  v-model=\"conveyance.comments\"\n"
 }

@@ -3,6 +3,7 @@ coverage
 Django==4.0.3
 djangorestframework
 django-webpack-loader
+drf-writable-nested
 factory-boy
 psycopg2-binary
 python-dotenv

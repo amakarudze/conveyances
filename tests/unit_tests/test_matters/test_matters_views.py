@@ -1,5 +1,4 @@
 import json
-import pytest
 
 from django.urls import reverse
 
@@ -19,16 +18,16 @@ CONVEYANCES_URL = reverse("matters:conveyancematter-list")
 MATTERS_URL = reverse("matters:matter-list")
 
 
-def bank_detail_url(bank_id):
-    return reverse("matters:bank-detail", args=[bank_id])
+def bank_detail_url(bank_uuid):
+    return reverse("matters:bank-detail", args=[bank_uuid])
 
 
-def conveyance_matter_detail_url(conveyancematter_id):
-    return reverse("matters:conveyancematter-detail", args=[conveyancematter_id])
+def conveyance_matter_detail_url(conveyancematter_uuid):
+    return reverse("matters:conveyancematter-detail", args=[conveyancematter_uuid])
 
 
-def matter_detail_url(matter_id):
-    return reverse("matters:matter-detail", args=[matter_id])
+def matter_detail_url(matter_uuid):
+    return reverse("matters:matter-detail", args=[matter_uuid])
 
 
 def test_base_matters_view_unauthenticated(client):
@@ -103,7 +102,7 @@ def test_create_bank(user_client, bank_payload):
 
 def test_edit_bank(user_client, edit_bank, bank):
     payload = edit_bank
-    url = bank_detail_url(bank.id)
+    url = bank_detail_url(bank.uuid)
     response = user_client.put(url, payload)
     bank.refresh_from_db()
 
@@ -113,16 +112,16 @@ def test_edit_bank(user_client, edit_bank, bank):
 
 def test_create_convenience_matter_no_matter(user_client, conveyance_matter_payload):
     payload = conveyance_matter_payload
-    response = user_client.post(CONVEYANCES_URL, payload)
+    response = user_client.post(CONVEYANCES_URL, payload, format="json")
 
-    assert response.status_code == status.HTTP_400_BAD_REQUEST
+    assert response.status_code == status.HTTP_201_CREATED
 
 
 def test_create_convenience_matter_one_matter(
     user_client, conveyance_matter_one_matter_payload
 ):
     payload = conveyance_matter_one_matter_payload
-    response = user_client.post(CONVEYANCES_URL, payload)
+    response = user_client.post(CONVEYANCES_URL, payload, format="json")
 
     assert response.status_code == status.HTTP_201_CREATED
 
@@ -131,36 +130,34 @@ def test_create_convenience_matter_with_two_matters(
     user_client, conveyance_two_matters_payload
 ):
     payload = conveyance_two_matters_payload
-    response = user_client.post(CONVEYANCES_URL, payload)
+    response = user_client.post(CONVEYANCES_URL, payload, format="json")
 
     assert response.status_code == status.HTTP_201_CREATED
 
 
 def test_edit_conveyance_matter(
-    user_client, edit_conveyance_matter_payload, basic_conveyance_matter
+    user_client, basic_conveyance_matter, edit_conveyance_matter_payload
 ):
     payload = edit_conveyance_matter_payload
-    url = conveyance_matter_detail_url(basic_conveyance_matter.id)
-    response = user_client.patch(url, payload)
+    url = conveyance_matter_detail_url(basic_conveyance_matter.uuid)
+    response = user_client.patch(url, payload, format="json")
 
     assert response.status_code == status.HTTP_200_OK
     matters = basic_conveyance_matter.matters.all()
     assert len(matters) == 1
 
 
-def test_create_matter(user_client):
-    with open("tests/unit_tests/test_matters/transfer.json") as p:
-        payload = json.load(p)
-        response = user_client.post(MATTERS_URL, payload, format="json")
+def test_create_matter(user_client, create_matter):
+    payload = create_matter
+    response = user_client.post(MATTERS_URL, payload, format="json")
 
     assert response.status_code == status.HTTP_201_CREATED
 
 
-def test_edit_matter(user_client, sample_matter2):
-    with open("tests/unit_tests/test_matters/mortgage_bond.json") as p:
-        payload = json.load(p)
+def test_edit_matter(user_client, sample_matter2, edit_matter):
+    payload = edit_matter
 
-        url = matter_detail_url(sample_matter2.id)
-        response = user_client.patch(url, payload, format="json")
+    url = matter_detail_url(sample_matter2.uuid)
+    response = user_client.patch(url, payload, format="json")
 
     assert response.status_code == status.HTTP_200_OK

@@ -14,4 +14,5 @@ router.register("matters", views.MatterViewSet)
 urlpatterns = [
     path("", include(router.urls)),
     path("base_matters/", views.BaseMatterView.as_view(), name="base_matters"),
+    path("current_user/", views.CurrentUserView.as_view(), name="current_user"),
 ]
