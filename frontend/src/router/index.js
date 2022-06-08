@@ -10,20 +10,36 @@ const router = createRouter({
       component: HomeView,
     },
     {
-      path: "/edit-matter",
-      name: "edit-matter",
+      path: "/add-bank/",
+      name: "add-bank",
       // route level code-splitting
       // this generates a separate chunk (MatterEditor.[hash].js) for this route
       // which is lazy-loaded when the route is visited.
-      component: () => import("../views/MatterEditorView.vue"),
+      component: () => import("../views/BankView.vue"),
     },
     {
-      path: "/matter",
-      name: "matter",
+      path: "/add-matter/",
+      name: "add-matter",
       // route level code-splitting
       // this generates a separate chunk (Matter.[hash].js) for this route
       // which is lazy-loaded when the route is visited.
       component: () => import("../views/MatterView.vue"),
+    },
+    {
+      path: "/conveyance/:slug/",
+      name: "conveyance",
+      component: () => import("../views/ConveyanceMatterView.vue"),
+      props: true,
+    },
+    {
+      path: "/logout/",
+      name: "logout",
+      component: () => import("../views/LogoutView.vue"),
+    },
+    {
+      path: "/banks/",
+      name: "bank",
+      component: () => import("../views/BanksView.vue"),
     },
   ],
 });

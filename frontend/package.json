@@ -10,10 +10,12 @@
   },
   "dependencies": {
     "@vue/cli-plugin-babel": "^5.0.4",
+    "axios": "^0.27.2",
     "babel": "^6.23.0",
     "babel-loader": "^8.2.5",
     "css-loader": "^6.7.1",
     "file-loader": "^6.2.0",
+    "lodash": "^4.17.21",
     "style-loader": "^3.3.1",
     "ts-loader": "^9.3.0",
     "vue": "^3.2.33",

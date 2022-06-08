@@ -28,79 +28,62 @@
                     <tr role="row">
                       <th
                         scope="col"
-                        class="sorting_asc text-primary"
+                        class="text-primary"
                         tabindex="0"
                         aria-controls="dataTable"
                         rowspan="1"
                         colspan="1"
                         aria-sort="ascending text-primary"
-                        aria-label="Full Name: activate to sort column descending"
                       >
-                        Matter
+                        Conveyance Matter
                       </th>
                       <th
                         scope="col"
-                        class="sorting text-primary"
+                        class="text-primary"
                         tabindex="0"
                         aria-controls="dataTable"
                         rowspan="1"
                         colspan="1"
-                        aria-label="Email: activate to sort column ascending"
-                      >
-                        Current Stage
-                      </th>
-                      <th
-                        scope="col"
-                        class="sorting text-primary"
-                        tabindex="0"
-                        aria-controls="dataTable"
-                        rowspan="1"
-                        colspan="1"
-                        aria-label="Is Active: activate to sort column ascending"
                       >
                         Bank
                       </th>
                       <th
                         scope="col"
-                        class="sorting text-primary"
+                        class="text-primary"
                         tabindex="0"
                         aria-controls="dataTable"
                         rowspan="1"
                         colspan="1"
-                        aria-label="Is Staff: activate to sort column ascending"
                       >
                         Created by
                       </th>
                       <th
                         scope="col"
-                        class="sorting text-primary"
+                        class="text-primary"
                         tabindex="0"
                         aria-controls="dataTable"
                         rowspan="1"
                         colspan="1"
-                        aria-label="Is Admin: activate to sort column ascending"
                       >
                         Date Created
                       </th>
                       <th
                         scope="col"
-                        class="sorting text-primary"
+                        class="text-primary"
                         tabindex="0"
                         aria-controls="dataTable"
                         rowspan="1"
                         colspan="1"
-                        aria-label="Date Joined: activate to sort column ascending"
                       >
                         Last Updated
                       </th>
                       <th
                         scope="col"
-                        class="sorting text-primary"
+                        class="text-primary"
                         tabindex="0"
                         aria-controls="dataTable"
                         rowspan="1"
                         colspan="1"
-                        aria-label="Date Joined: activate to sort column ascending"
                       >
                         Complete
                       </th>
@@ -108,8 +91,9 @@
                   </thead>
                   <tfoot class="bg-gradient-light">
                     <tr>
-                      <th scope="col" class="text-primary">Matter</th>
-                      <th scope="col" class="text-primary">Current Stage</th>
+                      <th scope="col" class="text-primary">
+                        Conveyance Matter
+                      </th>
                       <th scope="col" class="text-primary">Bank</th>
                       <th scope="col" class="text-primary">Created by</th>
                       <th scope="col" class="text-primary">Date Created</th>
@@ -118,16 +102,28 @@
                     </tr>
                   </tfoot>
                   <tbody>
-                    <tr>
-                      <td><a href="#"></a></td>
-                      <td></td>
-                      <td></td>
-                      <td></td>
-                      <td></td>
-                      <td></td>
+                    <tr v-for="conveyance in conveyances" :key="conveyance.pk">
                       <td>
-                        <i class="fa fa-check-square text-success"></i>
-                        <i class="fa fa-window-close text-danger"></i>
+                        <router-link
+                          :to="{
+                            name: 'conveyance',
+                            params: { slug: conveyance.uuid },
+                          }"
+                          class="nav-link"
+                        >
+                          {{ conveyance.title }}</router-link
+                        >
+                      </td>
+                      <td>{{ conveyance.bank }}</td>
+                      <td>{{ conveyance.created_by }}</td>
+                      <td>{{ conveyance.created_at }}</td>
+                      <td>{{ conveyance.last_updated }}</td>
+                      <td>
+                        <i
+                          v-if="conveyance.complete"
+                          class="fa fa-check-square text-success"
+                        ></i>
+                        <i v-else class="fa fa-window-close text-danger"></i>
                       </td>
                     </tr>
                   </tbody>
@@ -137,6 +133,92 @@
           </div>
         </div>
       </div>
+
+      <div class="row justify-content-md-center">
+        <div class="col col-lg-2"></div>
+        <div class="col-md-auto">
+          <nav aria-label="Page navigation">
+            <ul class="pagination">
+              <li v-show="previous" @click="getConveyances" class="page-item">
+                <span class="page-link">&laquo;</span>
+              </li>
+              <li
+                v-for="i in total_pages"
+                :key="i"
+                @click="getConveyances"
+                class="page-item"
+              >
+                <span
+                  v-if="i === current"
+                  class="page-item active page-link"
+                  aria-current="page"
+                >
+                  {{ i }}</span
+                ><span v-else class="page-item page-link"> {{ i }}</span>
+              </li>
+
+              <li v-show="next" @click="getConveyances" class="page-item">
+                <span class="page-link">&raquo;</span>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="col col-lg-2"></div>
+      </div>
     </div>
   </div>
 </template>
+
+<script>
+import { axios } from "../common/api.service.js";
+export default {
+  name: "HomeView",
+  data() {
+    return {
+      conveyances: [],
+      count: null,
+      current: null,
+      next: null,
+      previous: null,
+      total_pages: null,
+    };
+  },
+  methods: {
+    async getConveyances() {
+      let endpoint = "/api/conveyance_matters/";
+      if (this.next) {
+        endpoint = this.next;
+      }
+      if (this.previous) {
+        endpoint = this.previous;
+      }
+      try {
+        const response = await axios.get(endpoint);
+        this.conveyances.push(...response.data.results);
+        this.current = response.data.current;
+        this.total_pages = response.data.total_pages;
+        if (response.data.count) {
+          this.count = response.data.count;
+        }
+        if (response.data.next) {
+          this.next = response.data.next;
+        } else {
+          this.next = null;
+        }
+        if (response.data.previous) {
+          this.previous = response.data.previous;
+        } else {
+          this.previous = null;
+        }
+      } catch (error) {
+        console.log(error.response);
+        alert(error.response.statusText);
+      }
+    },
+  },
+  created() {
+    this.getConveyances();
+    document.title = "Home - Conveyances Matters";
+  },
+};
+</script>
