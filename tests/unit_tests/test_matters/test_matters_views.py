@@ -166,3 +166,25 @@ def test_login_required_for_api_home(client):
     response = client.get("/")
     assert response.status_code == status.HTTP_302_FOUND
     assertRedirects(response, f"/accounts/login/?next=/")
+
+
+def test_query_conveyance_matters_by_bank(
+    user_client, basic_conveyance_matter, conveyance_matter, conveyance_matters
+):
+    response = user_client.get(f"{CONVEYANCES_URL}?bank=Stanbic Bank")
+
+    assert len(response.data["results"]) == 1
+
+
+def test_query_conveyance_matters_by_title(
+    user_client, basic_conveyance_matter, conveyance_matter, conveyance_matters
+):
+    response = user_client.get(f"{CONVEYANCES_URL}?title=Jane Doe")
+
+    assert len(response.data["results"]) == 2
+
+
+def test_query_banks_by_name(user_client, bank, bank2):
+    response = user_client.get(f"{BANKS_URL}?name=First Capital Bank")
+
+    assert len(response.data["results"]) == 1
