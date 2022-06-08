@@ -1,7 +1,6 @@
-import json
-
 from django.urls import reverse
 
+from pytest_django.asserts import assertRedirects
 from rest_framework import status
 
 from matters.models import Bank, ConveyanceMatter, Matter
@@ -161,3 +160,9 @@ def test_edit_matter(user_client, sample_matter2, edit_matter):
     response = user_client.patch(url, payload, format="json")
 
     assert response.status_code == status.HTTP_200_OK
+
+
+def test_login_required_for_api_home(client):
+    response = client.get("/")
+    assert response.status_code == status.HTTP_302_FOUND
+    assertRedirects(response, f"/accounts/login/?next=/")
