@@ -7,23 +7,23 @@ import uuid
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('matters', '0003_alter_matter_stages'),
+        ("matters", "0003_alter_matter_stages"),
     ]
 
     operations = [
         migrations.AddField(
-            model_name='bank',
-            name='uuid',
+            model_name="bank",
+            name="uuid",
             field=models.UUIDField(db_index=True, default=uuid.uuid4, editable=False),
         ),
         migrations.AddField(
-            model_name='conveyancematter',
-            name='uuid',
+            model_name="conveyancematter",
+            name="uuid",
             field=models.UUIDField(db_index=True, default=uuid.uuid4, editable=False),
         ),
         migrations.AddField(
-            model_name='matter',
-            name='uuid',
+            model_name="matter",
+            name="uuid",
             field=models.UUIDField(db_index=True, default=uuid.uuid4, editable=False),
         ),
     ]

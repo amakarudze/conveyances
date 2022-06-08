@@ -9,7 +9,7 @@ from .serializers import (
     ConveyanceMatterSerializer,
     BaseMatterSerializer,
     MatterSerializer,
-    UserSerializer
+    UserSerializer,
 )
 from .stages import create_conveyance_object, matters
 
@@ -24,7 +24,7 @@ class BankViewSet(
     permission_classes = (IsAuthenticated,)
     queryset = Bank.objects.all().order_by("id")
     serializer_class = BankSerializer
-    lookup_field = 'uuid'
+    lookup_field = "uuid"
 
 
 class ConveyanceMatterViewSet(
@@ -37,7 +37,7 @@ class ConveyanceMatterViewSet(
     queryset = ConveyanceMatter.objects.all().order_by("-created_at")
     serializer_class = ConveyanceMatterSerializer
     permission_classes = (IsAuthenticated,)
-    lookup_field = 'uuid'
+    lookup_field = "uuid"
 
     def get_queryset(self):
         bank = self.request.query_params.get("bank")
@@ -78,7 +78,7 @@ class MatterViewSet(
     queryset = Matter.objects.all().order_by("-id")
     permission_classes = (IsAuthenticated,)
     serializer_class = MatterSerializer
-    lookup_field = 'uuid'
+    lookup_field = "uuid"
 
 
 class CurrentUserView(APIView):

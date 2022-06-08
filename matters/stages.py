@@ -97,7 +97,7 @@ class Stage:
         self.step = step
         self.comment: Text = None
         self.done: bool = False
-    
+
 
 @dataclass
 class BaseMatter:
@@ -108,7 +108,7 @@ class BaseMatter:
 def create_conveyance_object(name: str, stages: List) -> Iterable[BaseMatter]:
     matter_stages = []
     for i, stage in enumerate(stages):
-        matter_stages.append(vars(Stage(i+1, stage)))
+        matter_stages.append(vars(Stage(i + 1, stage)))
 
     convenyance_matter = BaseMatter(name, matter_stages)
     return convenyance_matter

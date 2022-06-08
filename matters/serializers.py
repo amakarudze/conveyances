@@ -7,7 +7,6 @@ from .models import Bank, ConveyanceMatter, Matter
 
 
 class BankSerializer(serializers.ModelSerializer):
-
     class Meta:
         model = Bank
         fields = ("uuid", "id", "name")
@@ -15,23 +14,20 @@ class BankSerializer(serializers.ModelSerializer):
 
 
 class MatterSerializer(UniqueFieldsMixin, serializers.ModelSerializer):
-
     class Meta:
         model = Matter
         fields = ("uuid", "pk", "name", "stages", "created_at", "last_updated")
         read_only_fields = ("created_at", "uuid", "last_updated")
         extra_kwargs = {
-            'id': {'read_only': False},
+            "id": {"read_only": False},
         }
 
 
 class ConveyanceMatterSerializer(WritableNestedModelSerializer):
     created_by = serializers.StringRelatedField()
     bank = serializers.SlugRelatedField(
-        queryset=Bank.objects.all(),
-        read_only=False,
-        slug_field='name'
-     )
+        queryset=Bank.objects.all(), read_only=False, slug_field="name"
+    )
     matters = MatterSerializer(many=True)
 
     class Meta:
@@ -48,7 +44,7 @@ class ConveyanceMatterSerializer(WritableNestedModelSerializer):
             "complete",
             "comment",
         )
-        read_only_fields = ("created_at", "last_updated", "uuid", "pk") 
+        read_only_fields = ("created_at", "last_updated", "uuid", "pk")
 
 
 class BaseMatterSerializer(serializers.Serializer):

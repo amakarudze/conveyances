@@ -7,23 +7,35 @@ import uuid
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('matters', '0004_bank_uuid_conveyancematter_uuid_matter_uuid'),
+        ("matters", "0004_bank_uuid_conveyancematter_uuid_matter_uuid"),
     ]
 
     operations = [
         migrations.AlterField(
-            model_name='bank',
-            name='uuid',
-            field=models.UUIDField(db_index=True, default=uuid.UUID('98937c48-f7d5-4702-872c-5529b2022c4d'), editable=False),
+            model_name="bank",
+            name="uuid",
+            field=models.UUIDField(
+                db_index=True,
+                default=uuid.UUID("98937c48-f7d5-4702-872c-5529b2022c4d"),
+                editable=False,
+            ),
         ),
         migrations.AlterField(
-            model_name='conveyancematter',
-            name='uuid',
-            field=models.UUIDField(db_index=True, default=uuid.UUID('61780e87-bcef-4dad-845f-f6b163f690b9'), editable=False),
+            model_name="conveyancematter",
+            name="uuid",
+            field=models.UUIDField(
+                db_index=True,
+                default=uuid.UUID("61780e87-bcef-4dad-845f-f6b163f690b9"),
+                editable=False,
+            ),
         ),
         migrations.AlterField(
-            model_name='matter',
-            name='uuid',
-            field=models.UUIDField(db_index=True, default=uuid.UUID('e87f7fa0-75d1-4bf1-9c19-19f86e846ddb'), editable=False),
+            model_name="matter",
+            name="uuid",
+            field=models.UUIDField(
+                db_index=True,
+                default=uuid.UUID("e87f7fa0-75d1-4bf1-9c19-19f86e846ddb"),
+                editable=False,
+            ),
         ),
     ]

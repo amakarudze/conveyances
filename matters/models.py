@@ -27,7 +27,7 @@ class ConveyanceMatter(models.Model):
     matters = models.ManyToManyField("Matter")
     created_at = models.DateTimeField(auto_now_add=True)
     last_updated = models.DateTimeField(auto_now=True)
-    created_by = models.ForeignKey('accounts.User', on_delete=models.CASCADE)
+    created_by = models.ForeignKey("accounts.User", on_delete=models.CASCADE)
     bank = models.ForeignKey(Bank, on_delete=models.CASCADE)
     complete = models.BooleanField(default=False)
     comment = models.TextField(blank=True, null=True)

@@ -117,14 +117,18 @@ def test_create_convenience_matter_no_matter(user_client, conveyance_matter_payl
     assert response.status_code == status.HTTP_201_CREATED
 
 
-def test_create_convenience_matter_one_matter(user_client, conveyance_matter_one_matter_payload):
+def test_create_convenience_matter_one_matter(
+    user_client, conveyance_matter_one_matter_payload
+):
     payload = conveyance_matter_one_matter_payload
     response = user_client.post(CONVEYANCES_URL, payload, format="json")
 
     assert response.status_code == status.HTTP_201_CREATED
 
 
-def test_create_convenience_matter_with_two_matters(user_client, conveyance_two_matters_payload):
+def test_create_convenience_matter_with_two_matters(
+    user_client, conveyance_two_matters_payload
+):
     payload = conveyance_two_matters_payload
     response = user_client.post(CONVEYANCES_URL, payload, format="json")
 

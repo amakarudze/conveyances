@@ -140,9 +140,7 @@ def bank2(db):
 
 @pytest.fixture
 def sample_matter(db, transfer_object):
-    return Matter.objects.create(
-        name="Transfer", stages=transfer_object.stages
-    )
+    return Matter.objects.create(name="Transfer", stages=transfer_object.stages)
 
 
 @pytest.fixture
@@ -230,7 +228,7 @@ def conveyance_matter_payload(bank):
         "matters": [],
         "bank": bank.name,
         "complete": False,
-        "comment": None
+        "comment": None,
     }
 
 
@@ -246,69 +244,69 @@ def conveyance_matter_one_matter_payload(bank):
                         "stage": "Acknowledge Instructions",
                         "step": 1,
                         "comment": None,
-                        "done": False
+                        "done": False,
                     },
                     {
                         "stage": "Statement Issued",
                         "step": 2,
                         "comment": None,
-                        "done": False
+                        "done": False,
                     },
                     {
                         "stage": "Statement Paid",
                         "step": 3,
                         "comment": None,
-                        "done": False
+                        "done": False,
                     },
                     {
                         "stage": "Consent Aailable",
                         "step": 4,
                         "comment": None,
-                        "done": False
+                        "done": False,
                     },
                     {
                         "stage": "Documents Lodged",
                         "step": 5,
                         "comment": None,
-                        "done": False
+                        "done": False,
                     },
                     {
                         "stage": "Documents Queried",
                         "step": 6,
                         "comment": None,
-                        "done": False
+                        "done": False,
                     },
                     {
                         "stage": "Documents Registered",
                         "step": 7,
                         "comment": None,
-                        "done": False
+                        "done": False,
                     },
                     {
                         "stage": "Documents Delivered to Bank",
                         "step": 8,
                         "comment": None,
-                        "done": False
+                        "done": False,
                     },
                     {
                         "stage": "Owner Collected Deed",
                         "step": 9,
                         "comment": None,
-                        "done": False
+                        "done": False,
                     },
                     {
                         "stage": "Documents Co-lodged",
                         "step": 10,
                         "comment": None,
-                        "done": False
-                    }
-                ]
+                        "done": False,
+                    },
+                ],
             }
         ],
-    "bank": bank.name,
-    "complete": False,
-    "comment": ""
-}
+        "bank": bank.name,
+        "complete": False,
+        "comment": "",
+    }
 
 
 @pytest.fixture
@@ -318,417 +316,377 @@ def conveyance_two_matters_payload(bank2):
         "bank": bank2.name,
         "matters": [
             {
-            "name": "Elizabeth & Ermet - Mortgage Bond with Other Lawyers Transfering",
-            "stages": [
-                {
-                    "stage": "Acknowledge Instructions",
-                    "step": 1,
-                    "comment": None,
-                    "done": False
-                },
-                {
-                    "stage": "Power of Attorney Signed",
-                    "step": 2,
-                    "comment": None,
-                    "done": False
-                },
-                {
-                    "stage": "Transfer Document Signed",
-                    "step": 3,
-                    "comment": None,
-                    "done": False
-                },
-                {
-                    "stage": "Statement Issued",
-                    "step": 4,
-                    "comment": None,
-                    "done": False
-                },
-                {
-                    "stage": "Statement Paid",
-                    "step": 5,
-                    "comment": None,
-                    "done": False
-                },
-                {
-                    "stage": "CGT Documents Submitted",
-                    "step": 6,
-                    "comment": None,
-                    "done": False
-                },
-                {
-                    "stage": "Interviews Conducted",
-                    "step": 7,
-                    "comment": None,
-                    "done": False
-                },
-                {
-                    "stage": "CGT Assessment Collected",
-                    "step": 8,
-                    "comment": None,
-                    "done": False
-                },
-                {
-                    "stage": "Assessment Paid",
-                    "step": 9,
-                    "comment": None,
-                    "done": False
-                },
-                {
-                    "stage": "CGT Collected",
-                    "step": 10,
-                    "comment": None,
-                    "done": False
-                },
-                {
-                    "stage": "Rates Certificate Collected",
-                    "step": 11,
-                    "comment": None,
-                    "done": False
-                },
-                {
-                    "stage": "Documents Lodged",
-                    "step": 12,
-                    "comment": None,
-                    "done": False
-                },
-                {
-                    "stage": "Documents Queried",
-                    "step": 13,
-                    "comment": None,
-                    "done": False
-                },
-                {
-                    "stage": "Documents Registered",
-                    "step": 14,
-                    "comment": None,
-                    "done": False
-                },
-                {
-                    "stage": "Documents Delivered to Bank",
-                    "step": 15,
-                    "comment": None,
-                    "done": False
-                }
-            ]
-        },
-        {
-            "name": "Elizabeth & Ermet - Lost Deed Application",
-            "stages": [
-                {
-                    "stage": "Acknowledge Instructions",
-                    "step": 1,
-                    "comment": None,
-                    "done": False
-                },
-                {
-                    "stage": "Statement Issued",
-                    "step": 2,
-                    "comment": None,
-                    "done": False
-                },
-                {
-                    "stage": "Statement Paid",
-                    "step": 3,
-                    "comment": None,
-                    "done": False
-                },
-                {
-                    "stage": "Adverts Sent Out",
-                    "step": 4,
-                    "comment": None,
-                    "done": False
-                },
-                {
-                    "stage": "Adverts Published",
-                    "step": 5,
-                    "comment": None,
-                    "done": False
-                },
-                {
-                    "stage": "Affidavit Signed",
-                    "step": 6,
-                    "comment": None,
-                    "done": False
-                },
-                {
-                    "stage": "Documents Lodged",
-                    "step": 7,
-                    "comment": None,
-                    "done": False
-                },
-                {
-                    "stage": "Documents Queried",
-                    "step": 8,
-                    "comment": None,
-                    "done": False
-                },
-                {
-                    "stage": "Documents Registered",
-                    "step": 9,
-                    "comment": None,
-                    "done": False
-                },
-                {
-                    "stage": "Owner Collected Deed",
-                    "step": 10,
-                    "comment": None,
-                    "done": False
-                }
-            ]
-        }
+                "name": "Elizabeth & Ermet - Mortgage Bond with Other Lawyers Transfering",
+                "stages": [
+                    {
+                        "stage": "Acknowledge Instructions",
+                        "step": 1,
+                        "comment": None,
+                        "done": False,
+                    },
+                    {
+                        "stage": "Power of Attorney Signed",
+                        "step": 2,
+                        "comment": None,
+                        "done": False,
+                    },
+                    {
+                        "stage": "Transfer Document Signed",
+                        "step": 3,
+                        "comment": None,
+                        "done": False,
+                    },
+                    {
+                        "stage": "Statement Issued",
+                        "step": 4,
+                        "comment": None,
+                        "done": False,
+                    },
+                    {
+                        "stage": "Statement Paid",
+                        "step": 5,
+                        "comment": None,
+                        "done": False,
+                    },
+                    {
+                        "stage": "CGT Documents Submitted",
+                        "step": 6,
+                        "comment": None,
+                        "done": False,
+                    },
+                    {
+                        "stage": "Interviews Conducted",
+                        "step": 7,
+                        "comment": None,
+                        "done": False,
+                    },
+                    {
+                        "stage": "CGT Assessment Collected",
+                        "step": 8,
+                        "comment": None,
+                        "done": False,
+                    },
+                    {
+                        "stage": "Assessment Paid",
+                        "step": 9,
+                        "comment": None,
+                        "done": False,
+                    },
+                    {
+                        "stage": "CGT Collected",
+                        "step": 10,
+                        "comment": None,
+                        "done": False,
+                    },
+                    {
+                        "stage": "Rates Certificate Collected",
+                        "step": 11,
+                        "comment": None,
+                        "done": False,
+                    },
+                    {
+                        "stage": "Documents Lodged",
+                        "step": 12,
+                        "comment": None,
+                        "done": False,
+                    },
+                    {
+                        "stage": "Documents Queried",
+                        "step": 13,
+                        "comment": None,
+                        "done": False,
+                    },
+                    {
+                        "stage": "Documents Registered",
+                        "step": 14,
+                        "comment": None,
+                        "done": False,
+                    },
+                    {
+                        "stage": "Documents Delivered to Bank",
+                        "step": 15,
+                        "comment": None,
+                        "done": False,
+                    },
+                ],
+            },
+            {
+                "name": "Elizabeth & Ermet - Lost Deed Application",
+                "stages": [
+                    {
+                        "stage": "Acknowledge Instructions",
+                        "step": 1,
+                        "comment": None,
+                        "done": False,
+                    },
+                    {
+                        "stage": "Statement Issued",
+                        "step": 2,
+                        "comment": None,
+                        "done": False,
+                    },
+                    {
+                        "stage": "Statement Paid",
+                        "step": 3,
+                        "comment": None,
+                        "done": False,
+                    },
+                    {
+                        "stage": "Adverts Sent Out",
+                        "step": 4,
+                        "comment": None,
+                        "done": False,
+                    },
+                    {
+                        "stage": "Adverts Published",
+                        "step": 5,
+                        "comment": None,
+                        "done": False,
+                    },
+                    {
+                        "stage": "Affidavit Signed",
+                        "step": 6,
+                        "comment": None,
+                        "done": False,
+                    },
+                    {
+                        "stage": "Documents Lodged",
+                        "step": 7,
+                        "comment": None,
+                        "done": False,
+                    },
+                    {
+                        "stage": "Documents Queried",
+                        "step": 8,
+                        "comment": None,
+                        "done": False,
+                    },
+                    {
+                        "stage": "Documents Registered",
+                        "step": 9,
+                        "comment": None,
+                        "done": False,
+                    },
+                    {
+                        "stage": "Owner Collected Deed",
+                        "step": 10,
+                        "comment": None,
+                        "done": False,
+                    },
+                ],
+            },
         ],
         "complete": False,
-        "comment": ""
+        "comment": "",
     }
 
 
 @pytest.fixture
 def edit_conveyance_matter_payload(bank, sample_matter):
     return {
-    "title": "Deeds Transfer between Jane Doe and First Capital Bank",
-    "matters": [
-        {
-            "name": "Jane Doe - Transfer",
-            "stages": [
-                {
-                    "stage": "Acknowledge Instructions",
-                    "step": 1,
-                    "comment": None,
-                    "done": False
-                },
-                {
-                    "stage": "Rates Application",
-                    "step": 2,
-                    "comment": None,
-                    "done": False
-                },
-                {
-                    "stage": "Transfer Document Signed",
-                    "step": 3,
-                    "comment": None,
-                    "done": False
-                },
-                {
-                    "stage": "Statement Issued",
-                    "step": 4,
-                    "comment": None,
-                    "done": False
-                },
-                {
-                    "stage": "Statement Paid",
-                    "step": 5,
-                    "comment": None,
-                    "done": False
-                },
-                {
-                    "stage": "CGT Documents Submitted",
-                    "step": 6,
-                    "comment": None,
-                    "done": False
-                },
-                {
-                    "stage": "Interviews Conducted",
-                    "step": 7,
-                    "comment": None,
-                    "done": False
-                },
-                {
-                    "stage": "CGT Assessment Collected",
-                    "step": 8,
-                    "comment": None,
-                    "done": False
-                },
-                {
-                    "stage": "Assessment Paid",
-                    "step": 9,
-                    "comment": None,
-                    "done": False
-                },
-                {
-                    "stage": "Rates Certificate Collected",
-                    "step": 10,
-                    "comment": None,
-                    "done": False
-                },
-                {
-                    "stage": "Documents Lodged",
-                    "step": 11,
-                    "comment": None,
-                    "done": False
-                },
-                {
-                    "stage": "Documents Queried",
-                    "step": 12,
-                    "comment": None,
-                    "done": False
-                },
-                {
-                    "stage": "Documents Registered",
-                    "step": 13,
-                    "comment": None,
-                    "done": False
-                },
-                {
-                    "stage": "Owner Collected Deed",
-                    "step": 14,
-                    "comment": None,
-                    "done": False
-                }
-            ]
-        }
-    ],
-    "bank": bank.name,
-    "complete": False,
-    "comment": ""
-}
+        "title": "Deeds Transfer between Jane Doe and First Capital Bank",
+        "matters": [
+            {
+                "name": "Jane Doe - Transfer",
+                "stages": [
+                    {
+                        "stage": "Acknowledge Instructions",
+                        "step": 1,
+                        "comment": None,
+                        "done": False,
+                    },
+                    {
+                        "stage": "Rates Application",
+                        "step": 2,
+                        "comment": None,
+                        "done": False,
+                    },
+                    {
+                        "stage": "Transfer Document Signed",
+                        "step": 3,
+                        "comment": None,
+                        "done": False,
+                    },
+                    {
+                        "stage": "Statement Issued",
+                        "step": 4,
+                        "comment": None,
+                        "done": False,
+                    },
+                    {
+                        "stage": "Statement Paid",
+                        "step": 5,
+                        "comment": None,
+                        "done": False,
+                    },
+                    {
+                        "stage": "CGT Documents Submitted",
+                        "step": 6,
+                        "comment": None,
+                        "done": False,
+                    },
+                    {
+                        "stage": "Interviews Conducted",
+                        "step": 7,
+                        "comment": None,
+                        "done": False,
+                    },
+                    {
+                        "stage": "CGT Assessment Collected",
+                        "step": 8,
+                        "comment": None,
+                        "done": False,
+                    },
+                    {
+                        "stage": "Assessment Paid",
+                        "step": 9,
+                        "comment": None,
+                        "done": False,
+                    },
+                    {
+                        "stage": "Rates Certificate Collected",
+                        "step": 10,
+                        "comment": None,
+                        "done": False,
+                    },
+                    {
+                        "stage": "Documents Lodged",
+                        "step": 11,
+                        "comment": None,
+                        "done": False,
+                    },
+                    {
+                        "stage": "Documents Queried",
+                        "step": 12,
+                        "comment": None,
+                        "done": False,
+                    },
+                    {
+                        "stage": "Documents Registered",
+                        "step": 13,
+                        "comment": None,
+                        "done": False,
+                    },
+                    {
+                        "stage": "Owner Collected Deed",
+                        "step": 14,
+                        "comment": None,
+                        "done": False,
+                    },
+                ],
+            }
+        ],
+        "bank": bank.name,
+        "complete": False,
+        "comment": "",
+    }
 
 
 @pytest.fixture
 def create_matter():
     return {
-    "name": "Richard Bucket - Transfer",
-    "stages": [
-        {
-            "stage": "Acknowledge Instructions",
-            "step": 1,
-            "comment": "Received and signed.",
-            "done": True
-        },
-        {
-            "stage": "Rates Application",
-            "step": 2,
-            "comment": "Application submitted",
-            "done": False
-        },
-        {
-            "stage": "Transfer Document Signed",
-            "step": 3,
-            "comment": None,
-            "done": False
-        },
-        {
-            "stage": "Statement Issued",
-            "step": 4,
-            "comment": None,
-            "done": False
-        },
-        {
-            "stage": "Statement Paid",
-            "step": 5,
-            "comment": None,
-            "done": False
-        },
-        {
-            "stage": "CGT Documents Submitted",
-            "step": 6,
-            "comment": None,
-            "done": False
-        },
-        {
-            "stage": "Interviews Conducted",
-            "step": 7,
-            "comment": None,
-            "done": False
-        },
-        {
-            "stage": "CGT Assessment Collected",
-            "step": 8,
-            "comment": None,
-            "done": False
-        },
-        {
-            "stage": "Assessment Paid",
-            "step": 9,
-            "comment": None,
-            "done": False
-        },
-        {
-            "stage": "Rates Certificate Collected",
-            "step": 10,
-            "comment": None,
-            "done": False
-        },
-        {
-            "stage": "Documents Lodged",
-            "step": 11,
-            "comment": None,
-            "done": False
-        },
-        {
-            "stage": "Documents Queried",
-            "step": 12,
-            "comment": None,
-            "done": False
-        },
-        {
-            "stage": "Documents Registered",
-            "step": 13,
-            "comment": None,
-            "done": False
-        },
-        {
-            "stage": "Owner Collected Deed",
-            "step": 14,
-            "comment": None,
-            "done": False
-        }
-    ]
-}
+        "name": "Richard Bucket - Transfer",
+        "stages": [
+            {
+                "stage": "Acknowledge Instructions",
+                "step": 1,
+                "comment": "Received and signed.",
+                "done": True,
+            },
+            {
+                "stage": "Rates Application",
+                "step": 2,
+                "comment": "Application submitted",
+                "done": False,
+            },
+            {
+                "stage": "Transfer Document Signed",
+                "step": 3,
+                "comment": None,
+                "done": False,
+            },
+            {"stage": "Statement Issued", "step": 4, "comment": None, "done": False},
+            {"stage": "Statement Paid", "step": 5, "comment": None, "done": False},
+            {
+                "stage": "CGT Documents Submitted",
+                "step": 6,
+                "comment": None,
+                "done": False,
+            },
+            {
+                "stage": "Interviews Conducted",
+                "step": 7,
+                "comment": None,
+                "done": False,
+            },
+            {
+                "stage": "CGT Assessment Collected",
+                "step": 8,
+                "comment": None,
+                "done": False,
+            },
+            {"stage": "Assessment Paid", "step": 9, "comment": None, "done": False},
+            {
+                "stage": "Rates Certificate Collected",
+                "step": 10,
+                "comment": None,
+                "done": False,
+            },
+            {"stage": "Documents Lodged", "step": 11, "comment": None, "done": False},
+            {"stage": "Documents Queried", "step": 12, "comment": None, "done": False},
+            {
+                "stage": "Documents Registered",
+                "step": 13,
+                "comment": None,
+                "done": False,
+            },
+            {
+                "stage": "Owner Collected Deed",
+                "step": 14,
+                "comment": None,
+                "done": False,
+            },
+        ],
+    }
 
 
 @pytest.fixture
 def edit_matter():
     return {
-    "name": "Mortgage Bond",
-    "stages": [
-        {
-            "stage": "Acknowledge Instructions",
-            "step": 1,
-            "comment": "Received and filed.",
-            "done": True
-        },
-        {
-            "stage": "Statement Issued",
-            "step": 2,
-            "comment": "Statement issued to client.",
-            "done": True
-        },
-        {
-            "stage": "Power of Attorney Signed",
-            "step": 3,
-            "comment": None,
-            "done": False
-        },
-        {
-            "stage": "Statement Paid",
-            "step": 4,
-            "comment": None,
-            "done": False
-        },
-        {
-            "stage": "Documents Lodged",
-            "step": 5,
-            "comment": None,
-            "done": False
-        },
-        {
-            "stage": "Documents Queried",
-            "step": 6,
-            "comment": None,
-            "done": False
-        },
-        {
-            "stage": "Documents Registered",
-            "step": 7,
-            "comment": None,
-            "done": False
-        },
-        {
-            "stage": "Documents Delivered to Bank",
-            "step": 8,
-            "comment": None,
-            "done": False
-        }
-    ]
-}
+        "name": "Mortgage Bond",
+        "stages": [
+            {
+                "stage": "Acknowledge Instructions",
+                "step": 1,
+                "comment": "Received and filed.",
+                "done": True,
+            },
+            {
+                "stage": "Statement Issued",
+                "step": 2,
+                "comment": "Statement issued to client.",
+                "done": True,
+            },
+            {
+                "stage": "Power of Attorney Signed",
+                "step": 3,
+                "comment": None,
+                "done": False,
+            },
+            {"stage": "Statement Paid", "step": 4, "comment": None, "done": False},
+            {"stage": "Documents Lodged", "step": 5, "comment": None, "done": False},
+            {"stage": "Documents Queried", "step": 6, "comment": None, "done": False},
+            {
+                "stage": "Documents Registered",
+                "step": 7,
+                "comment": None,
+                "done": False,
+            },
+            {
+                "stage": "Documents Delivered to Bank",
+                "step": 8,
+                "comment": None,
+                "done": False,
+            },
+        ],
+    }

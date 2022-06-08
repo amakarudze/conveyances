@@ -23,8 +23,10 @@ urlpatterns = [
     path("accounts/", include("accounts.urls", namespace="accounts")),
     path(
         "",
-        login_required(TemplateView.as_view(template_name="index.html"),
-       ), name="app" 
+        login_required(
+            TemplateView.as_view(template_name="index.html"),
+        ),
+        name="app",
     ),
     path("api/", include("matters.urls", namespace="matters")),
 ]

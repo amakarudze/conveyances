@@ -39,8 +39,13 @@ def test_conveyance_matter_serialized_data(user, bank, sample_matter, sample_mat
         "user": user.pk,
         "title": t.title,
         "matters": [
-            OrderedDict([('name', sample_matter.name), ('stages', sample_matter.stages)]), 
-            OrderedDict([('name', sample_matter2.name), ('stages', sample_matter2.stages)])],
+            OrderedDict(
+                [("name", sample_matter.name), ("stages", sample_matter.stages)]
+            ),
+            OrderedDict(
+                [("name", sample_matter2.name), ("stages", sample_matter2.stages)]
+            ),
+        ],
         "bank": bank.name,
     }
     serializer = ConveyanceMatterSerializer(data=valid_serialized_data)
