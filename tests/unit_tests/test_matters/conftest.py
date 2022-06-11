@@ -170,11 +170,11 @@ def conveyance_matter(db, bank, user, sample_matter):
 
 
 @pytest.fixture
-def basic_conveyance_matter(db, bank, user):
+def basic_conveyance_matter(db, bank2, user):
     matter = ConveyanceMatter.objects.create(
         title="Deeds Transfer between Jane Doe and First Capital Bank",
         created_by=user,
-        bank=bank,
+        bank=bank2,
     )
     return matter
 

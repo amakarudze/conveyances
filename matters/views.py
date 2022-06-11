@@ -26,6 +26,14 @@ class BankViewSet(
     serializer_class = BankSerializer
     lookup_field = "uuid"
 
+    def get_queryset(self):
+        name = self.request.query_params.get("name")
+        queryset = self.queryset
+
+        if name:
+            return queryset.filter(name__icontains=name).order_by("id")
+        return queryset
+
 
 class ConveyanceMatterViewSet(
     viewsets.GenericViewSet,
@@ -45,7 +53,7 @@ class ConveyanceMatterViewSet(
         queryset = self.queryset
 
         if bank:
-            return queryset.filter(bank__name=bank).order_by("-created_at")
+            return queryset.filter(bank__name__icontains=bank).order_by("-created_at")
         if title:
             return queryset.filter(title__icontains=title).order_by("-created_at")
         return queryset

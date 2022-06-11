@@ -132,6 +132,7 @@ export default {
             matters: this.selected,
           },
         });
+        alert(response.statusText);
         this.$router.push({ name: "home" });
       } catch (error) {
         this.error = error.response.statusText;

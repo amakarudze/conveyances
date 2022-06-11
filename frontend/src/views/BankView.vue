@@ -38,6 +38,7 @@ export default {
           url: endpoint,
           data: { name: this.bankName },
         });
+        alert(response.statusText);
         this.$router.push({ name: "banks" });
       } catch (error) {
         this.error = error.response.statusText;
