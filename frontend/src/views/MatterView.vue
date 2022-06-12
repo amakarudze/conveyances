@@ -103,9 +103,7 @@ export default {
       try {
         const response = await axios.get(endpoint);
         this.banks.push(...response.data.results);
-        console.log(this.banks);
       } catch (error) {
-        console.log(error.response);
         alert(error.response.statusText);
       }
     },
@@ -115,7 +113,6 @@ export default {
         const response = await axios.get(endpoint);
         this.matters = response.data;
       } catch (error) {
-        console.log(error.response);
         alert(error.response.statusText);
       }
     },

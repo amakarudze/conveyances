@@ -9,6 +9,36 @@
         <h6 class="m-0 font-weight-bold text-primary">List of Banks</h6>
       </div>
       <div class="card-body">
+        <div class="row">
+          <div class="col-md-3"></div>
+          <div class="col-md-6"></div>
+          <div class="col-md-3">
+            <form
+              class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100"
+            >
+              <div class="input-group">
+                <input
+                  type="text"
+                  v-model="name"
+                  class="form-control bg-light border-0 small"
+                  placeholder="Search for bank by name..."
+                  aria-label="Search"
+                  aria-describedby="basic-addon2"
+                  @keypress.enter.prevent="getBankByName"
+                />
+                <div class="input-group-append">
+                  <button
+                    class="btn btn-primary"
+                    type="button"
+                    @click="getBankByName"
+                  >
+                    <i class="fas fa-search fa-sm"></i>
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
         <div class="table-responsive">
           <div id="dataTable_wrapper" class="dataTables_wrapper dt-bootstrap4">
             <div class="row">
@@ -103,6 +133,8 @@ export default {
       next: null,
       previous: null,
       total_pages: null,
+      name: null,
+      page_num: null,
     };
   },
   methods: {
@@ -114,9 +146,12 @@ export default {
       if (this.previous) {
         endpoint = this.previous;
       }
+      if (this.page_num) {
+        endpoint = `/api/banks/?page=${this.page_num}`;
+      }
       try {
         const response = await axios.get(endpoint);
-        this.banks.push(...response.data.results);
+        this.banks = response.data.results;
         this.current = response.data.current;
         this.total_pages = response.data.total_pages;
         if (response.data.count) {
@@ -133,9 +168,24 @@ export default {
           this.previous = null;
         }
       } catch (error) {
-        console.log(error.response);
         alert(error.response.statusText);
       }
+    },
+    async performNetworkRequest(endpoint) {
+      let method = "GET";
+      try {
+        const response = await axios({
+          url: endpoint,
+          method: method,
+        });
+        this.banks = response.data.results;
+      } catch (error) {
+        alert(error.response.statusText);
+      }
+    },
+    getBankByName() {
+      let endpoint = `/api/banks/?name=${this.name}`;
+      this.performNetworkRequest(endpoint);
     },
   },
   created() {

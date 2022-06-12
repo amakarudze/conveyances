@@ -64,7 +64,7 @@ mortgage_bond_cancellation = [
     "Acknowledge Instructions",
     "Statement Issued",
     "Statement Paid",
-    "Consent Aailable",
+    "Consent Available",
     "Documents Lodged",
     "Documents Queried",
     "Documents Registered",
