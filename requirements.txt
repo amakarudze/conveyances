@@ -16,6 +16,8 @@ click==8.0.4
     # via black
 coverage==6.3.2
     # via -r requirements.in
+dj-database-url==0.5.0
+    # via -r requirements.in
 django==4.0.3
     # via
     #   -r requirements.in

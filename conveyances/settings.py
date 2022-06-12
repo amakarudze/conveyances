@@ -13,6 +13,8 @@ https://docs.djangoproject.com/en/4.0/ref/settings/
 import os
 from pathlib import Path
 
+import dj_database_url
+
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -84,6 +86,11 @@ WSGI_APPLICATION = "conveyances.wsgi.application"
 # Database
 # https://docs.djangoproject.com/en/4.0/ref/settings/#databases
 
+DATABASES = {}
+
+DATABASES["default"] = dj_database_url.config(default=os.environ.get("DATABASE_URL"))
+
+"""
 DATABASES = {
     "default": {
         "ENGINE": "django.db.backends.postgresql",
@@ -94,6 +101,7 @@ DATABASES = {
         "POST": os.environ.get("DATABASE_PORT"),
     }
 }
+"""
 
 if os.environ.get("GITHUB_WORKFLOW"):
     DATABASES = {
