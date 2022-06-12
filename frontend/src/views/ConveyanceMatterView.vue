@@ -66,15 +66,18 @@
           </div>
         </div>
         <hr />
+        <div class="row">
+          <div class="col-sm-5"></div>
+          <div class="col-sm-5"></div>
+          <div class="col-sm-2">
+            <button type="submit" class="btn btn-primary">Update</button>
+          </div>
+        </div>
+        <hr />
         <div>
           <h3>Matters:</h3>
-          <div
-            :span="8"
-            v-for="matter in conveyance.matters"
-            :key="matter.index"
-            class="card mb-3"
-          >
-            <div class="card-body">
+          <div class="row" v-for="chunk in matterChunks" :key="chunk">
+            <div class="col-md-6" v-for="matter in chunk" :key="matter.index">
               <div class="card-title">
                 <h4>{{ matter.name }} # Matter No. {{ matter.pk }}</h4>
                 <hr />
@@ -117,13 +120,6 @@
             </div>
           </div>
         </div>
-        <div class="row">
-          <div class="col-sm-4"></div>
-          <div class="col-sm-4"></div>
-          <div class="col-sm-4">
-            <button type="submit" class="btn btn-primary">Update</button>
-          </div>
-        </div>
       </form>
     </div>
   </div>
@@ -131,6 +127,7 @@
 
 <script>
 import { axios } from "../common/api.service.js";
+import _ from "lodash";
 
 export default {
   name: "ConveyanceMatterView",
@@ -152,7 +149,6 @@ export default {
         const response = await axios.get(endpoint);
         this.conveyance = response.data;
       } catch (error) {
-        console.log(error.response);
         alert(error.response.statusText);
       }
     },
@@ -182,6 +178,11 @@ export default {
   created() {
     this.getConveyanceData();
     document.title = "Matter Details - Conveyances Matters";
+  },
+  computed: {
+    matterChunks() {
+      return _.chunk(Object.values(this.conveyance.matters), 2);
+    },
   },
 };
 </script>

@@ -11,6 +11,61 @@
         </h6>
       </div>
       <div class="card-body">
+        <div class="row">
+          <div div="col-md-3">
+            <form
+              class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search"
+            >
+              <div class="input-group">
+                <input
+                  type="text"
+                  class="form-control bg-light border-0 small"
+                  placeholder="Search matters by title..."
+                  aria-label="Search"
+                  aria-describedby="basic-addon2"
+                  v-model="title"
+                  @keypress.enter.prevent="getConveyancesByTitle"
+                />
+                <div class="input-group-append">
+                  <button
+                    @click="getConveyancesByTitle"
+                    class="btn btn-primary"
+                    type="button"
+                  >
+                    <i class="fas fa-search fa-sm"></i>
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="col-md-6"></div>
+          <div class="col-md-3">
+            <form
+              class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search"
+            >
+              <div class="input-group">
+                <input
+                  type="text"
+                  class="form-control bg-light border-0 small"
+                  placeholder="Filter by bank..."
+                  aria-label="Filter by bank"
+                  aria-describedby="basic-addon2"
+                  v-model="bank"
+                  @keypress.enter.prevent="getConveyancesByBank"
+                />
+                <div class="input-group-append">
+                  <button
+                    @click="getConveyancesByBank"
+                    class="btn btn-primary"
+                    type="button"
+                  >
+                    <i class="fas fa-search fa-sm"></i>
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
         <div class="table-responsive">
           <div id="dataTable_wrapper" class="dataTables_wrapper dt-bootstrap4">
             <div class="row">
@@ -143,6 +198,7 @@
                 <span class="page-link">&laquo;</span>
               </li>
               <li
+                v-bind="page_num"
                 v-for="i in total_pages"
                 :key="i"
                 @click="getConveyances"
@@ -171,6 +227,8 @@
 
 <script>
 import { axios } from "../common/api.service.js";
+// import { paginateResults } from "../common/pagination.js";
+
 export default {
   name: "HomeView",
   data() {
@@ -180,10 +238,30 @@ export default {
       current: null,
       next: null,
       previous: null,
+      page_num: null,
       total_pages: null,
+      title: null,
+      bank: null,
     };
   },
   methods: {
+    paginateResults(response) {
+      this.current = response.data.current;
+      this.total_pages = response.data.total_pages;
+      if (response.data.count) {
+        this.count = response.data.count;
+      }
+      if (response.data.next) {
+        this.next = response.data.next;
+      } else {
+        this.next = null;
+      }
+      if (response.data.previous) {
+        this.previous = response.data.previous;
+      } else {
+        this.previous = null;
+      }
+    },
     async getConveyances() {
       let endpoint = "/api/conveyance_matters/";
       if (this.next) {
@@ -192,28 +270,37 @@ export default {
       if (this.previous) {
         endpoint = this.previous;
       }
+      if (this.page_num) {
+        endpoint = `/api/conveyance_matters/?page=${this.page_num}`;
+      }
       try {
         const response = await axios.get(endpoint);
-        this.conveyances.push(...response.data.results);
-        this.current = response.data.current;
-        this.total_pages = response.data.total_pages;
-        if (response.data.count) {
-          this.count = response.data.count;
-        }
-        if (response.data.next) {
-          this.next = response.data.next;
-        } else {
-          this.next = null;
-        }
-        if (response.data.previous) {
-          this.previous = response.data.previous;
-        } else {
-          this.previous = null;
-        }
+        this.conveyances = response.data.results;
+        this.paginateResults(response);
       } catch (error) {
-        console.log(error.response);
         alert(error.response.statusText);
       }
+    },
+    async performNetworkRequest(endpoint) {
+      let method = "GET";
+      try {
+        const response = await axios({
+          url: endpoint,
+          method: method,
+        });
+        this.conveyances = response.data.results;
+      } catch (error) {
+        alert(error.response.statusText);
+      }
+    },
+    getConveyancesByTitle() {
+      let endpoint = `/api/conveyance_matters/?title=${this.title}`;
+
+      this.performNetworkRequest(endpoint);
+    },
+    getConveyancesByBank() {
+      let endpoint = `/api/conveyance_matters/?bank=${this.bank}`;
+      this.performNetworkRequest(endpoint);
     },
   },
   created() {
