@@ -12,3 +12,4 @@ pytest-django
 pytest-dotenv
 pytest-factoryboy
 dj-database-url
+whitenoise
