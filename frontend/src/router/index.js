@@ -34,11 +34,11 @@ const router = createRouter({
     {
       path: "/logout/",
       name: "logout",
-      component: () => import("../views/LogoutView.vue"),
+      component: () => import("../views/LogOutView.vue"),
     },
     {
       path: "/banks/",
-      name: "bank",
+      name: "banks",
       component: () => import("../views/BanksView.vue"),
     },
   ],
