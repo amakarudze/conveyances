@@ -133,7 +133,7 @@ export default {
                 >
                 <img
                   class="img-profile rounded-circle"
-                  src="img/undraw_profile.svg"
+                  src="/src/img/undraw_profile.svg"
                 />
               </a>
               <!-- Dropdown - User Information -->

@@ -150,11 +150,171 @@
       "name": "src_views_BanksView_vue.4dd779cac4ed9d2c0443.hot-update.js.map",
       "path": "/Users/anna/code/danziger/frontend/dist/src_views_BanksView_vue.4dd779cac4ed9d2c0443.hot-update.js.map",
       "publicPath": "http://127.0.0.1:8080/src_views_BanksView_vue.4dd779cac4ed9d2c0443.hot-update.js.map"
+    },
+    "app-7f58db6fec65d57e60bd.js": {
+      "name": "app-7f58db6fec65d57e60bd.js",
+      "path": "/Users/anna/code/danziger/frontend/dist/app-7f58db6fec65d57e60bd.js",
+      "publicPath": "http://127.0.0.1:8080/app-7f58db6fec65d57e60bd.js"
+    },
+    "app.1ed324f81f6e886ba6b2.hot-update.js": {
+      "name": "app.1ed324f81f6e886ba6b2.hot-update.js",
+      "path": "/Users/anna/code/danziger/frontend/dist/app.1ed324f81f6e886ba6b2.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/app.1ed324f81f6e886ba6b2.hot-update.js"
+    },
+    "app.1ed324f81f6e886ba6b2.hot-update.json": {
+      "name": "app.1ed324f81f6e886ba6b2.hot-update.json",
+      "path": "/Users/anna/code/danziger/frontend/dist/app.1ed324f81f6e886ba6b2.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/app.1ed324f81f6e886ba6b2.hot-update.json"
+    },
+    "app-7f58db6fec65d57e60bd.js.map": {
+      "name": "app-7f58db6fec65d57e60bd.js.map",
+      "path": "/Users/anna/code/danziger/frontend/dist/app-7f58db6fec65d57e60bd.js.map",
+      "publicPath": "http://127.0.0.1:8080/app-7f58db6fec65d57e60bd.js.map"
+    },
+    "app.1ed324f81f6e886ba6b2.hot-update.js.map": {
+      "name": "app.1ed324f81f6e886ba6b2.hot-update.js.map",
+      "path": "/Users/anna/code/danziger/frontend/dist/app.1ed324f81f6e886ba6b2.hot-update.js.map",
+      "publicPath": "http://127.0.0.1:8080/app.1ed324f81f6e886ba6b2.hot-update.js.map"
+    },
+    "app-642bf67aeddebc54bc12.js": {
+      "name": "app-642bf67aeddebc54bc12.js",
+      "path": "/Users/anna/code/danziger/frontend/dist/app-642bf67aeddebc54bc12.js",
+      "publicPath": "http://127.0.0.1:8080/app-642bf67aeddebc54bc12.js"
+    },
+    "app.7f58db6fec65d57e60bd.hot-update.js": {
+      "name": "app.7f58db6fec65d57e60bd.hot-update.js",
+      "path": "/Users/anna/code/danziger/frontend/dist/app.7f58db6fec65d57e60bd.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/app.7f58db6fec65d57e60bd.hot-update.js"
+    },
+    "app.7f58db6fec65d57e60bd.hot-update.json": {
+      "name": "app.7f58db6fec65d57e60bd.hot-update.json",
+      "path": "/Users/anna/code/danziger/frontend/dist/app.7f58db6fec65d57e60bd.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/app.7f58db6fec65d57e60bd.hot-update.json"
+    },
+    "app-642bf67aeddebc54bc12.js.map": {
+      "name": "app-642bf67aeddebc54bc12.js.map",
+      "path": "/Users/anna/code/danziger/frontend/dist/app-642bf67aeddebc54bc12.js.map",
+      "publicPath": "http://127.0.0.1:8080/app-642bf67aeddebc54bc12.js.map"
+    },
+    "app.7f58db6fec65d57e60bd.hot-update.js.map": {
+      "name": "app.7f58db6fec65d57e60bd.hot-update.js.map",
+      "path": "/Users/anna/code/danziger/frontend/dist/app.7f58db6fec65d57e60bd.hot-update.js.map",
+      "publicPath": "http://127.0.0.1:8080/app.7f58db6fec65d57e60bd.hot-update.js.map"
+    },
+    "app-1a945c2186c9fd5a2e28.js": {
+      "name": "app-1a945c2186c9fd5a2e28.js",
+      "path": "/Users/anna/code/danziger/frontend/dist/app-1a945c2186c9fd5a2e28.js",
+      "publicPath": "http://127.0.0.1:8080/app-1a945c2186c9fd5a2e28.js"
+    },
+    "app.642bf67aeddebc54bc12.hot-update.js": {
+      "name": "app.642bf67aeddebc54bc12.hot-update.js",
+      "path": "/Users/anna/code/danziger/frontend/dist/app.642bf67aeddebc54bc12.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/app.642bf67aeddebc54bc12.hot-update.js"
+    },
+    "app.642bf67aeddebc54bc12.hot-update.json": {
+      "name": "app.642bf67aeddebc54bc12.hot-update.json",
+      "path": "/Users/anna/code/danziger/frontend/dist/app.642bf67aeddebc54bc12.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/app.642bf67aeddebc54bc12.hot-update.json"
+    },
+    "app-1a945c2186c9fd5a2e28.js.map": {
+      "name": "app-1a945c2186c9fd5a2e28.js.map",
+      "path": "/Users/anna/code/danziger/frontend/dist/app-1a945c2186c9fd5a2e28.js.map",
+      "publicPath": "http://127.0.0.1:8080/app-1a945c2186c9fd5a2e28.js.map"
+    },
+    "app.642bf67aeddebc54bc12.hot-update.js.map": {
+      "name": "app.642bf67aeddebc54bc12.hot-update.js.map",
+      "path": "/Users/anna/code/danziger/frontend/dist/app.642bf67aeddebc54bc12.hot-update.js.map",
+      "publicPath": "http://127.0.0.1:8080/app.642bf67aeddebc54bc12.hot-update.js.map"
+    },
+    "app-7272b8a18c1659d0e7c8.js": {
+      "name": "app-7272b8a18c1659d0e7c8.js",
+      "path": "/Users/anna/code/danziger/frontend/dist/app-7272b8a18c1659d0e7c8.js",
+      "publicPath": "http://127.0.0.1:8080/app-7272b8a18c1659d0e7c8.js"
+    },
+    "app.1a945c2186c9fd5a2e28.hot-update.js": {
+      "name": "app.1a945c2186c9fd5a2e28.hot-update.js",
+      "path": "/Users/anna/code/danziger/frontend/dist/app.1a945c2186c9fd5a2e28.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/app.1a945c2186c9fd5a2e28.hot-update.js"
+    },
+    "app.1a945c2186c9fd5a2e28.hot-update.json": {
+      "name": "app.1a945c2186c9fd5a2e28.hot-update.json",
+      "path": "/Users/anna/code/danziger/frontend/dist/app.1a945c2186c9fd5a2e28.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/app.1a945c2186c9fd5a2e28.hot-update.json"
+    },
+    "app-7272b8a18c1659d0e7c8.js.map": {
+      "name": "app-7272b8a18c1659d0e7c8.js.map",
+      "path": "/Users/anna/code/danziger/frontend/dist/app-7272b8a18c1659d0e7c8.js.map",
+      "publicPath": "http://127.0.0.1:8080/app-7272b8a18c1659d0e7c8.js.map"
+    },
+    "app.1a945c2186c9fd5a2e28.hot-update.js.map": {
+      "name": "app.1a945c2186c9fd5a2e28.hot-update.js.map",
+      "path": "/Users/anna/code/danziger/frontend/dist/app.1a945c2186c9fd5a2e28.hot-update.js.map",
+      "publicPath": "http://127.0.0.1:8080/app.1a945c2186c9fd5a2e28.hot-update.js.map"
+    },
+    "app-68435abe74ece26b8037.js": {
+      "name": "app-68435abe74ece26b8037.js",
+      "path": "/Users/anna/code/danziger/frontend/dist/app-68435abe74ece26b8037.js",
+      "publicPath": "http://127.0.0.1:8080/app-68435abe74ece26b8037.js"
+    },
+    "src_views_LogOutView_vue.bundle.js": {
+      "name": "src_views_LogOutView_vue.bundle.js",
+      "path": "/Users/anna/code/danziger/frontend/dist/src_views_LogOutView_vue.bundle.js",
+      "publicPath": "http://127.0.0.1:8080/src_views_LogOutView_vue.bundle.js"
+    },
+    "app.7272b8a18c1659d0e7c8.hot-update.js": {
+      "name": "app.7272b8a18c1659d0e7c8.hot-update.js",
+      "path": "/Users/anna/code/danziger/frontend/dist/app.7272b8a18c1659d0e7c8.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/app.7272b8a18c1659d0e7c8.hot-update.js"
+    },
+    "app.7272b8a18c1659d0e7c8.hot-update.json": {
+      "name": "app.7272b8a18c1659d0e7c8.hot-update.json",
+      "path": "/Users/anna/code/danziger/frontend/dist/app.7272b8a18c1659d0e7c8.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/app.7272b8a18c1659d0e7c8.hot-update.json"
+    },
+    "app-68435abe74ece26b8037.js.map": {
+      "name": "app-68435abe74ece26b8037.js.map",
+      "path": "/Users/anna/code/danziger/frontend/dist/app-68435abe74ece26b8037.js.map",
+      "publicPath": "http://127.0.0.1:8080/app-68435abe74ece26b8037.js.map"
+    },
+    "src_views_LogOutView_vue.bundle.js.map": {
+      "name": "src_views_LogOutView_vue.bundle.js.map",
+      "path": "/Users/anna/code/danziger/frontend/dist/src_views_LogOutView_vue.bundle.js.map",
+      "publicPath": "http://127.0.0.1:8080/src_views_LogOutView_vue.bundle.js.map"
+    },
+    "app.7272b8a18c1659d0e7c8.hot-update.js.map": {
+      "name": "app.7272b8a18c1659d0e7c8.hot-update.js.map",
+      "path": "/Users/anna/code/danziger/frontend/dist/app.7272b8a18c1659d0e7c8.hot-update.js.map",
+      "publicPath": "http://127.0.0.1:8080/app.7272b8a18c1659d0e7c8.hot-update.js.map"
+    },
+    "app-be68f9483f6817835bc9.js": {
+      "name": "app-be68f9483f6817835bc9.js",
+      "path": "/Users/anna/code/danziger/frontend/dist/app-be68f9483f6817835bc9.js",
+      "publicPath": "http://127.0.0.1:8080/app-be68f9483f6817835bc9.js"
+    },
+    "app.68435abe74ece26b8037.hot-update.js": {
+      "name": "app.68435abe74ece26b8037.hot-update.js",
+      "path": "/Users/anna/code/danziger/frontend/dist/app.68435abe74ece26b8037.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/app.68435abe74ece26b8037.hot-update.js"
+    },
+    "app.68435abe74ece26b8037.hot-update.json": {
+      "name": "app.68435abe74ece26b8037.hot-update.json",
+      "path": "/Users/anna/code/danziger/frontend/dist/app.68435abe74ece26b8037.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/app.68435abe74ece26b8037.hot-update.json"
+    },
+    "app-be68f9483f6817835bc9.js.map": {
+      "name": "app-be68f9483f6817835bc9.js.map",
+      "path": "/Users/anna/code/danziger/frontend/dist/app-be68f9483f6817835bc9.js.map",
+      "publicPath": "http://127.0.0.1:8080/app-be68f9483f6817835bc9.js.map"
+    },
+    "app.68435abe74ece26b8037.hot-update.js.map": {
+      "name": "app.68435abe74ece26b8037.hot-update.js.map",
+      "path": "/Users/anna/code/danziger/frontend/dist/app.68435abe74ece26b8037.hot-update.js.map",
+      "publicPath": "http://127.0.0.1:8080/app.68435abe74ece26b8037.hot-update.js.map"
     }
   },
   "chunks": {
     "app": [
-      "app-1ed324f81f6e886ba6b2.js"
+      "app-be68f9483f6817835bc9.js"
     ]
   },
   "publicPath": "http://127.0.0.1:8080/"

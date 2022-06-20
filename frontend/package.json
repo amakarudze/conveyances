@@ -16,6 +16,7 @@
     "babel-loader": "^8.2.5",
     "css-loader": "^6.7.1",
     "file-loader": "^6.2.0",
+    "html-webpack-plugin": "^5.5.0",
     "lodash": "^4.17.21",
     "style-loader": "^3.3.1",
     "ts-loader": "^9.3.0",
@@ -25,7 +26,8 @@
     "webpack": "^5.72.1",
     "webpack-bundle-tracker": "^1.5.0",
     "webpack-cli": "^4.9.2",
-    "webpack-dev-server": "^4.9.0"
+    "webpack-dev-server": "^4.9.0",
+    "webpack-merge": "^5.8.0"
   },
   "devDependencies": {
     "@rushstack/eslint-patch": "^1.1.0",
@@ -35,5 +37,9 @@
     "eslint-plugin-vue": "^8.2.0",
     "prettier": "^2.5.1",
     "vite": "^2.9.5"
+  },
+  "engines": {
+    "node": "==16.15.0",
+    "npm": "==8.5.5"
   }
 }
