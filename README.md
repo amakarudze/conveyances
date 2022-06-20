@@ -16,6 +16,7 @@ This app requires the following to run:
 - Vue 3
 - Webpack 
 - Webpack Bundle Tracker
+- Heroku account and CLI (for deployment)
 
 ## Installation
 1. Clone the repo by running this command `git clone git@github.com:amakarudze/conveyances.git`.
@@ -38,6 +39,11 @@ For now the project only has backend unit tests which are run using the `coverag
 The app is deployed on [Heroku](https://www.heroku.com/). I usually deploy my apps to [PythonAnywhere](https://www.pythonanywhere.com/) but since I needed to use Postgres database and PythonAnywhere does not offer Postgres database for free accounts, I had to return to [Heroku](https://www.heroku.com/) after a couple of years of not using their service.
 
 To deploy on [Heroku](https://www.heroku.com/):
+- Build the frontend by running `npm run build` while in the `frontend` folder.
+- Navigate to your project root folder. Follow instructions for [deploying Python project to Heroku](https://devcenter.heroku.com/articles/getting-started-with-python) up to the point of creating an app.
+- Go to your Heroku dashboard and on the app's settings choose automatic [deployment from Github](https://devcenter.heroku.com/articles/github-integration). This will deploy your app from GitHub.
+- Add environment variables for your app.
+- If the app still doesn't run, open a console on your Heroku app and run the command `heroku ps:scale worker=1` to start a web worker as per instructions [here](https://devcenter.heroku.com/articles/procfile).
 
 ## Usage
 To use the app do the following:
