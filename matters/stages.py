@@ -1,5 +1,5 @@
 from dataclasses import dataclass
-from typing import Dict, Iterable, List, Text
+from typing import Iterable, List, Text
 
 
 transfer = [
