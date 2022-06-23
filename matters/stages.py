@@ -70,7 +70,6 @@ mortgage_bond_cancellation = [
     "Documents Registered",
     "Documents Delivered to Bank",
     "Owner Collected Deed",
-    "Documents Co-lodged",
 ]
 
 matters = {
