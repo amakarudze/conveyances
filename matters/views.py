@@ -1,7 +1,6 @@
 from rest_framework import mixins, views, viewsets
 from rest_framework.permissions import IsAuthenticated
 from rest_framework.response import Response
-from rest_framework.views import APIView
 
 from .models import Bank, ConveyanceMatter, Matter
 from .serializers import (
@@ -89,7 +88,7 @@ class MatterViewSet(
     lookup_field = "uuid"
 
 
-class CurrentUserView(APIView):
+class CurrentUserView(views.APIView):
     def get(self, request, format=None):
         current_user = self.request.user
         results = UserSerializer(current_user).data
