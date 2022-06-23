@@ -10,7 +10,7 @@ This app requires the following to run:
 - Python 3.9+
 - Postgres 12
 - Django Rest Framework
-- Django Bundle Tracker
+- Django Webpack Loader
 - Node 16.15.0 
 - npm 8.5.5
 - Vue 3
